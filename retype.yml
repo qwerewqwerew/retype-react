@@ -6,7 +6,7 @@ branding:
   label: Docs
 links:
   - text: Respository
-    link: https://github.com/qwerewqwerew/retype
+    link: https://github.com/qwerewqwerew/retype-react.git
 cache:
   strategy: none
 exclude:
