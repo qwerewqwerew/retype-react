@@ -1,6 +1,6 @@
 {
   "version": "3.2.0",
-  "created": "2023-10-09T06:50:01Z",
+  "created": "2023-10-09T06:52:12Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -9,37 +9,48 @@
       "path": "404.html"
     },
     {
-      "path": "리액트\\1\\index.html"
+      "path": "리액트\\1\\index.html",
+      "old": true
     },
     {
-      "path": "리액트\\3\\index.html"
+      "path": "리액트\\3\\index.html",
+      "old": true
     },
     {
-      "path": "리액트\\assets\\imgs\\2023-10-06_083527.jpg"
+      "path": "리액트\\assets\\imgs\\2023-10-06_083527.jpg",
+      "old": true
     },
     {
-      "path": "리액트\\assets\\imgs\\2023-10-06_083948.jpg"
+      "path": "리액트\\assets\\imgs\\2023-10-06_083948.jpg",
+      "old": true
     },
     {
-      "path": "리액트\\assets\\imgs\\a_04.png"
+      "path": "리액트\\assets\\imgs\\a_04.png",
+      "old": true
     },
     {
-      "path": "리액트\\assets\\imgs\\a02.png"
+      "path": "리액트\\assets\\imgs\\a02.png",
+      "old": true
     },
     {
-      "path": "리액트\\assets\\imgs\\a03.png"
+      "path": "리액트\\assets\\imgs\\a03.png",
+      "old": true
     },
     {
-      "path": "리액트\\assets\\imgs\\a04.png"
+      "path": "리액트\\assets\\imgs\\a04.png",
+      "old": true
     },
     {
-      "path": "리액트\\assets\\imgs\\a5.png"
+      "path": "리액트\\assets\\imgs\\a5.png",
+      "old": true
     },
     {
-      "path": "리액트\\assets\\imgs\\a6.png"
+      "path": "리액트\\assets\\imgs\\a6.png",
+      "old": true
     },
     {
-      "path": "리액트\\footnote\\index.html"
+      "path": "리액트\\footnote\\index.html",
+      "old": true
     },
     {
       "path": "categories\\general\\index.html"
@@ -64,6 +75,39 @@
     },
     {
       "path": "mdi_react.png"
+    },
+    {
+      "path": "react\\1\\index.html"
+    },
+    {
+      "path": "react\\3\\index.html"
+    },
+    {
+      "path": "react\\assets\\imgs\\2023-10-06_083527.jpg"
+    },
+    {
+      "path": "react\\assets\\imgs\\2023-10-06_083948.jpg"
+    },
+    {
+      "path": "react\\assets\\imgs\\a_04.png"
+    },
+    {
+      "path": "react\\assets\\imgs\\a02.png"
+    },
+    {
+      "path": "react\\assets\\imgs\\a03.png"
+    },
+    {
+      "path": "react\\assets\\imgs\\a04.png"
+    },
+    {
+      "path": "react\\assets\\imgs\\a5.png"
+    },
+    {
+      "path": "react\\assets\\imgs\\a6.png"
+    },
+    {
+      "path": "react\\footnote\\index.html"
     },
     {
       "path": "resources\\css\\retype.css"
