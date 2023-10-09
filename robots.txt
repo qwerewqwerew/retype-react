@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://qwerewqwerew.github.io/retype-react/sitemap.xml.gz
+Sitemap: http://qwerewqwerew.github.io/retype-react/sitemap.xml.gz
