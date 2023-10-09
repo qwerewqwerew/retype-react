@@ -1,6 +1,6 @@
 {
   "version": "3.2.0",
-  "created": "2023-10-09T06:52:12Z",
+  "created": "2023-10-09T07:09:09Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -68,7 +68,8 @@
       "path": "categories\\react\\index.html"
     },
     {
-      "path": "CNAME"
+      "path": "CNAME",
+      "old": true
     },
     {
       "path": "index.html"
