@@ -1,6 +1,6 @@
 {
   "version": "3.5.0",
-  "created": "2023-10-10T13:10:34Z",
+  "created": "2023-10-10T14:00:59Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -90,6 +90,10 @@
     },
     {
       "path": "resources\\js\\lunr.js"
+    },
+    {
+      "path": "resources\\js\\mermaid.js",
+      "old": true
     },
     {
       "path": "resources\\js\\prism.js"
