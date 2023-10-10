@@ -1,6 +1,6 @@
 {
-  "version": "3.5.0",
-  "created": "2023-10-09T07:36:46Z",
+  "version": "3.2.0",
+  "created": "2023-10-10T00:08:24Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -121,10 +121,6 @@
     },
     {
       "path": "tags\\react\\index.html"
-    },
-    {
-      "path": "welcome\\index.html",
-      "old": true
     }
   ]
 }

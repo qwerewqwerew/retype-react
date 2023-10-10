@@ -2,16 +2,10 @@ input: .
 output: .retype
 url: https://qwerewqwerew.github.io/retype-react/
 branding:
-  title: ✔ 리액트노트
+  title: Project Name
   label: Docs
 links:
-  - text: Respository
-    link: https://github.com/qwerewqwerew/retype-react.git
-cache:
-  strategy: none
-exclude:
-  - 'draft/'
-markdown:
-  lineBreaks: hard
+- text: 코딩노트
+  link: https://qwerewqwerew.github.io/retype/
 footer:
-  copyright: '&copy; Copyright {{ year }}. coalacoding All rights reserved.'
+  copyright: "&copy; Copyright {{ year }}. All rights reserved."
