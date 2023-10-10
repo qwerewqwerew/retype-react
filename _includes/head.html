@@ -142,10 +142,16 @@
   }
 
   .my-list li {
-    padding-bottom: .5rem;
+    padding-bottom: 1rem;
     font-size: 1.1rem;
+    text-indent:0.5rem;
   }
-
+  .my-list li li {
+    color:#3f51b5;
+  }
+  .my-list li li::marker{
+    content:'→';
+  }
   iframe {
     margin: auto;
   }

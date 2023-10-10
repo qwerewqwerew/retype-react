@@ -1,6 +1,6 @@
 {
-  "version": "3.2.0",
-  "created": "2023-10-10T06:48:45Z",
+  "version": "3.5.0",
+  "created": "2023-10-10T13:10:34Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -9,16 +9,22 @@
       "path": "404.html"
     },
     {
-      "path": "categories\\general\\index.html"
+      "path": "categories\\basic\\index.html"
+    },
+    {
+      "path": "categories\\general\\index.html",
+      "old": true
     },
     {
       "path": "categories\\index.html"
     },
     {
-      "path": "categories\\javascript\\index.html"
+      "path": "categories\\javascript\\index.html",
+      "old": true
     },
     {
-      "path": "categories\\news\\index.html"
+      "path": "categories\\news\\index.html",
+      "old": true
     },
     {
       "path": "categories\\react\\index.html"
@@ -33,7 +39,14 @@
       "path": "react\\1\\index.html"
     },
     {
-      "path": "react\\3\\index.html"
+      "path": "react\\2\\index.html"
+    },
+    {
+      "path": "react\\3\\index.html",
+      "old": true
+    },
+    {
+      "path": "react\\assets\\imgs\\2-1.png"
     },
     {
       "path": "react\\assets\\imgs\\2023-10-06_083527.jpg"
