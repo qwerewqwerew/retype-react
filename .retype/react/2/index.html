@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/retype-react">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.750431970089">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.750592684869">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -33,12 +33,12 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.750431970089" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.750592684869" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.750431970089" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.750592684869" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.750431970089" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.750431970089" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.750592684869" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.750592684869" defer></script>
 
     <style>
       @import url('https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.8/static/pretendard.css');
@@ -360,7 +360,12 @@
 <li><doc-anchor-trigger to="#17-mission">1.7. Mission</doc-anchor-trigger></li>
 </ul>
 </li>
-<li><doc-anchor-trigger to="#2-%EB%A7%9D%EA%B3%A0%ED%9A%8C%EC%9B%90%EC%95%B1-%EB%A7%8C%EB%93%A4%EA%B8%B0">2. 망고회원앱 만들기</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#2-%EB%A7%9D%EA%B3%A0%ED%9A%8C%EC%9B%90%EC%95%B1-%EB%A7%8C%EB%93%A4%EA%B8%B0">2. 망고회원앱 만들기</doc-anchor-trigger>
+<ul>
+<li><doc-anchor-trigger to="#21-%EC%8A%A4%ED%83%80%EC%9D%BC-%ED%8C%8C%EC%9D%BC-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C">2.1. 스타일 파일 다운로드</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#22-%EC%9E%91%EC%84%B1">2.2. 작성</doc-anchor-trigger></li>
+</ul>
+</li>
 </ul>
 <doc-anchor-target id="1-리액트컴포넌트">
     <h2>
@@ -802,48 +807,137 @@ http://qwerew.cafe24.com/images/pet-4.jpg
         <span>2. 망고회원앱 만들기</span>
     </h2>
 </doc-anchor-target>
-<blockquote>
-<p>MemberItem.js 컴포넌트를 생성하여 회원목록 컴포넌트를 만들겠습니다.</p>
-</blockquote>
+<doc-anchor-target id="21-스타일-파일-다운로드">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#21-스타일-파일-다운로드">#</doc-anchor-trigger>
+        <span>2.1. 스타일 파일 다운로드</span>
+    </h3>
+</doc-anchor-target>
+<p>
+<div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"/><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z"/></svg>
+        </span>
+        <span class="inline-block font-medium ml-2">:icon-down:다운로드</span>
+    </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>../assets/files/2/styles.zip</span>
+    </div>
+    <a href="../assets/files/2/styles.zip" target="_blank" class="absolute block inset-0"></a>
+</div>
+</p>
+<doc-anchor-target id="22-작성">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#22-작성">#</doc-anchor-trigger>
+        <span>2.2. 작성</span>
+    </h3>
+</doc-anchor-target>
+<div class="my-list">
 <ol>
-<li><p>componets 폴더를 생성한후 MemberItem.js를 작성합니다</p>
+<li><p>스타일 파일을 다운로드 하여 src 폴더 하위에 압축을 풉니다.</p>
+</li>
+<li><p>index.css 파일을 열고 코드를 수정합니다.</p>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">componets/MemberItem.js</div>
+<div class="codeblock-title">index.css</div>
+<pre class="language-css"><code v-pre class="language-css">@import url(./styles/common.css);</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>src 폴더에 MemberItem.js 파일을 생성후 아래의 코드를 작성합니다.</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">MemberItem.js</div>
 <pre class="language-javascript"><code v-pre class="language-javascript">import './MemberItem.css';
 
 const MemberItem = () =&gt; {
  return (
- 	&lt;div className=&quot;card&quot;&gt;
- 		&lt;img src=&quot;http://qwerew.cafe24.com/images/pet-1.jpg&quot; alt=&quot;&quot; /&gt;
- 		&lt;span&gt;김망고&lt;/span&gt;
- 	&lt;/div&gt;
+ 	&lt;ul className=&quot;list_body&quot;&gt;
+ 		&lt;li className=&quot;list_item&quot;&gt;
+ 			&lt;div className=&quot;list_img&quot;&gt;
+ 				&lt;img src=&quot;http://qwerew.cafe24.com/images/pet-1.jpg&quot; alt=&quot;&quot; /&gt;
+ 			&lt;/div&gt;
+ 			&lt;div className=&quot;list_desc&quot;&gt;
+ 				&lt;span className=&quot;title&quot;&gt;이름&lt;/span&gt;
+ 				&lt;span className=&quot;text&quot;&gt;머리묶은 김망고&lt;/span&gt;
+ 			&lt;/div&gt;
+ 			&lt;div className=&quot;list_desc&quot;&gt;
+ 				&lt;span className=&quot;title&quot;&gt;이메일&lt;/span&gt;
+ 				&lt;span className=&quot;text&quot;&gt;abc@de.com&lt;/span&gt;
+ 			&lt;/div&gt;
+ 		&lt;/li&gt;
+ 		&lt;li className=&quot;list_item&quot;&gt;
+ 			&lt;div className=&quot;list_img&quot;&gt;
+ 				&lt;img src=&quot;http://qwerew.cafe24.com/images/pet-1.jpg&quot; alt=&quot;&quot; /&gt;
+ 			&lt;/div&gt;
+ 			&lt;div className=&quot;list_desc&quot;&gt;
+ 				&lt;span className=&quot;title&quot;&gt;이름&lt;/span&gt;
+ 				&lt;span className=&quot;text&quot;&gt;머리묶은 김망고&lt;/span&gt;
+ 			&lt;/div&gt;
+ 			&lt;div className=&quot;list_desc&quot;&gt;
+ 				&lt;span className=&quot;title&quot;&gt;이메일&lt;/span&gt;
+ 				&lt;span className=&quot;text&quot;&gt;abc@de.com&lt;/span&gt;
+ 			&lt;/div&gt;
+ 		&lt;/li&gt;
+ 	&lt;/ul&gt;
  );
 };
 export default MemberItem;</code></pre>
 </doc-codeblock></div>
 </li>
-<li><p>componets 폴더를 생성한후 MemberItem.css를 작성합니다</p>
+<li><p>src 폴더에 MemberItem.css 파일을 생성후 아래의 코드를 작성합니다.</p>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<div class="codeblock-title">componets/MemberItem.css</div>
-<pre class="language-css"><code v-pre class="language-css">.card {
- padding: 5%;
+<div class="codeblock-title">MemberItem.css</div>
+<pre class="language-css"><code v-pre class="language-css">.list_body {
+ padding: 2vw;
  display: flex;
- align-items: center;
- box-shadow: 0px 0px 13px 4px rgba(0, 0, 0, 0.15);
- width: 30%;
- margin: 10%;
+ gap: 2rem;
 }
-.card img {
- width: 200px;
+.list_item {
+ padding: 2vw;
+ border-radius: 1vw;
+ box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
 }
-.card span {
- font-size: 2em;
+.list_img {
+ max-width: 15vw;
+ margin-bottom: 1.5rem;
+}
+.list_desc {
+ margin-bottom: 1.5rem;
+ color: var(--tone-2);
+ line-height: 1.7;
+ display: flex;
+ gap: 2rem;
+}
+.title {
+ font-size: 1.4rem;
+ font-weight: 900;
+ color: var(--tint-2);
+}
+.text {
+ font-size: 1.6rem;
+ font-weight: 400;
+}
+img {
+ width: 100%;
 }</code></pre>
 </doc-codeblock></div>
 </li>
-<li><p>App.js 에 MemberItem 컴포넌트를 임포트 합니다.</p>
+<li><p>src 폴더의 App.js 파일을 열고 코드를 수정합니다.</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">App.js</div>
+<pre class="language-javascript"><code v-pre class="language-javascript"> import MemberItem from './components/MemberItem';
+ function App() {
+ 	return (
+ 		&lt;div className=&quot;App&quot;&gt;
+ 			&lt;MemberItem /&gt;
+ 		&lt;/div&gt;
+ 	);
+ }
+
+ export default App;</code></pre>
+</doc-codeblock></div>
 </li>
 </ol>
+</div>
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
                                     <span>

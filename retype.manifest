@@ -1,6 +1,6 @@
 {
   "version": "3.5.0",
-  "created": "2023-10-12T13:19:31Z",
+  "created": "2023-10-14T09:58:06Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -44,6 +44,9 @@
     {
       "path": "react\\3\\index.html",
       "old": true
+    },
+    {
+      "path": "react\\assets\\files\\2\\styles.zip"
     },
     {
       "path": "react\\assets\\imgs\\10-11_527.jpg"
