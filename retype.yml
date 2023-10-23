@@ -9,3 +9,8 @@ links:
   link: https://qwerewqwerew.github.io/retype/
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
+integrations:
+  googleTagManager:
+    id: GTM-NQNBFL8D
+  googleAnalytics:
+    id: G-6SMH5R2Q90
