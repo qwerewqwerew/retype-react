@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6SMH5R2Q90"></script>
+    <script data-cfasync="false">window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-6SMH5R2Q90');</script>
+
+    <script data-cfasync="false">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NQNBFL8D');</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="turbo-root" content="/retype-react">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.751888475398">
+
+    <!-- See retype.com -->
+    <meta name="generator" content="Retype 3.5.0">
+
+    <!-- Primary Meta Tags -->
+    <title>3-props</title>
+    <meta name="title" content="3-props">
+    <meta name="description" content="리액트에서 컴포넌트를 생성하는 문법을 JSX(JavaScript XML: Javascript에 XML을 추가한 확장한 문법) 라고 합니다.">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://qwerewqwerew.github.io/retype-react/react/3/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://qwerewqwerew.github.io/retype-react/react/3/">
+    <meta property="og:title" content="3-props">
+    <meta property="og:description" content="리액트에서 컴포넌트를 생성하는 문법을 JSX(JavaScript XML: Javascript에 XML을 추가한 확장한 문법) 라고 합니다.">
+    <meta property="og:image" content="https://qwerewqwerew.github.io/retype-react/react/assets/imgs/10-25_534.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://qwerewqwerew.github.io/retype-react/react/3/">
+    <meta property="twitter:title" content="3-props">
+    <meta property="twitter:description" content="리액트에서 컴포넌트를 생성하는 문법을 JSX(JavaScript XML: Javascript에 XML을 추가한 확장한 문법) 라고 합니다.">
+    <meta property="twitter:image" content="https://qwerewqwerew.github.io/retype-react/react/assets/imgs/10-25_534.jpg">
+
+    <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+
+    <link href="../../resources/css/retype.css?v=3.5.0.751888475398" rel="stylesheet">
+
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.751888475398" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.751888475398" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.751888475398" defer></script>
+
+    <style>
+      @import url('https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.8/static/pretendard.css');
+      @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+      @import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
+
+      html {
+        line-height: 1.75;
+      }
+
+      code,
+      code span {
+        font-family: consolas, 'Inconsolata', monospace;
+        /*     font-size: .9rem;
+        line-height: 1.5;
+     */
+      }
+
+      * {
+        font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+        font-family: 'Pretendard', sans-serif;
+      }
+
+      a {
+        font-weight: 500;
+      }
+
+      aside {
+        margin-bottom: 1.2rem;
+      }
+
+      .comment_box {
+        padding: 2rem;
+        color: #094092;
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 1.1em;
+        letter-spacing: -0.5px;
+        position: relative;
+        background-color: #f4f5f7;
+        line-height: 1.8;
+        filter: drop-shadow(-2px 4px 4px #25344b25);
+      }
+
+      .comment_box p {
+        margin-bottom: 0.4rem !important;
+      }
+
+      .docs-markdown table.comfortable tr td,
+      .docs-markdown table.comfortable tr th {
+        padding: 0.6rem .8rem;
+      }
+
+      .w-full p:not(.hidden) {
+        margin-bottom: 0.5rem;
+      }
+
+      div[id]>h1,
+      div[id]>h2,
+      div[id]>h3,
+      div[id]>h4,
+      div[id]>h5,
+      div[id]>h6 {
+        margin-top: 3.4rem;
+        color: #3f51b5 !important;
+      }
+
+      [class^=img] {
+        width: auto;
+      }
+
+      [class^=img] p {
+        display: none;
+      }
+
+      .img50 figure img,
+      .w50 {
+        max-width: 50%;
+      }
+
+      .w40 {
+        max-width: 40%;
+      }
+
+      .w30 {
+        max-width: 30%;
+      }
+
+      .img20 figure img,
+      .w20 {
+        max-width: 20%;
+      }
+
+      .img10 figure img,
+      .w10 {
+        max-width: 10%;
+      }
+
+      .docs-markdown div[id="목차"]+ul li {
+        line-height: 1.8;
+        font-weight: 400;
+        padding-top: 2px;
+        padding-bottom: 4px;
+        font-size: 14px;
+      }
+
+      .docs-markdown table.comfortable tr td,
+      .docs-markdown table.comfortable tr th {
+        padding: 0.5rem 1.25rem;
+        font-size: 15px;
+      }
+
+      .shadow {
+        filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, .2))
+      }
+
+      .normal {
+        font-style: normal;
+      }
+
+      .mx-1 {
+        margin: auto 1rem;
+      }
+
+      .mr-1 {
+        margin-right: 1rem;
+      }
+
+      .my-1 {
+        margin: 1rem auto;
+      }
+
+      .red,
+      .red * {
+        color: rgb(210, 26, 170) !important;
+        font-size: 1.1rem !important;
+      }
+
+      .box {
+        background: #f7f7f7;
+        padding: 1rem 0 .5rem 1rem;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, .1), -1px -1px 2px rgba(0, 0, 0, .1);
+      }
+
+      .my-list li {
+        padding-bottom: 1rem;
+        font-size: 1.1rem;
+        text-indent:0.5rem;
+      }
+      .my-list li li {
+        color:#3f51b5;
+      }
+      .my-list li li::marker{
+        content:'→';
+      }
+      iframe {
+        margin: auto;
+      }
+    </style>
+</head>
+<body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQNBFL8D" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
+        <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
+    
+        <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
+            <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
+                <!-- Mobile menu button skeleton -->
+                <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+                <div v-cloak id="docs-sidebar-toggle"></div>
+        
+                <!-- Logo -->
+                <div class="flex items-center justify-between h-full py-2 md:w-75">
+                    <div class="flex items-center px-2 md:px-6">
+                        <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-2xl">
+                            <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">리액트노트</span>
+                        </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
+                    </div>
+        
+                    <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
+                </div>
+        
+                <div class="flex justify-between md:grow">
+                    <!-- Top Nav -->
+                    <nav class="hidden md:flex">
+                        <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://qwerewqwerew.github.io/retype/">코딩노트</a>
+                            </li>
+        
+                        </ul>
+                    </nav>
+        
+                    <!-- Header Right Skeleton -->
+                    <div v-cloak class="flex justify-end grow skeleton">
+        
+                        <!-- Search input mock -->
+                        <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
+                            <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                            </div>
+                            <input class="w-full h-10 placeholder-gray-400 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 dark:placeholder-dark-400" style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search">
+                        </div>
+        
+                        <!-- Mobile search button -->
+                        <div class="flex items-center justify-center w-10 h-10 lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                        </div>
+        
+                        <!-- Dark mode switch placeholder -->
+                        <div class="w-10 h-10 lg:ml-2"></div>
+        
+                        <!-- History button -->
+                        <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                        </div>
+                    </div>
+        
+                    <div v-cloak class="flex justify-end grow">
+                        <div id="docs-mobile-search-button"></div>
+                        <doc-search-desktop></doc-search-desktop>
+        
+                        <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                        <doc-history></doc-history>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <div class="container relative flex bg-white">
+            <!-- Sidebar Skeleton -->
+            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+            
+                <!-- Render this div, if config.showSidebarFilter is `true` -->
+                <div class="flex items-center h-16 px-6">
+                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter">
+                </div>
+            
+                <div class="pl-6 mt-1 mb-4">
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                </div>
+            
+                <div class="shrink-0 mt-auto bg-transparent dark:border-dark-650">
+                    <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                        <span class="text-xs whitespace-nowrap">Powered by</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Sidebar component -->
+            <doc-sidebar v-cloak>
+                <template #sidebar-footer>
+                    <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-dark-650">
+            
+                        <div class="py-3 px-6 md:hidden border-b dark:border-dark-650">
+                            <nav>
+                                <ul class="flex flex-wrap justify-center items-center">
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://qwerewqwerew.github.io/retype/">코딩노트</a>
+                                    </li>
+            
+                                </ul>
+                            </nav>
+                        </div>
+            
+                        <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                            <span class="text-xs whitespace-nowrap">Powered by</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                        </a>
+                    </div>
+                </template>
+            </doc-sidebar>
+    
+            <div class="grow min-w-0 dark:bg-dark-850">
+                <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+                <div class="flex">
+                    <div class="min-w-0 p-4 grow md:px-16">
+                        <main class="relative pb-12 lg:pt-2">
+                            <div class="docs-markdown" id="docs-content">
+                                <!-- Rendered if sidebar right is enabled -->
+                                <div id="docs-sidebar-right-toggle"></div>
+                                <!-- Page content  -->
+<doc-anchor-target id="3-props" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#3-props">#</doc-anchor-trigger>
+        <span>3-props</span>
+    </h1>
+</doc-anchor-target>
+<div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
+    <div>In&nbsp;</div>
+    <div><a href="../../categories/react/">react</a></div>
+</div>
+
+<doc-anchor-target id="목차">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#목차">#</doc-anchor-trigger>
+        <span>목차 <!-- omit in toc --></span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="1-리액트-props">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#1-리액트-props">#</doc-anchor-trigger>
+        <span>1. 리액트 props</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="11-데이터의-동적출력">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#11-데이터의-동적출력">#</doc-anchor-trigger>
+        <span>1.1. 데이터의 동적출력</span>
+    </h3>
+</doc-anchor-target>
+<blockquote>
+<p>리액트에서 컴포넌트를 생성하는 문법을 JSX(JavaScript XML: Javascript에 XML을 추가한 확장한 문법) 라고 합니다.</p>
+<p>jsx 에는 <code v-pre>{}</code> 기호 안에 자바스크립트 를 작성하면 자바스크립트 코드를 실행할수 있습니다.</p>
+<p>MemberItem 컴포넌트에서 사용하고 있는 데이터를 자바스크립트의 표현식으로 변경하여 작성해보겠습니다.</p>
+</blockquote>
+<doc-anchor-target id="111-작성">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#111-작성">#</doc-anchor-trigger>
+        <span>1.1.1. 작성</span>
+    </h4>
+</doc-anchor-target>
+<div class="my-list">
+<ol>
+<li>components/MemberItem.js 를 수정합니다.</li>
+</ol>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">MemberItem.js</div>
+<pre class="language-javascript"><code v-pre class="language-javascript">import './MemberItem.css';
+const MemberItem = () =&gt; {
+	const member = {
+		img: ['http://qwerew.cafe24.com/images/pet-1.jpg', 'http://qwerew.cafe24.com/images/pet-2.jpg', 'http://qwerew.cafe24.com/images/pet-3.jpg'],
+		name: ['김망고', '김공주', '구름이'],
+		email: ['abc@de.com', 'aeb@de.com', 'etd@de.com'],
+	};
+
+	return (
+		&lt;ul className='list_body'&gt;
+			&lt;li className='list_item'&gt;
+				&lt;div className='list_img'&gt;
+					&lt;img src={member.img[0]} alt={member.name[0]} /&gt;
+				&lt;/div&gt;
+				&lt;div className='list_desc'&gt;
+					&lt;span className='title'&gt;이름&lt;/span&gt;
+					&lt;span className='text'&gt;{member.name[0]}&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div className='list_desc'&gt;
+					&lt;span className='title'&gt;이메일&lt;/span&gt;
+					&lt;span className='text'&gt;{member.email[0]}&lt;/span&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li className='list_item'&gt;
+				&lt;div className='list_img'&gt;
+					&lt;img src={member.img[1]} alt={member.name[1]} /&gt;
+				&lt;/div&gt;
+				&lt;div className='list_desc'&gt;
+					&lt;span className='title'&gt;이름&lt;/span&gt;
+					&lt;span className='text'&gt;{member.name[1]}&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div className='list_desc'&gt;
+					&lt;span className='title'&gt;이메일&lt;/span&gt;
+					&lt;span className='text'&gt;{member.email[1]}&lt;/span&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li className='list_item'&gt;
+				&lt;div className='list_img'&gt;
+					&lt;img src={member.img[2]} alt={member.name[2]} /&gt;
+				&lt;/div&gt;
+				&lt;div className='list_desc'&gt;
+					&lt;span className='title'&gt;이름&lt;/span&gt;
+					&lt;span className='text'&gt;{member.name[2]}&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div className='list_desc'&gt;
+					&lt;span className='title'&gt;이메일&lt;/span&gt;
+					&lt;span className='text'&gt;{member.email[2]}&lt;/span&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	);
+};
+export default MemberItem;</code></pre>
+</doc-codeblock></div>
+<p>매번 긴 속성을 작성하지 않아도 되니 정말 편리하죠?</p>
+<p><img src="../assets/imgs/10-25_534.jpg" alt="실행화면" /> :::</p>
+<doc-anchor-target id="2-props">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2-props">#</doc-anchor-trigger>
+        <span>2. Props</span>
+    </h2>
+</doc-anchor-target>
+<blockquote>
+<p>만약 App.js에서 MemberItem 컴포넌트를 여러번 사용한다면 어떻게 해야할까요?</p>
+</blockquote>
+<doc-anchor-target id="21-appjs">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#21-appjs">#</doc-anchor-trigger>
+        <span>2.1. App.js</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-javascript"><code v-pre class="language-javascript">import logo from './logo.svg';
+import MemberItem from './components/MemberItem1';
+function App() {
+	return (
+		&lt;div className='App'&gt;
+			&lt;img src={logo} className='App-logo' alt='logo' style=100px /&gt;
+			&lt;MemberItem /&gt;
+			&lt;MemberItem /&gt;
+		&lt;/div&gt;
+	);
+}
+
+export default App;</code></pre>
+</doc-codeblock></div>
+<p>여러번 같은 리스트를 반복할수 있습니다 너무 편리하죠?</p>
+<p><figure class="content-center">
+    <img src="../assets/imgs/10-25_533.jpg" alt="실행화면">
+    <figcaption class="caption">실행화면</figcaption>
+</figure>
+</p>
+<blockquote>
+<p>하지만 MemberItem 컴포넌트의 콘텐츠의 내용이 다를 경우 어떻게 해야 할까요?</p>
+<p>props 라는 기능을 사용하면 됩니다.</p>
+<p>props 란 부모 컴포넌트가 자식 컴포넌트에게 전달하는 데이터를 의미하는데요.</p>
+<p>props 를 사용하면 컴포넌트간의 데이터를 공급할수 있습니다.</p>
+<p>지금부터 props를 사용하여 목록마다 다른 데이터를 출력해보도록 하겠습니다.</p>
+</blockquote>
+<doc-anchor-target id="22-22">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#22-22">#</doc-anchor-trigger>
+        <span>2.2. 2.2.</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="221-appjs">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#221-appjs">#</doc-anchor-trigger>
+        <span>2.2.1. App.js</span>
+    </h4>
+</doc-anchor-target>
+<div class="my-list">
+<ol>
+<li>props 를 진행하기 위해 앱의 구조를 변경하겠습니다.</li>
+<li>App.js 에 MemberDB 변수를 생성하고 회원정보를 넣어 초기화 합니다</li>
+</ol>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">#src/App.js</div>
+<pre class="language-javascript"><code v-pre class="language-javascript">import logo from './logo.svg';
+import MemberItem from './components/MemberItem';
+function App() {
+	const MemberDB = [
+		{ id: 'm1', name: '김경아', thumb: 'http://qwerew.cafe24.com/images/pet-1.jpg', email: 'abc@defg.com' },
+		{ id: 'm2', name: '김망고', thumb: 'http://qwerew.cafe24.com/images/pet-2.jpg', email: 'efg@defg.com' },
+		{ id: 'm3', name: '김민정', thumb: 'http://qwerew.cafe24.com/images/pet-3.jpg', email: 'hij@defg.com' },
+		{ id: 'm4', name: '윤현선', thumb: 'http://qwerew.cafe24.com/images/pet-4.jpg', email: 'lmn@defg.com' },
+		{ id: 'm4', name: '이소정', thumb: 'http://qwerew.cafe24.com/images/pet-5.jpg', email: 'opq@defg.com' },
+	];
+	return (
+		&lt;div className='App'&gt;
+			&lt;img src={logo} className='App-logo' alt='logo' style=100px /&gt;
+			&lt;MemberItem /&gt;
+			&lt;MemberItem /&gt;
+			&lt;MemberItem /&gt;
+			&lt;MemberItem /&gt;
+		&lt;/div&gt;
+	);
+}
+
+export default App;</code></pre>
+</doc-codeblock></div>
+<ol start="3">
+<li>하위 컴포넌트에 데이터를 전달합니다.
+<ol>
+<li>MemberItem 컴포넌트를 한개만 남기고 삭제합니다.</li>
+<li>Props 를 작성합니다.</li>
+</ol>
+</li>
+</ol>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-javascript"><code v-pre class="language-javascript">&lt;MemberItem name={MemberDB[0].name} thumb={MemberDB[0].thumb} email={MemberDB[0].email} /&gt;</code></pre>
+</doc-codeblock></div>
+</div>
+</div>
+<doc-anchor-target id="222-memberitemjs">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#222-memberitemjs">#</doc-anchor-trigger>
+        <span>2.2.2. MemberItem.js</span>
+    </h4>
+</doc-anchor-target>
+<div class="my-list">
+<ol>
+<li>데이터의 구조가 변경 되었으므로 components 폴더의 MemberList 컴포넌트의 코드를 수정합니다.
+<ul>
+<li>변수 member 삭제 합니다</li>
+<li><code v-pre>ul.list_body&gt;li.list_item&gt;((.list_img&gt;img)+(.list_desc&gt;span.title+span+text))</code> 의 구조만 남기고 모두 삭제 합니다</li>
+<li></li>
+</ul>
+</li>
+<li>부모컴포넌트가 전달하는 데이터를 매개변수로 전달 받습니다.
+<ul>
+<li>이때 작성한 <code v-pre>props</code> 는 리액트에서 제공하는 기능으로 상위 요소가 전달하는 모든 데이터를 공급받을수 있습니다.</li>
+</ul>
+</li>
+</ol>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">components/MemberList.js</div>
+<pre class="language-javascript"><code v-pre class="language-javascript">import './MemberItem.css';
+const MemberItem = (props) =&gt; {
+	console.log(props);
+	return (
+		&lt;ul className='list_body'&gt;
+			&lt;li className='list_item'&gt;
+				&lt;div className='list_img'&gt;
+					&lt;img src={props.thumb} alt={props.name} /&gt;
+				&lt;/div&gt;
+				&lt;div className='list_desc'&gt;
+					&lt;span className='title'&gt;이름&lt;/span&gt;
+					&lt;span className='text'&gt;{props.name}&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div className='list_desc'&gt;
+					&lt;span className='title'&gt;이메일&lt;/span&gt;
+					&lt;span className='text'&gt;{props.email}&lt;/span&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	);
+};
+export default MemberItem;</code></pre>
+</doc-codeblock></div>
+<p><img src="../assets/imgs/10-29_536.jpg" alt="alt" /> :::</p>
+<doc-anchor-target id="223-appjs">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#223-appjs">#</doc-anchor-trigger>
+        <span>2.2.3. App.js</span>
+    </h4>
+</doc-anchor-target>
+<blockquote>
+<p>다음 데이터를 전달합니다.</p>
+</blockquote>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">src/App.js</div>
+<pre class="language-javascript"><code v-pre class="language-javascript">import logo from './logo.svg';
+import MemberItem from './components/MemberItem';
+function App() {
+	const MemberDB = [
+		{ id: 'm1', name: '김경아', thumb: 'http://qwerew.cafe24.com/images/pet-1.jpg', email: 'abc@defg.com' },
+		{ id: 'm2', name: '김망고', thumb: 'http://qwerew.cafe24.com/images/pet-2.jpg', email: 'efg@defg.com' },
+		{ id: 'm3', name: '김민정', thumb: 'http://qwerew.cafe24.com/images/pet-3.jpg', email: 'hij@defg.com' },
+		{ id: 'm4', name: '윤현선', thumb: 'http://qwerew.cafe24.com/images/pet-4.jpg', email: 'lmn@defg.com' },
+		{ id: 'm4', name: '이소정', thumb: 'http://qwerew.cafe24.com/images/pet-5.jpg', email: 'opq@defg.com' },
+	];
+	return (
+		&lt;div className='App'&gt;
+			&lt;img src={logo} className='App-logo' alt='logo' style=100px /&gt;
+			&lt;MemberItem name={MemberDB[0].name} thumb={MemberDB[0].thumb} email={MemberDB[0].email} /&gt;
+			&lt;MemberItem name={MemberDB[1].name} thumb={MemberDB[1].thumb} email={MemberDB[1].email} /&gt;
+			&lt;MemberItem name={MemberDB[2].name} thumb={MemberDB[2].thumb} email={MemberDB[2].email} /&gt;
+			&lt;MemberItem name={MemberDB[3].name} thumb={MemberDB[3].thumb} email={MemberDB[3].email} /&gt;
+			&lt;MemberItem name={MemberDB[4].name} thumb={MemberDB[4].thumb} email={MemberDB[4].email} /&gt;
+		&lt;/div&gt;
+	);
+}
+
+export default App;</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="3-컴포넌트-분할하기">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#3-컴포넌트-분할하기">#</doc-anchor-trigger>
+        <span>3. 컴포넌트 분할하기</span>
+    </h2>
+</doc-anchor-target>
+<blockquote>
+<p>MemberItem 컴포넌트를 아래의 이미지처럼 두개로 나누어 보겠습니다.</p>
+<p><img src="../assets/imgs/10-29_537.jpg" alt="alt" /></p>
+<p>리액트의 앱은 기존 html 문서처럼 하나의 페이지로 구성되는 것이 아니라 컴포넌트가 모여서 페이지를 구성하는 방식입니다.</p>
+<p>그렇기 때문에 컴포넌트를 세분화 하여 개발하게 될 경우 각 컴포넌트의 독립성을 유지하게 되며 코드의 재사용성이 높아집니다.</p>
+</blockquote>
+<doc-anchor-target id="31-itemthumbjs-생성">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#31-itemthumbjs-생성">#</doc-anchor-trigger>
+        <span>3.1. ItemThumb.js 생성</span>
+    </h3>
+</doc-anchor-target>
+<div class="my-box">
+<ol>
+<li><code v-pre>components/ItemThumb.js</code> 를 생성하고 함수형 컴포넌트로 만듭니다. 이때 매개변수에 props 를 작성합니다.</li>
+<li><code v-pre>components/ItemThumb.css</code> 를 생성하고 임포트 합니다.</li>
+<li><code v-pre>components/MemberItem.js</code> 에서 이미지를 표시하는 코드를 잘라 붙입니다.</li>
+<li><code v-pre>components/MemberItem.css</code> 에서 이미지를 표시하는 css를 잘라 붙입니다.</li>
+<li></li>
+</ol>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">components/ItemThumb.js</div>
+<pre class="language-javascript"><code v-pre class="language-javascript">import './ItemThumb.css';
+
+const ItemThumb = (props) =&gt; {
+	return (
+		&lt;div className='list_img'&gt;
+			&lt;img src={props.thumb} alt={props.name} /&gt;
+		&lt;/div&gt;
+	);
+};
+export default ItemThumb;</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">components/ItemThumb.css</div>
+<pre class="language-css"><code v-pre class="language-css">.list_img {
+	max-width: 15vw;
+	margin-bottom: 1.5rem;
+}
+img {
+	width: 100%;
+}</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="32-itemdescjs-생성">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#32-itemdescjs-생성">#</doc-anchor-trigger>
+        <span>3.2. ItemDesc.js 생성</span>
+    </h3>
+</doc-anchor-target>
+<div class="my-box">
+<ol start="2">
+<li><code v-pre>components/ItemDesc.js</code> 를 생성하고 함수형 컴포넌트로 만듭니다. 이때 매개변수에 props 를 작성합니다.</li>
+<li><code v-pre>components/MemberItem.js</code> 에서 설명을 표시하는 코드를 잘라 붙입니다.</li>
+<li><code v-pre>components/MemberItem.css</code> 에서 설명을 표시하는 css를 잘라 붙입니다.</li>
+</ol>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">#components/ItemDesc.js</div>
+<pre class="language-javascript"><code v-pre class="language-javascript">import './ItemDesc.css';
+
+const ItemDesc = (props) =&gt; {
+	return (
+		&lt;div className='list_desc'&gt;
+			&lt;span className='title'&gt;이름&lt;/span&gt;
+			&lt;span className='text'&gt;{props.name}&lt;/span&gt;
+		&lt;/div&gt;
+	);
+};
+export default ItemDesc;</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<div class="codeblock-title">#components/ItemDesc.css</div>
+<pre class="language-css"><code v-pre class="language-css">.list_desc {
+	margin-bottom: 1.5rem;
+	color: var(--tone-2);
+	line-height: 1.7;
+	display: flex;
+	gap: 2rem;
+}
+.title {
+	font-size: 1.4rem;
+	font-weight: 900;
+	color: var(--tint-2);
+}
+.text {
+	font-size: 1.6rem;
+	font-weight: 400;
+}</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="33-데이터-전달">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#33-데이터-전달">#</doc-anchor-trigger>
+        <span>3.3. 데이터 전달</span>
+    </h3>
+</doc-anchor-target>
+<blockquote>
+<p>App에서 전달받은 데이터는 MemberItem 컴포넌트에서 각각 자식 컴포넌트로 나누어 전달하게 됩니다.</p>
+<p><img src="../assets/imgs/compo.png" alt="alt" /></p>
+</blockquote>
+<doc-anchor-target id="34-memberitemjs">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#34-memberitemjs">#</doc-anchor-trigger>
+        <span>3.4. MemberItem.js</span>
+    </h3>
+</doc-anchor-target>
+<div class="my-list">
+<ol>
+<li>MemberItem 컴포넌트에 ItemThumb,ItemDesc 컴포넌트를 임포트 합니다.</li>
+<li>각 컴포넌트로 App 에서 공급받은 데이터를 다시 전달합니다.
+<ol>
+<li>콘솔로그를 보면 App 에서 전달하고 있는 데이터가 확인됩니다.</li>
+</ol>
+</li>
+</ol>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-javascript"><code v-pre class="language-javascript">import './MemberItem.css';
+import ItemThumb from './ItemThumb';
+import ItemDesc from './ItemDesc';
+const MemberItem = (props) =&gt; {
+	console.log(props);
+	return (
+		&lt;ul className='list_body'&gt;
+			&lt;li className='list_item'&gt;
+				&lt;ItemThumb thumb={props.thumb} /&gt;
+				&lt;ItemDesc name={props.name} email={props.email} /&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	);
+};
+export default MemberItem;</code></pre>
+</doc-codeblock></div>
+<ol start="3">
+<li><p>여기까지 작성시 이메일은 렌더되지 않습니다.</p>
+<p><img src="../assets/imgs/10-29_538.jpg" alt="alt" /></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<doc-anchor-target id="35-itemdescjs">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#35-itemdescjs">#</doc-anchor-trigger>
+        <span>3.5. ItemDesc.js</span>
+    </h3>
+</doc-anchor-target>
+<div class="my-box">
+<ol>
+<li>itemDesc 컴포넌트에서 props를 확인해봅시다.</li>
+<li>전달되는 데이터를 확인후 email 을 추가합니다.</li>
+<li>최상위 요소는 한개만 반환해야 하므로 빈 태그를 추가합니다.</li>
+</ol>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-javascript"><code v-pre class="language-javascript">import './ItemDesc.css';
+
+const ItemDesc = (props) =&gt; {
+	console.log('여기는 ItemDesc', props);
+	return (
+		&lt;&gt;
+			&lt;div className='list_desc'&gt;
+				&lt;span className='title'&gt;이름&lt;/span&gt;
+				&lt;span className='text'&gt;{props.name}&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div className='list_desc'&gt;
+				&lt;span className='title'&gt;이름&lt;/span&gt;
+				&lt;span className='text'&gt;{props.email}&lt;/span&gt;
+			&lt;/div&gt;
+		&lt;/&gt;
+	);
+};
+export default ItemDesc;</code></pre>
+</doc-codeblock></div>
+</div>
+<doc-anchor-target id="4-misson">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#4-misson">#</doc-anchor-trigger>
+        <span>4. Misson</span>
+    </h2>
+</doc-anchor-target>
+<blockquote>
+<p>item목록을 표시하는 컴포넌트를 생성하세요</p>
+<blockquote>
+<p>아래의 표시된 부분을 컴포넌트로 분리하세요
+<img src="../assets/imgs/10-29_539.jpg" alt="alt" />
+App 컴포넌트의 데이터를 생성한 컴포넌트로 전달하세요
+<img src="../assets/imgs/compo2.png" alt="alt" /></p>
+</blockquote>
+</blockquote>
+
+                                <div class="flex items-center mt-6 mb-6 clear-both">
+                                    <span>
+                                        <a href="../../tags/">
+                                            <svg class="inline-block -mb-px mr-1.5 text-blue-500 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
+                                        </a>
+                                        <span class="mr-2"><a href="../../tags/%EB%A6%AC%EC%95%A1%ED%8A%B8/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>리액트</span>
+                                </a></span>
+                                        <span class="mr-2"><a href="../../tags/react/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>react</span>
+                                </a></span>
+                                    </span>
+                                </div>
+                
+                                <!-- Required only on API pages -->
+                                <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
+                            </div>
+                            <footer class="clear-both">
+                            
+                                <nav class="flex mt-14">
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../react/2/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                            <span>
+                                                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                                                <span class="block mt-1">2-​컴포넌트</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                            
+                                    <div class="w-1/2">
+                                    </div>
+                                </nav>
+                            </footer>
+                        </main>
+                
+                        <div class="border-t dark:border-dark-650 pt-6 mb-8">
+                            <footer class="flex flex-wrap items-center justify-between">
+                                <div>
+                                    <ul class="flex flex-wrap items-center text-sm">
+                                    </ul>
+                                </div>
+                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2023. All rights reserved.</p></div>
+                            </footer>
+                        </div>
+                    </div>
+                
+                    <!-- Rendered if sidebar right is enabled -->
+                    <!-- Sidebar right skeleton-->
+                    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-white border-gray-200 lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:transform-none sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton dark:bg-dark-850 dark:border-dark-650">
+                        <div class="pl-5">
+                            <div class="w-32 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-48 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-40 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                        </div>
+                    </div>
+                
+                    <!-- User should be able to hide sidebar right -->
+                    <doc-sidebar-right v-cloak></doc-sidebar-right>
+                </div>
+
+            </div>
+        </div>
+    
+        <doc-search-mobile></doc-search-mobile>
+        <doc-back-to-top></doc-back-to-top>
+    </div>
+
+
+    <div id="docs-overlay-target"></div>
+
+    <script data-cfasync="false">window.__DOCS__ = { "title": "3-props", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+</body>
+</html>
