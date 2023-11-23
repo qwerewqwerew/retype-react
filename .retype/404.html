@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/retype-react">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.753783072723">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.754056357853">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -33,11 +33,11 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/retype-react/resources/css/retype.css?v=3.5.0.753783072723" rel="stylesheet">
+    <link href="/retype-react/resources/css/retype.css?v=3.5.0.754056357853" rel="stylesheet">
 
-    <script data-cfasync="false" src="/retype-react/resources/js/config.js?v=3.5.0.753783072723" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/retype-react/resources/js/config.js?v=3.5.0.754056357853" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="/retype-react/resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="/retype-react/resources/js/lunr.js?v=3.5.0.753783072723" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/retype-react/resources/js/lunr.js?v=3.5.0.754056357853" data-turbo-eval="false" defer></script>
 
     <style>
       @import url('https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.8/static/pretendard.css');
@@ -185,17 +185,37 @@
       .my-list li {
         padding-bottom: 1rem;
         font-size: 1.1rem;
-        text-indent:0.5rem;
+        text-indent: 0.5rem;
       }
+
       .my-list li li {
-        color:#3f51b5;
+        color: #3f51b5;
       }
-      .my-list li li::marker{
-        content:'→ ';
-        color:#a5abca;
+
+      .my-list li li::marker {
+        content: '→ ';
+        color: #a5abca;
       }
+
       iframe {
         margin: auto;
+      }
+
+      summary {
+        padding: 1rem;
+        background-color: #a5abca39;
+      }
+
+      .scenario {
+        background-color: #a5abca2b;
+        color: #323d70;
+        padding: 1rem;
+        height: 80px;
+      }
+
+      .scenario[open] {
+        height: 500px;
+        overflow-y: scroll;
       }
     </style>
 </head>
