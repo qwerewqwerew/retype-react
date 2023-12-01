@@ -15,21 +15,26 @@
     <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
-    <title>composition</title>
-    <meta name="title" content="composition">
+    <title>6-LiftingState</title>
+    <meta name="title" content="6-LiftingState">
+    <meta name="description" content="1. 상태올리기-Lifting State Up">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://qwerewqwerew.github.io/retype-react/tags/composition/">
+    <link rel="canonical" href="https://qwerewqwerew.github.io/retype-react/react/6/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://qwerewqwerew.github.io/retype-react/tags/composition/">
-    <meta property="og:title" content="composition">
+    <meta property="og:url" content="https://qwerewqwerew.github.io/retype-react/react/6/">
+    <meta property="og:title" content="6-LiftingState">
+    <meta property="og:description" content="1. 상태올리기-Lifting State Up">
+    <meta property="og:image" content="https://qwerewqwerew.github.io/retype-react/react/assets/imgs/5-1.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://qwerewqwerew.github.io/retype-react/tags/composition/">
-    <meta property="twitter:title" content="composition">
+    <meta property="twitter:url" content="https://qwerewqwerew.github.io/retype-react/react/6/">
+    <meta property="twitter:title" content="6-LiftingState">
+    <meta property="twitter:description" content="1. 상태올리기-Lifting State Up">
+    <meta property="twitter:image" content="https://qwerewqwerew.github.io/retype-react/react/assets/imgs/5-1.jpg">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -348,40 +353,196 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="tag-composition" class="break-words">
+<doc-anchor-target id="6-liftingstate" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#tag-composition">#</doc-anchor-trigger>
-        <span>Tag: composition</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#6-liftingstate">#</doc-anchor-trigger>
+        <span>6-LiftingState</span>
     </h1>
 </doc-anchor-target>
-<p>See all <a href="../">tags</a>.</p>
-<a class="no-link mb-6 overflow-hidden border border-gray-200 rounded-lg md:flex dark:border-dark-700 hover:border-gray-400 dark:hover:border-dark-450" href="../../react/5/">
-    <div class="relative shrink-0 bg-gray-300 md:w-5/12 pb-9/16 md:pb-0 dark:bg-dark-450">
-        <img class="absolute object-cover w-full h-full" src="../../react/assets/imgs/drawio.png">
-    </div>
-    <div class="p-6">
-        <div class="text-xs font-semibold text-blue-500 uppercase dark:text-blue-400">react</div>
-        <div class="mt-2 text-lg font-semibold leading-snug text-gray-900 dark:text-white md:text-xl">5-composition</div>
-        <div class="line-clamp-3"><p class="hidden mt-2 md:block">1. 중첩 컴포넌트(composition)</p></div>
-    </div>
-</a>
-<a class="no-link mb-6 overflow-hidden border border-gray-200 rounded-lg md:flex dark:border-dark-700 hover:border-gray-400 dark:hover:border-dark-450" href="../../react/6/">
-    <div class="relative shrink-0 bg-gray-300 md:w-5/12 pb-9/16 md:pb-0 dark:bg-dark-450">
-        <img class="absolute object-cover w-full h-full" src="../../react/assets/imgs/5-1.jpg">
-    </div>
-    <div class="p-6">
-        <div class="text-xs font-semibold text-blue-500 uppercase dark:text-blue-400">react</div>
-        <div class="mt-2 text-lg font-semibold leading-snug text-gray-900 dark:text-white md:text-xl">6-LiftingState</div>
-        <div class="line-clamp-3"><p class="hidden mt-2 md:block">1. 상태올리기-Lifting State Up</p></div>
-    </div>
-</a>
+<div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
+    <div>In&nbsp;</div>
+    <div><a href="../../categories/react/">react</a></div>
+</div>
 
-                                
+<doc-anchor-target id="목차">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#목차">#</doc-anchor-trigger>
+        <span>목차 <!-- omit in toc --></span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><doc-anchor-trigger to="#1-%EC%83%81%ED%83%9C%EC%98%AC%EB%A6%AC%EA%B8%B0-lifting-state-up">1. 상태올리기-Lifting State Up</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#2-%EA%B8%B0%EC%B4%88">2. 기초</doc-anchor-trigger>
+<ul>
+<li><doc-anchor-trigger to="#201-%EC%8B%9C%EC%9E%91%EC%BD%94%EB%93%9C">2.0.1. 시작코드</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#202-%EC%99%84%EB%A3%8C%EC%BD%94%EB%93%9C">2.0.2. 완료코드</doc-anchor-trigger></li>
+</ul>
+</li>
+<li><doc-anchor-trigger to="#3-%EC%8B%AC%ED%99%94">3. 심화</doc-anchor-trigger>
+<ul>
+<li><doc-anchor-trigger to="#301-%EC%8B%9C%EC%9E%91%EC%BD%94%EB%93%9C">3.0.1. 시작코드</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#302-%EC%99%84%EB%A3%8C%EC%BD%94%EB%93%9C">3.0.2. 완료코드</doc-anchor-trigger></li>
+</ul>
+</li>
+</ul>
+<doc-anchor-target id="1-상태올리기-lifting-state-up">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#1-상태올리기-lifting-state-up">#</doc-anchor-trigger>
+        <span>1. 상태올리기-Lifting State Up</span>
+    </h2>
+</doc-anchor-target>
+<p>
+<div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"/><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z"/></svg>
+        </span>
+        <span class="inline-block font-medium ml-2"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M14.78 3.653a3.936 3.936 0 1 1 5.567 5.567l-3.627 3.627a3.936 3.936 0 0 1-5.88-.353.75.75 0 0 0-1.18.928 5.436 5.436 0 0 0 8.12.486l3.628-3.628a5.436 5.436 0 1 0-7.688-7.688l-3 3a.75.75 0 0 0 1.06 1.061l3-3Z"/><path d="M7.28 11.153a3.936 3.936 0 0 1 5.88.353.75.75 0 0 0 1.18-.928 5.436 5.436 0 0 0-8.12-.486L2.592 13.72a5.436 5.436 0 1 0 7.688 7.688l3-3a.75.75 0 1 0-1.06-1.06l-3 3a3.936 3.936 0 0 1-5.567-5.568l3.627-3.627Z"/></g></g></svg>설명PPT링크</span>
+    </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>https://docs.google.com/presentation/d/1svGnWI4GaPCc86YsbIXgjYRewZoTV4MwkxfxLdC5jo0/edit?usp=sharing</span>
+    </div>
+    <a href="https://docs.google.com/presentation/d/1svGnWI4GaPCc86YsbIXgjYRewZoTV4MwkxfxLdC5jo0/edit?usp=sharing" target="_blank" class="absolute block inset-0"></a>
+</div>
+</p>
+<p>
+<div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"/><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z"/></svg>
+        </span>
+        <span class="inline-block font-medium ml-2"><svg xmlns="http://www.w3.org/2000/svg" class="docs-icon" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><g><path d="M14.78 3.653a3.936 3.936 0 1 1 5.567 5.567l-3.627 3.627a3.936 3.936 0 0 1-5.88-.353.75.75 0 0 0-1.18.928 5.436 5.436 0 0 0 8.12.486l3.628-3.628a5.436 5.436 0 1 0-7.688-7.688l-3 3a.75.75 0 0 0 1.06 1.061l3-3Z"/><path d="M7.28 11.153a3.936 3.936 0 0 1 5.88.353.75.75 0 0 0 1.18-.928 5.436 5.436 0 0 0-8.12-.486L2.592 13.72a5.436 5.436 0 1 0 7.688 7.688l3-3a.75.75 0 1 0-1.06-1.06l-3 3a3.936 3.936 0 0 1-5.567-5.568l3.627-3.627Z"/></g></g></svg>공식문서</span>
+    </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>https://legacy.reactjs.org/docs/lifting-state-up.html</span>
+    </div>
+    <a href="https://legacy.reactjs.org/docs/lifting-state-up.html" target="_blank" class="absolute block inset-0"></a>
+</div>
+</p>
+<blockquote>
+<p>리액트는 데이터 흐름은 단방향 하향식 데이터 구조를 가집니다.</p>
+<p>부모컴포넌트로 부터 자식컴포넌트로의 데이터 전달만 가능하죠.</p>
+<p>앱을 개발하게 되면 하나의 데이터를 여러 컴포넌트에서 동시에 다뤄야 하는 경우가 발생합니다. 예를 들면 회원로그인 후 로그인상태의 값의 경우 모든 컴포넌트에서 상태 데이터를 공유해야겠죠.</p>
+<p>아래의 그림 처럼 리액트 앱에서 컴포넌트가 공통적으로 사용하는 로그인 상태값을 가진 로그인 컴포넌트를 상위컴포넌트로 설계 할 경우 모든 하위컴포넌트에 같은 데이터가 전달되는 것을 볼수 있습니다. 이런 경우는 문제가 없겠죠.</p>
+<p><img src="../assets/imgs/5-1.jpg" alt="alt" /></p>
+<p>하지만 하위 컴포넌트에서 로그인 상태값을 바꿔야 하는 경우에는 어떨까요?</p>
+<p>사용자가 로그인후 myorder 컴포넌트의 order-list 를 확인 후 로그아웃을 한다면 로그인 상태값은 false 로 수정되어야 할 것 입니다.</p>
+<p><img src="../assets/imgs/5.jpg" alt="alt" /></p>
+<p>데이터변경이 일어난 listB 컴포넌트는 Login 컴포넌트의 2뎁스 하위에 위치하고 있기때문에 상위 요소로 데이터를 전달해야 하는데 리액트에서는 방법이 없습니다.</p>
+<p>이때 사용할수 있는 방법이 부모와 자식의 상향식 데이터 전달이며 이 방법을 Lifting State 라고 합니다.</p>
+<p>간단한 예제로 학습 한 후 제작중인 회원가입 앱에 적용해보겠습니다.</p>
+</blockquote>
+<doc-anchor-target id="2-기초">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2-기초">#</doc-anchor-trigger>
+        <span>2. 기초</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>src 폴더정리 <img src="../assets/imgs/11-28_570.jpg" alt="alt" /></li>
+<li>test 폴더를 만들고 간단한 예제를 진행했던 파일을 옮깁니다.</li>
+<li>test/6/폴더를 생성하고 Accordian 컴포넌트를 생성합니다.</li>
+<li></li>
+<li>index.js 로 이동하여 App 컴포넌트 대신 test/Accordian 컴포넌트를 임포트합니다.</li>
+</ul>
+<doc-anchor-target id="201-시작코드">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#201-시작코드">#</doc-anchor-trigger>
+        <span>2.0.1. 시작코드</span>
+    </h4>
+</doc-anchor-target>
+<iframe src="https://codesandbox.io/embed/k36flm?view=Editor+%2B+Preview&module=%2Fsrc%2FPanel.js"
+     style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="stateLifting (forked)"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+<doc-anchor-target id="202-완료코드">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#202-완료코드">#</doc-anchor-trigger>
+        <span>2.0.2. 완료코드</span>
+    </h4>
+</doc-anchor-target>
+<iframe src="https://codesandbox.io/embed/7b3tg5?view=Editor+%2B+Preview&module=%2Fsrc%2FPanel.js"
+     style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="stateLifting-finished"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+<doc-anchor-target id="3-심화">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#3-심화">#</doc-anchor-trigger>
+        <span>3. 심화</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="301-시작코드">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#301-시작코드">#</doc-anchor-trigger>
+        <span>3.0.1. 시작코드</span>
+    </h4>
+</doc-anchor-target>
+<iframe src="https://codesandbox.io/embed/5nd9kw?view=Editor+%2B+Preview&module=%2Fsrc%2FApp.js&expanddevtools=1"
+     style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="5-1-final"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+<doc-anchor-target id="302-완료코드">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#302-완료코드">#</doc-anchor-trigger>
+        <span>3.0.2. 완료코드</span>
+    </h4>
+</doc-anchor-target>
+<iframe src="https://codesandbox.io/embed/f6mng7?view=Editor+%2B+Preview&module=%2Fsrc%2Fcomponents%2Fui%2FHeading.css"
+     style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="6-finished"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+
+                                <div class="flex items-center mt-6 mb-6 clear-both">
+                                    <span>
+                                        <a href="../../tags/">
+                                            <svg class="inline-block -mb-px mr-1.5 text-blue-500 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
+                                        </a>
+                                        <span class="mr-2"><a href="../../tags/%EB%A6%AC%EC%95%A1%ED%8A%B8/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>리액트</span>
+                                </a></span>
+                                        <span class="mr-2"><a href="../../tags/react/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>react</span>
+                                </a></span>
+                                        <span class="mr-2"><a href="../../tags/composition/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>composition</span>
+                                </a></span>
+                                    </span>
+                                </div>
+                
                                 <!-- Required only on API pages -->
                                 <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
                             </div>
                             <footer class="clear-both">
                             
+                                <nav class="flex mt-14">
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../react/5/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                            <span>
+                                                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                                                <span class="block mt-1">5-​composition</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                            
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../react/issue/">
+                                            <span>
+                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                                                <span class="block mt-1">issue</span>
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        </a>
+                                    </div>
+                                </nav>
                             </footer>
                         </main>
                 
@@ -420,6 +581,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "composition", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "6-LiftingState", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
