@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/retype-react">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.754717160451">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.754995622933">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -38,12 +38,12 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.754717160451" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.754995622933" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.754717160451" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.754995622933" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.754717160451" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.754717160451" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.754995622933" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.754995622933" defer></script>
 
     <style>
       @import url('https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.8/static/pretendard.css');
@@ -374,16 +374,18 @@
 <ul>
 <li><doc-anchor-trigger to="#1-%EC%A4%91%EC%B2%A9-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8composition">1. 중첩 컴포넌트(composition)</doc-anchor-trigger>
 <ul>
-<li><doc-anchor-trigger to="#11-%EC%A4%91%EC%B2%A9%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A5%BC-%EC%99%9C-%EC%93%B0%EB%8A%94%EA%B0%80">1.1. 중첩컴포넌트를 왜 쓰는가?</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#12-%EC%BB%B4%ED%8F%AC%EC%A7%80%EC%85%98-%EC%97%B0%EC%8A%B5">1.2. 컴포지션 연습</doc-anchor-trigger>
+<li><doc-anchor-trigger to="#11-%EA%B8%B0%EC%B4%88%EC%98%81%EC%83%81">1.1. 기초영상</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#12-%EC%8B%AC%ED%99%94%EC%98%81%EC%83%81">1.2. 심화영상</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#13-%EC%A4%91%EC%B2%A9%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A5%BC-%EC%99%9C-%EC%93%B0%EB%8A%94%EA%B0%80">1.3. 중첩컴포넌트를 왜 쓰는가?</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#14-%EC%BB%B4%ED%8F%AC%EC%A7%80%EC%85%98-%EC%97%B0%EC%8A%B5">1.4. 컴포지션 연습</doc-anchor-trigger>
 <ul>
-<li><doc-anchor-trigger to="#121-srcboxjs">1.2.1. src\Box.js</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#122-srccompaajs">1.2.2. src\CompAA.js</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#141-srcboxjs">1.4.1. src\Box.js</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#142-srccompaajs">1.4.2. src\CompAA.js</doc-anchor-trigger></li>
 </ul>
 </li>
-<li><doc-anchor-trigger to="#13-propschildren">1.3. props.children</doc-anchor-trigger>
+<li><doc-anchor-trigger to="#15-propschildren">1.5. props.children</doc-anchor-trigger>
 <ul>
-<li><doc-anchor-trigger to="#131-srcboxjs">1.3.1. src\Box.js</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#151-srcboxjs">1.5.1. src\Box.js</doc-anchor-trigger></li>
 </ul>
 </li>
 </ul>
@@ -407,11 +409,24 @@
         <span>1. 중첩 컴포넌트(composition)</span>
     </h2>
 </doc-anchor-target>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ORHmyu7sI3U?si=hvCHBCzjah5RCUy2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<doc-anchor-target id="11-중첩컴포넌트를-왜-쓰는가">
+<doc-anchor-target id="11-기초영상">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#11-중첩컴포넌트를-왜-쓰는가">#</doc-anchor-trigger>
-        <span>1.1. 중첩컴포넌트를 왜 쓰는가?</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#11-기초영상">#</doc-anchor-trigger>
+        <span>1.1. 기초영상</span>
+    </h3>
+</doc-anchor-target>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ORHmyu7sI3U?si=hvCHBCzjah5RCUy2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<doc-anchor-target id="12-심화영상">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#12-심화영상">#</doc-anchor-trigger>
+        <span>1.2. 심화영상</span>
+    </h3>
+</doc-anchor-target>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Hw4UGYfz60c?si=hvCHBCzjah5RCUy2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<doc-anchor-target id="13-중첩컴포넌트를-왜-쓰는가">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#13-중첩컴포넌트를-왜-쓰는가">#</doc-anchor-trigger>
+        <span>1.3. 중첩컴포넌트를 왜 쓰는가?</span>
     </h3>
 </doc-anchor-target>
 <blockquote>
@@ -420,10 +435,10 @@
 <p>이때 사용할수 있는것이 composition(합성) 입니다.</p>
 <p>앱에서 반복 사용되는 UI 디자인 코드를 별도의 컴포넌트로 생성하여 합성하는 학습을 해보겠습니다.</p>
 </blockquote>
-<doc-anchor-target id="12-컴포지션-연습">
+<doc-anchor-target id="14-컴포지션-연습">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#12-컴포지션-연습">#</doc-anchor-trigger>
-        <span>1.2. 컴포지션 연습</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#14-컴포지션-연습">#</doc-anchor-trigger>
+        <span>1.4. 컴포지션 연습</span>
     </h3>
 </doc-anchor-target>
 <blockquote>
@@ -441,10 +456,10 @@
 <p>컴포넌트는 아래의 그림과 같은 구조로 이루어져 있으며 동일한 스타일을 중복하여 사용하고 있습니다. 중복되는 스타일을 컴포지션으로 수정해 봅시다.</p>
 <p><img src="../assets/imgs/drawio.png" alt="alt" /></p>
 </blockquote>
-<doc-anchor-target id="121-srcboxjs">
+<doc-anchor-target id="141-srcboxjs">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#121-srcboxjs">#</doc-anchor-trigger>
-        <span>1.2.1. src\Box.js</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#141-srcboxjs">#</doc-anchor-trigger>
+        <span>1.4.1. src\Box.js</span>
     </h4>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -458,10 +473,10 @@ const Box = (props) =&gt; {
 };
 export default Box;</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="122-srccompaajs">
+<doc-anchor-target id="142-srccompaajs">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#122-srccompaajs">#</doc-anchor-trigger>
-        <span>1.2.2. src\CompAA.js</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#142-srccompaajs">#</doc-anchor-trigger>
+        <span>1.4.2. src\CompAA.js</span>
     </h4>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -492,17 +507,17 @@ export default CompAA;</code></pre>
 <p class="red"><strong>개발자 모드에서 소스코드를 확인해보면 Box 컴포넌트의 스타일 속성이 적용된것은 보이나 기존 CompAA 의 스타일과 데이터가 보이지 않습니다.</strong> </p>
 <p>왜그럴까요? CompAA 의 UI는 Box 컴포넌트가 임포트 된것이며 Box 컴포넌트는 다른 함수이기 때문에 CompAA 의 값을 전달하려면 인자와 매개변수를 활용해야 하기 때문입니다. <img src="../assets/imgs/11-23_552.jpg" alt="alt" /></p>
 <p>어떻게 해야 할까요?</p>
-<doc-anchor-target id="13-propschildren">
+<doc-anchor-target id="15-propschildren">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#13-propschildren">#</doc-anchor-trigger>
-        <span>1.3. props.children</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#15-propschildren">#</doc-anchor-trigger>
+        <span>1.5. props.children</span>
     </h3>
 </doc-anchor-target>
 <p>우리의 컴포넌트는 함수입니다함수는 인수와 매개변수의 형태로 서로 값을 전달할수 있죠.</p>
-<doc-anchor-target id="131-srcboxjs">
+<doc-anchor-target id="151-srcboxjs">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#131-srcboxjs">#</doc-anchor-trigger>
-        <span>1.3.1. src\Box.js</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#151-srcboxjs">#</doc-anchor-trigger>
+        <span>1.5.1. src\Box.js</span>
     </h4>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
