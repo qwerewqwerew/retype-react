@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6SMH5R2Q90"></script>
+    <script data-cfasync="false">window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-6SMH5R2Q90');</script>
+
+    <script data-cfasync="false">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NQNBFL8D');</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="turbo-root" content="/retype-react">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.767341513446">
+
+    <!-- See retype.com -->
+    <meta name="generator" content="Retype 3.5.0">
+
+    <!-- Primary Meta Tags -->
+    <title>레시피앱-1-환경설정</title>
+    <meta name="title" content="레시피앱-1-환경설정">
+    <meta name="description" content="1. 레시피 앱 소개">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://qwerewqwerew.github.io/retype-react/레시피앱/1/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://qwerewqwerew.github.io/retype-react/레시피앱/1/">
+    <meta property="og:title" content="레시피앱-1-환경설정">
+    <meta property="og:description" content="1. 레시피 앱 소개">
+    <meta property="og:image" content="https://qwerewqwerew.github.io/retype-react/레시피앱/assets/04-25_623.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://qwerewqwerew.github.io/retype-react/레시피앱/1/">
+    <meta property="twitter:title" content="레시피앱-1-환경설정">
+    <meta property="twitter:description" content="1. 레시피 앱 소개">
+    <meta property="twitter:image" content="https://qwerewqwerew.github.io/retype-react/레시피앱/assets/04-25_623.jpg">
+
+    <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+
+    <link href="../../resources/css/retype.css?v=3.5.0.767341513446" rel="stylesheet">
+
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.767341513446" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.767341513446" data-turbo-eval="false" defer></script>
+
+    <style>
+      @import url('https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.8/static/pretendard.css');
+      @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+      @import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
+
+      :root {
+        --dark-0: #0d0d0d;
+        --dark-10: #1a1a1a;
+        --dark-20: #262626;
+        --dark-30: #333333;
+        --dark-40: #404040;
+        --dark-50: #4d4d4d;
+        --dark-60: #595959;
+        --dark-70: #666666;
+        --dark-80: #737373;
+        --dark-90: #808080;
+        --light-90: #8c8c8c;
+        --light-80: #999999;
+        --light-70: #a6a6a6;
+        --light-60: #b3b3b3;
+        --light-50: #bfbfbf;
+        --light-40: #cccccc;
+        --light-30: #d9d9d9;
+        --light-20: #e6e6e6;
+        --light-10: #f2f2f2;
+        --light-0: #ffffff;
+        --tone-0: #3F51B5;
+        --tone-10: #4656AE;
+        --tone-20: #4C5AA8;
+        --tone-30: #535FA1;
+        --tone-40: #59639B;
+        --tone-50: #606894;
+        --tone-60: #666C8E;
+        --tone-70: #6D7187;
+        --tone-80: #737581;
+        --acc-0: #B53F8C;
+      }
+
+      .c-dark-0 {
+        color: var(--dark-0);
+      }
+
+      .c-dark-10 {
+        color: var(--dark-10);
+      }
+
+      .c-dark-20 {
+        color: var(--dark-20);
+      }
+
+      .c-dark-30 {
+        color: var(--dark-30);
+      }
+
+      .c-dark-40 {
+        color: var(--dark-40);
+      }
+
+      .c-dark-50 {
+        color: var(--dark-50);
+      }
+
+      .c-dark-60 {
+        color: var(--dark-60);
+      }
+
+      .c-dark-70 {
+        color: var(--dark-70);
+      }
+
+      .c-dark-80 {
+        color: var(--dark-80);
+      }
+
+      .c-dark-90 {
+        color: var(--dark-90);
+      }
+
+      .c-light-90 {
+        color: var(--light-90);
+      }
+
+      .c-light-80 {
+        color: var(--light-80);
+      }
+
+      .c-light-70 {
+        color: var(--light-70);
+      }
+
+      .c-light-60 {
+        color: var(--light-60);
+      }
+
+      .c-light-50 {
+        color: var(--light-50);
+      }
+
+      .c-light-40 {
+        color: var(--light-40);
+      }
+
+      .c-light-30 {
+        color: var(--light-30);
+      }
+
+      .c-light-20 {
+        color: var(--light-20);
+      }
+
+      .c-light-10 {
+        color: var(--light-10);
+      }
+
+      .c-light-0 {
+        color: var(--ight-0);
+      }
+
+      .c-tone-0 {
+        color: var(-- tone-0);
+      }
+
+      .c-tone-10 {
+        color: var(--tone-10);
+      }
+
+      .c-tone-20 {
+        color: var(--tone-20);
+      }
+
+      .c-tone-30 {
+        color: var(--tone-30);
+      }
+
+      .c-tone-40 {
+        color: var(--tone-40);
+      }
+
+      .c-tone-50 {
+        color: var(--tone-50);
+      }
+
+      .c-tone-60 {
+        color: var(--tone-60);
+      }
+
+      .c-tone-70 {
+        color: var(--tone-70);
+      }
+
+      .c-tone-80 {
+        color: var(--tone-80);
+      }
+
+      .pr {
+        position: relative;
+      }
+
+      .m-b-0 {
+        margin-bottom: 0 !important
+      }
+
+      .m-l-0 {
+        margin-left: 0 !important
+      }
+
+      .m-t-0 {
+        margin-top: 0 !important
+      }
+
+      .m-r-0 {
+        margin-right: 0 !important
+      }
+
+      html {
+        line-height: 1.75;
+      }
+
+      code,
+      code span {
+        font-family: consolas, 'Inconsolata', monospace;
+      }
+
+      * {
+        font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+        font-family: 'Pretendard', sans-serif;
+      }
+
+      a {
+        font-weight: 500;
+      }
+
+      aside {
+        margin-bottom: 1.2rem;
+      }
+
+      .comment_box {
+        padding: 2rem;
+        color: #444950;
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 1em;
+        position: relative;
+        background-color: #f4f5f7;
+        line-height: 1.75;
+        filter: drop-shadow(-2px 4px 4px #0a216d25);
+      }
+
+      .comment_box p,
+      .comment_box ul {
+        margin-bottom: 0.4rem !important;
+      }
+
+      .comment_box li li {
+        padding: 0;
+        margin: 0 !important;
+      }
+
+      .center {
+        margin: auto;
+        text-align: center;
+      }
+
+      .comment_box li {
+        margin-bottom: 0.8rem !important;
+      }
+
+      .docs-markdown table.comfortable tr td,
+      .docs-markdown table.comfortable tr th {
+        padding: 0.6rem 0.8rem;
+      }
+
+      .w-full p:not(.hidden) {
+        margin-bottom: 0.5rem;
+      }
+
+      div[id]>h1,
+      div[id]>h2,
+      div[id]>h3,
+      div[id]>h4,
+      div[id]>h5,
+      div[id]>h6 {
+        margin-top: 3.4rem;
+        color: #3f51b5 !important;
+      }
+
+      [class^='img'] {
+        width: auto;
+      }
+
+      [class^='img'] p {
+        display: none;
+      }
+
+      .img50 figure img,
+      .w50 {
+        max-width: 50%;
+      }
+
+      .w60 {
+        max-width: 60%;
+      }
+
+      .w70 {
+        max-width: 70%;
+      }
+
+      .w40 {
+        max-width: 40%;
+      }
+
+      .w30 {
+        max-width: 30%;
+      }
+
+      .img20 figure img,
+      .w20 {
+        max-width: 20%;
+      }
+
+      .img10 figure img,
+      .w10 {
+        max-width: 10%;
+      }
+
+      [id*='목차']+ul li,
+      [id*='목차']+ol li {
+        list-style-type: none !important;
+        line-height: 1.8 !important;
+        ;
+        font-weight: 400 !important;
+        ;
+        padding-top: 2px !important;
+        ;
+        padding-bottom: 4px !important;
+        ;
+        margin-top: 0 !important;
+        ;
+        font-size: 14px !important;
+        ;
+      }
+
+      .docs-markdown table.comfortable tr td,
+      .docs-markdown table.comfortable tr th {
+        padding: 0.5rem 1.25rem;
+        font-size: 15px;
+      }
+
+      .shadow {
+        filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.2));
+      }
+
+      .normal {
+        font-style: normal;
+      }
+
+      .mx-1 {
+        margin: auto 1rem;
+      }
+
+      .mr-1 {
+        margin-right: 1rem;
+      }
+
+      .my-1 {
+        margin: 1rem auto;
+      }
+
+      .docs-markdown kbd,
+      kbd {
+        font-weight: 400;
+        background: #efe9e950;
+        padding-bottom: 5px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px, rgba(0, 0, 0, 0.1) 0px 2px 4px -1px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      }
+
+      .red,
+      .red * {
+        color: #d21aaa !important;
+        font-size: 1.1rem !important;
+      }
+
+      .blue,
+      .blue * {
+        color: #1a6ad2 !important;
+      }
+
+      .mark {
+        background-color: rgba(245, 255, 103, 0.534);
+      }
+
+      .box {
+        background: #ffffff;
+        padding: 2rem 0 0.5rem 1rem;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1), -1px -1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .box1 {
+        background: #ffffff;
+        padding: 2rem 0 0.5rem 1rem;
+        box-shadow: 1px 1px 3px rgba(207, 16, 16, 0.1), -1px -1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .pdbox {
+        padding: 0.5rem;
+        background: #effafe;
+        border-radius: 4px;
+      }
+
+      .docs-panels>div,
+      .mb-6.border.rounded-md.dark\:border-dark-650 {
+        background: #e1edff65;
+      }
+
+      .docs-panels>div>div {
+        border-bottom: 1px solid #d0d9e67e;
+      }
+
+      .collapse-content .docs-markdown ol,
+      .collapse-content .docs-markdown ul {
+        margin-bottom: 0 !important;
+      }
+
+      .docs-markdown ol li,
+      .docs-markdown ul li {
+        margin-top: 1.4rem;
+      }
+
+      .tab-content ol,
+      .tab-content ul {
+        margin-bottom: 0 !important;
+      }
+
+      .flex.items-center.text-xs.text-gray-400.dark\:text-dark-400 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .collapse-content {
+        background-color: #fcfcfc !important;
+      }
+
+      .flex.items-center.text-xs.text-gray-400.dark\:text-dark-400 {
+        display: none;
+      }
+
+      .docs-markdown hr {
+        border-color: rgba(202, 205, 212, 0);
+        box-shadow: rgba(46, 124, 240, 0.4) 0px 5px, rgba(46, 124, 240, 0.3) 0px 10px, rgba(46, 124, 240, 0.2) 0px 15px, rgba(46, 124, 240, 0.1) 0px 20px, rgba(46, 124, 240, 0.05) 0px 25px;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+      }
+
+      .mt30 {
+        margin-top: 30px !important;
+      }
+
+      .index_li li {
+        margin-top: 0;
+      }
+
+      .index_li a {
+        font-size: 1.4rem;
+        color: #3F51B5 !important;
+      }
+
+      .h1 {
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: -0.5px;
+      }
+
+      .h2 {
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        font-size: 32px;
+      }
+
+      .h3 {
+        font-weight: 700;
+        letter-spacing: -0.2px;
+        font-size: 28px;
+      }
+
+      .h4 {
+        font-weight: 700;
+        letter-spacing: -0.2px;
+        font-size: 24px;
+      }
+
+      .h5 {
+        font-weight: 700;
+        font-size: 20px;
+      }
+
+      .h6 {
+        font-weight: 700;
+        font-size: 16px;
+      }
+
+      .inline-block {
+        display: inline-block;
+      }
+      .h1.m-b-0.pr{
+        top:40px;
+      }
+      .desc::before{content:'설명'; background-color: var(--tone-50); color:var(--light-10); padding:4px; border-radius: 4px; font-size: 14px; font-weight: 500; margin-left:-20px;}
+      .desc{
+        border:1px solid var(--light-40);
+        border-radius:8px;
+        padding-bottom:2rem;
+      }
+      .desc li{
+        margin-top:.8rem !important;
+      }
+    </style>
+</head>
+<body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQNBFL8D" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
+        <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
+    
+        <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
+            <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
+                <!-- Mobile menu button skeleton -->
+                <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+                <div v-cloak id="docs-sidebar-toggle"></div>
+        
+                <!-- Logo -->
+                <div class="flex items-center justify-between h-full py-2 md:w-75">
+                    <div class="flex items-center px-2 md:px-6">
+                        <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-2xl">
+                            <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">리액트노트</span>
+                        </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
+                    </div>
+        
+                    <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
+                </div>
+        
+                <div class="flex justify-between md:grow">
+                    <!-- Top Nav -->
+                    <nav class="hidden md:flex">
+                        <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://qwerewqwerew.github.io/retype/">코딩노트</a>
+                            </li>
+        
+                        </ul>
+                    </nav>
+        
+                    <!-- Header Right Skeleton -->
+                    <div v-cloak class="flex justify-end grow skeleton">
+        
+                        <!-- Search input mock -->
+                        <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
+                            <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                            </div>
+                            <input class="w-full h-10 placeholder-gray-400 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 dark:placeholder-dark-400" style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search">
+                        </div>
+        
+                        <!-- Mobile search button -->
+                        <div class="flex items-center justify-center w-10 h-10 lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                        </div>
+        
+                        <!-- Dark mode switch placeholder -->
+                        <div class="w-10 h-10 lg:ml-2"></div>
+        
+                        <!-- History button -->
+                        <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                        </div>
+                    </div>
+        
+                    <div v-cloak class="flex justify-end grow">
+                        <div id="docs-mobile-search-button"></div>
+                        <doc-search-desktop></doc-search-desktop>
+        
+                        <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                        <doc-history></doc-history>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <div class="container relative flex bg-white">
+            <!-- Sidebar Skeleton -->
+            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+            
+                <!-- Render this div, if config.showSidebarFilter is `true` -->
+                <div class="flex items-center h-16 px-6">
+                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter">
+                </div>
+            
+                <div class="pl-6 mt-1 mb-4">
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                </div>
+            
+                <div class="shrink-0 mt-auto bg-transparent dark:border-dark-650">
+                    <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                        <span class="text-xs whitespace-nowrap">Powered by</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Sidebar component -->
+            <doc-sidebar v-cloak>
+                <template #sidebar-footer>
+                    <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-dark-650">
+            
+                        <div class="py-3 px-6 md:hidden border-b dark:border-dark-650">
+                            <nav>
+                                <ul class="flex flex-wrap justify-center items-center">
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://qwerewqwerew.github.io/retype/">코딩노트</a>
+                                    </li>
+            
+                                </ul>
+                            </nav>
+                        </div>
+            
+                        <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                            <span class="text-xs whitespace-nowrap">Powered by</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                        </a>
+                    </div>
+                </template>
+            </doc-sidebar>
+    
+            <div class="grow min-w-0 dark:bg-dark-850">
+                <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+                <div class="flex">
+                    <div class="min-w-0 p-4 grow md:px-16">
+                        <main class="relative pb-12 lg:pt-2">
+                            <div class="docs-markdown" id="docs-content">
+                                <!-- Rendered if sidebar right is enabled -->
+                                <div id="docs-sidebar-right-toggle"></div>
+                                <!-- Page content  -->
+<doc-anchor-target id="레시피앱-1-환경설정" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#레시피앱-1-환경설정">#</doc-anchor-trigger>
+        <span>레시피앱-1-환경설정</span>
+    </h1>
+</doc-anchor-target>
+<div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
+    <div>In&nbsp;</div>
+    <div><a href="../../categories/react/">react</a>,&nbsp;</div>
+    <div><a href="../../categories/project/">project</a>,&nbsp;</div>
+    <div><a href="../../categories/recipe/">recipe</a></div>
+</div>
+
+<doc-anchor-target id="목차">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#목차">#</doc-anchor-trigger>
+        <span>목차 <!-- omit in toc --></span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><doc-anchor-trigger to="#1-%EB%A0%88%EC%8B%9C%ED%94%BC-%EC%95%B1-%EC%86%8C%EA%B0%9C">1. 레시피 앱 소개</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#2-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95">2. 개발 환경설정</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#3-%EA%B9%83-%EC%84%A4%EC%B9%98">3. 깃 설치</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#4-vscode-%EC%84%A4%EC%B9%98">4. VSCode 설치</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#5-%EB%A6%AC%EC%95%A1%ED%8A%B8-%ED%99%95%EC%9E%A5%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0">5. 리액트 확장프로그램 설치하기</doc-anchor-trigger>
+<ul>
+<li><doc-anchor-trigger to="#51-react-devtools-%EC%82%AC%EC%9A%A9%ED%95%B4%EB%B3%B4%EA%B8%B0">5.1. React Devtools 사용해보기</doc-anchor-trigger></li>
+</ul>
+</li>
+</ul>
+<doc-anchor-target id="1-레시피-앱-소개">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#1-레시피-앱-소개">#</doc-anchor-trigger>
+        <span>1. 레시피 앱 소개</span>
+    </h2>
+</doc-anchor-target>
+<blockquote>
+<p>이번 클래스는 레시피를 소개하는 앱을 제작할 것이다.<br />
+이 리액트 앱에 사용된 기술 스택은 <strong>axios , react-router</strong> 등 이며 공공API를 연동하는 학습도 하게 될 것이다.</p>
+<p>강의는 공공API 데이터를 연동하는 법과 리액트에서 컴포넌트 연결 및 라우터 설정에 촛점을 맞추므로 사용되는 자바스크립트 메서드 나 스타일링 관련 코드는 별도의 설명 없이 진행된다.</p>
+<p>본 강의는 초심자를 대상으로 제작 하였으며 퍼포먼스 최적화 보다는 초심자가 이해하기 쉬운 방향의 코드로 구성하였다.</p>
+<p>
+<div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path d="M14.78 3.653a3.936 3.936 0 1 1 5.567 5.567l-3.627 3.627a3.936 3.936 0 0 1-5.88-.353.75.75 0 0 0-1.18.928 5.436 5.436 0 0 0 8.12.486l3.628-3.628a5.436 5.436 0 1 0-7.688-7.688l-3 3a.75.75 0 0 0 1.06 1.061l3-3Z"/><path d="M7.28 11.153a3.936 3.936 0 0 1 5.88.353.75.75 0 0 0 1.18-.928 5.436 5.436 0 0 0-8.12-.486L2.592 13.72a5.436 5.436 0 1 0 7.688 7.688l3-3a.75.75 0 1 0-1.06-1.06l-3 3a3.936 3.936 0 0 1-5.567-5.568l3.627-3.627Z"/></svg>
+        </span>
+        <span class="inline-block font-medium ml-2">제작할 앱 보기</span>
+    </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>https://recipe-app-gray-seven.vercel.app/</span>
+    </div>
+    <a href="https://recipe-app-gray-seven.vercel.app/" target="_blank" class="absolute block inset-0"></a>
+</div>
+</p>
+</blockquote>
+<doc-anchor-target id="2-개발-환경설정">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2-개발-환경설정">#</doc-anchor-trigger>
+        <span>2. 개발 환경설정</span>
+    </h2>
+</doc-anchor-target>
+<p>
+<div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path d="M14.78 3.653a3.936 3.936 0 1 1 5.567 5.567l-3.627 3.627a3.936 3.936 0 0 1-5.88-.353.75.75 0 0 0-1.18.928 5.436 5.436 0 0 0 8.12.486l3.628-3.628a5.436 5.436 0 1 0-7.688-7.688l-3 3a.75.75 0 0 0 1.06 1.061l3-3Z"/><path d="M7.28 11.153a3.936 3.936 0 0 1 5.88.353.75.75 0 0 0 1.18-.928 5.436 5.436 0 0 0-8.12-.486L2.592 13.72a5.436 5.436 0 1 0 7.688 7.688l3-3a.75.75 0 1 0-1.06-1.06l-3 3a3.936 3.936 0 0 1-5.567-5.568l3.627-3.627Z"/></svg>
+        </span>
+        <span class="inline-block font-medium ml-2">리액트소개와 환경설정</span>
+    </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>http://localhost:5000/retype-react/%EB%A6%AC%EC%95%A1%ED%8A%B8%EC%A2%80%ED%95%B4%EB%9D%BC/1/</span>
+    </div>
+    <a href="http://localhost:5000/retype-react/%EB%A6%AC%EC%95%A1%ED%8A%B8%EC%A2%80%ED%95%B4%EB%9D%BC/1/" target="_blank" class="absolute block inset-0"></a>
+</div>
+</p>
+<p>리액트의 개요와 개발 환경 설정은 위의 링크를 참고해서 진행한다.</p>
+<doc-anchor-target id="3-깃-설치">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#3-깃-설치">#</doc-anchor-trigger>
+        <span>3. 깃 설치</span>
+    </h2>
+</doc-anchor-target>
+<p>
+<div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path d="M14.78 3.653a3.936 3.936 0 1 1 5.567 5.567l-3.627 3.627a3.936 3.936 0 0 1-5.88-.353.75.75 0 0 0-1.18.928 5.436 5.436 0 0 0 8.12.486l3.628-3.628a5.436 5.436 0 1 0-7.688-7.688l-3 3a.75.75 0 0 0 1.06 1.061l3-3Z"/><path d="M7.28 11.153a3.936 3.936 0 0 1 5.88.353.75.75 0 0 0 1.18-.928 5.436 5.436 0 0 0-8.12-.486L2.592 13.72a5.436 5.436 0 1 0 7.688 7.688l3-3a.75.75 0 1 0-1.06-1.06l-3 3a3.936 3.936 0 0 1-5.567-5.568l3.627-3.627Z"/></svg>
+        </span>
+        <span class="inline-block font-medium ml-2">깃과 깃허브 설치하기</span>
+    </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>https://www.youtube.com/watch?v=W87Jqd2r9ds&amp;list=PLX7q4zTwhcqJvdbM5jmKP-UkFTJ3rHJ8W&amp;index=2</span>
+    </div>
+    <a href="https://www.youtube.com/watch?v=W87Jqd2r9ds&list=PLX7q4zTwhcqJvdbM5jmKP-UkFTJ3rHJ8W&index=2" target="_blank" class="absolute block inset-0"></a>
+</div>
+<br />
+깃과 깃허브의 개발 환경 설정은 위의 링크를 참고해서 진행한다.</p>
+<doc-anchor-target id="4-vscode-설치">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#4-vscode-설치">#</doc-anchor-trigger>
+        <span>4. VSCode 설치</span>
+    </h2>
+</doc-anchor-target>
+<p>
+<div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path d="M14.78 3.653a3.936 3.936 0 1 1 5.567 5.567l-3.627 3.627a3.936 3.936 0 0 1-5.88-.353.75.75 0 0 0-1.18.928 5.436 5.436 0 0 0 8.12.486l3.628-3.628a5.436 5.436 0 1 0-7.688-7.688l-3 3a.75.75 0 0 0 1.06 1.061l3-3Z"/><path d="M7.28 11.153a3.936 3.936 0 0 1 5.88.353.75.75 0 0 0 1.18-.928 5.436 5.436 0 0 0-8.12-.486L2.592 13.72a5.436 5.436 0 1 0 7.688 7.688l3-3a.75.75 0 1 0-1.06-1.06l-3 3a3.936 3.936 0 0 1-5.567-5.568l3.627-3.627Z"/></svg>
+        </span>
+        <span class="inline-block font-medium ml-2">vscode 다운로드</span>
+    </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>https://code.visualstudio.com/download</span>
+    </div>
+    <a href="https://code.visualstudio.com/download" target="_blank" class="absolute block inset-0"></a>
+</div>
+</p>
+<doc-anchor-target id="5-리액트-확장프로그램-설치하기">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#5-리액트-확장프로그램-설치하기">#</doc-anchor-trigger>
+        <span>5. 리액트 확장프로그램 설치하기</span>
+    </h2>
+</doc-anchor-target>
+<ol>
+<li>아래의 링크로 이동한다<br />
+<div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path d="M14.78 3.653a3.936 3.936 0 1 1 5.567 5.567l-3.627 3.627a3.936 3.936 0 0 1-5.88-.353.75.75 0 0 0-1.18.928 5.436 5.436 0 0 0 8.12.486l3.628-3.628a5.436 5.436 0 1 0-7.688-7.688l-3 3a.75.75 0 0 0 1.06 1.061l3-3Z"/><path d="M7.28 11.153a3.936 3.936 0 0 1 5.88.353.75.75 0 0 0 1.18-.928 5.436 5.436 0 0 0-8.12-.486L2.592 13.72a5.436 5.436 0 1 0 7.688 7.688l3-3a.75.75 0 1 0-1.06-1.06l-3 3a3.936 3.936 0 0 1-5.567-5.568l3.627-3.627Z"/></svg>
+        </span>
+        <span class="inline-block font-medium ml-2">React Developer Tools</span>
+    </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi</span>
+    </div>
+    <a href="https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi" target="_blank" class="absolute block inset-0"></a>
+</div>
+</li>
+<li>아래 그림에 표시된 버튼을 클릭한다.<br />
+<img src="../assets/04-25_623.jpg" alt="alt" /></li>
+<li>2번을 진행하면 아래와 같은 팝업창이 열린다. 표시된 부분을 클릭한다.<br />
+<img src="../assets/04-25_622.jpg" alt="alt" /></li>
+<li>크롬 주소표시줄 우측의 <img src="../assets/04-25_627.jpg" alt="alt" /> 아이콘을 클릭한다. 이제 확장프로그램을 세팅 할 것 이다.<br />
+<img src="../assets/04-25_621.jpg" alt="alt" /></li>
+<li>아래의 그림에 표시된 확장프로그램을 찾아 ①을 클릭 한 다음 ② 를 클릭 한다.<br />
+<img src="../assets/04-25_624.jpg" alt="alt" /></li>
+<li>아래 그림과 같은 페이지가 보이면 표시된 곳을 순서대로 클릭하여 그림처럼 활성화 상태로 변경한다.<br />
+<img src="../assets/04-25_625.jpg" alt="alt" /></li>
+<li>이제 주소표시줄 우측에 표시된 아이콘이 확인된다.<br />
+<img src="../assets/04-25_626.jpg" alt="alt" /></li>
+</ol>
+<doc-anchor-target id="51-react-devtools-사용해보기">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#51-react-devtools-사용해보기">#</doc-anchor-trigger>
+        <span>5.1. React Devtools 사용해보기</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li>아래의 링크로 이동한다.<br />
+<div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path d="M14.78 3.653a3.936 3.936 0 1 1 5.567 5.567l-3.627 3.627a3.936 3.936 0 0 1-5.88-.353.75.75 0 0 0-1.18.928 5.436 5.436 0 0 0 8.12.486l3.628-3.628a5.436 5.436 0 1 0-7.688-7.688l-3 3a.75.75 0 0 0 1.06 1.061l3-3Z"/><path d="M7.28 11.153a3.936 3.936 0 0 1 5.88.353.75.75 0 0 0 1.18-.928 5.436 5.436 0 0 0-8.12-.486L2.592 13.72a5.436 5.436 0 1 0 7.688 7.688l3-3a.75.75 0 1 0-1.06-1.06l-3 3a3.936 3.936 0 0 1-5.567-5.568l3.627-3.627Z"/></svg>
+        </span>
+        <span class="inline-block font-medium ml-2">링크</span>
+    </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>https://recipe-app-gray-seven.vercel.app/</span>
+    </div>
+    <a href="https://recipe-app-gray-seven.vercel.app/" target="_blank" class="absolute block inset-0"></a>
+</div>
+</li>
+<li>보고있는 페이지가 리액트로 제작 되었을경우 확장프로그램 아이콘의 색상이 진해진다.<br />
+<img src="../assets/04-25_628.jpg" alt="alt" /></li>
+<li><kbd>F12</kbd> 키를 눌러 개발자도구를 실행한다. 그후 아래 그림의 1번을 클릭하면 2,3의 메뉴가 확인된다.<br />
+<img src="../assets/04-25_629.jpg" alt="alt" /></li>
+<li>아래의 그림처럼 개발자 메뉴를 앞으로 꺼낸다. 3번 단계의 2,3 메뉴를 각각 클릭하여 드래그드랍 한다.<br />
+<img src="../assets/react.gif" alt="alt" /></li>
+<li>사용법<br />
+아래의 그림처럼 리액트 인스펙트터를 클릭한후 확인하고 싶은 요소를 클릭한다<br />
+우측패널에 선택한 요소의 정보를 확인할수 있다.<br />
+<img src="../assets/react2.gif" alt="alt" /></li>
+</ol>
+
+                                <div class="flex items-center mt-6 mb-6 clear-both">
+                                    <span>
+                                        <a href="../../tags/">
+                                            <svg class="inline-block -mb-px mr-1.5 text-blue-500 dark:text-blue-400" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
+                                        </a>
+                                        <span class="mr-2"><a href="../../tags/%EB%A6%AC%EC%95%A1%ED%8A%B8/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>리액트</span>
+                                </a></span>
+                                        <span class="mr-2"><a href="../../tags/react/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>react</span>
+                                </a></span>
+                                        <span class="mr-2"><a href="../../tags/nodejs/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>nodejs</span>
+                                </a></span>
+                                        <span class="mr-2"><a href="../../tags/node/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>node</span>
+                                </a></span>
+                                    </span>
+                                </div>
+                
+                                <!-- Required only on API pages -->
+                                <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
+                            </div>
+                            <footer class="clear-both">
+                            
+                                <nav class="flex mt-14">
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../node/1/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                            <span>
+                                                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                                                <span class="block mt-1">1-​업데이트</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                            
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../레시피앱/2/">
+                                            <span>
+                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                                                <span class="block mt-1">레시피앱-​2-​시작</span>
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </footer>
+                        </main>
+                
+                        <div class="border-t dark:border-dark-650 pt-6 mb-8">
+                            <footer class="flex flex-wrap items-center justify-between">
+                                <div>
+                                    <ul class="flex flex-wrap items-center text-sm">
+                                    </ul>
+                                </div>
+                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2024. All rights reserved.</p></div>
+                            </footer>
+                        </div>
+                    </div>
+                
+                    <!-- Rendered if sidebar right is enabled -->
+                    <!-- Sidebar right skeleton-->
+                    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-white border-gray-200 lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:transform-none sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton dark:bg-dark-850 dark:border-dark-650">
+                        <div class="pl-5">
+                            <div class="w-32 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-48 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-40 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                        </div>
+                    </div>
+                
+                    <!-- User should be able to hide sidebar right -->
+                    <doc-sidebar-right v-cloak></doc-sidebar-right>
+                </div>
+
+            </div>
+        </div>
+    
+        <doc-search-mobile></doc-search-mobile>
+        <doc-back-to-top></doc-back-to-top>
+    </div>
+
+
+    <div id="docs-overlay-target"></div>
+
+    <script data-cfasync="false">window.__DOCS__ = { "title": "레시피앱-1-환경설정", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+</body>
+</html>

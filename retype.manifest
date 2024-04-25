@@ -1,12 +1,327 @@
 {
   "version": "3.5.0",
-  "created": "2024-04-08T08:23:08Z",
+  "created": "2024-04-25T06:25:17Z",
   "files": [
     {
       "path": ".nojekyll"
     },
     {
       "path": "404.html"
+    },
+    {
+      "path": "레시피앱\\1\\index.html"
+    },
+    {
+      "path": "레시피앱\\12\\index.html"
+    },
+    {
+      "path": "레시피앱\\2\\index.html"
+    },
+    {
+      "path": "레시피앱\\3\\index.html"
+    },
+    {
+      "path": "레시피앱\\8\\index.html"
+    },
+    {
+      "path": "레시피앱\\assets\\04-25_621.jpg"
+    },
+    {
+      "path": "레시피앱\\assets\\04-25_622.jpg"
+    },
+    {
+      "path": "레시피앱\\assets\\04-25_623.jpg"
+    },
+    {
+      "path": "레시피앱\\assets\\04-25_624.jpg"
+    },
+    {
+      "path": "레시피앱\\assets\\04-25_625.jpg"
+    },
+    {
+      "path": "레시피앱\\assets\\04-25_626.jpg"
+    },
+    {
+      "path": "레시피앱\\assets\\04-25_627.jpg"
+    },
+    {
+      "path": "레시피앱\\assets\\04-25_628.jpg"
+    },
+    {
+      "path": "레시피앱\\assets\\04-25_629.jpg"
+    },
+    {
+      "path": "레시피앱\\assets\\04-25_630.jpg"
+    },
+    {
+      "path": "레시피앱\\assets\\2-2.png"
+    },
+    {
+      "path": "레시피앱\\assets\\2-3.png"
+    },
+    {
+      "path": "레시피앱\\assets\\2024-04-19_150227.jpg"
+    },
+    {
+      "path": "레시피앱\\assets\\2024-04-19_150639.jpg"
+    },
+    {
+      "path": "레시피앱\\assets\\2024-04-19_151648.jpg"
+    },
+    {
+      "path": "레시피앱\\assets\\2024-04-19_153704.jpg"
+    },
+    {
+      "path": "레시피앱\\assets\\2024-04-19_154846.jpg"
+    },
+    {
+      "path": "레시피앱\\assets\\2024-04-19_161051.jpg"
+    },
+    {
+      "path": "레시피앱\\assets\\2024-04-19_171629.jpg"
+    },
+    {
+      "path": "레시피앱\\assets\\2024-04-19_171826.jpg"
+    },
+    {
+      "path": "레시피앱\\assets\\3-1.png"
+    },
+    {
+      "path": "레시피앱\\assets\\p1.jpg"
+    },
+    {
+      "path": "레시피앱\\assets\\p2.png"
+    },
+    {
+      "path": "레시피앱\\assets\\react.gif"
+    },
+    {
+      "path": "레시피앱\\assets\\react2.gif"
+    },
+    {
+      "path": "레시피앱\\assets\\src.zip"
+    },
+    {
+      "path": "리액트좀해라\\1\\index.html"
+    },
+    {
+      "path": "리액트좀해라\\2\\index.html"
+    },
+    {
+      "path": "리액트좀해라\\3\\index.html"
+    },
+    {
+      "path": "리액트좀해라\\4\\index.html"
+    },
+    {
+      "path": "리액트좀해라\\5\\index.html"
+    },
+    {
+      "path": "리액트좀해라\\6\\index.html"
+    },
+    {
+      "path": "리액트좀해라\\7\\index.html"
+    },
+    {
+      "path": "리액트좀해라\\assets\\files\\2\\styles.zip"
+    },
+    {
+      "path": "리액트좀해라\\assets\\files\\3\\src.zip"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\10-11_527.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\10-11_528.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\10-11_529.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\10-16_530.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\10-25_533.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\10-25_534.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\10-29_536.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\10-29_537.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\10-29_538.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\10-29_539.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\11-05_540.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\11-05_541.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\11-20_545.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\11-20_546.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\11-20_547.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\11-20_548.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\11-23_549.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\11-23_550.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\11-23_551.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\11-23_552.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\11-23_553.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\11-23_554.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\11-23_555.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\11-23_556.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\11-23_557.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\11-23_558.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\11-23_559.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\11-23_560.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\11-23_561.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\11-23_562.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\11-23_563.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\11-23_564.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\11-23_565.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\11-23_566.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\11-23_567.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\11-23_568.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\11-28_570.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\2-1.png"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\2023-10-06_083527.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\2023-10-06_083948.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\2024-04-08_145352.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\2024-04-08_145540.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\2024-04-08_145745.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\2024-04-08_172203.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\5-1.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\5.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\a_04.png"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\a02.png"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\a03.png"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\a04.png"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\a5.png"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\a6.png"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\a7.png"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\compo.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\compo.png"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\compo2.png"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\drawio.png"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\event.png"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\hierarchy.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\key.jpg"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\mission2-1a.png"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\mission2-1b.png"
+    },
+    {
+      "path": "리액트좀해라\\assets\\imgs\\pointes.png"
+    },
+    {
+      "path": "리액트좀해라\\image.png"
+    },
+    {
+      "path": "리액트좀해라\\issue\\index.html"
     },
     {
       "path": "categories\\basic\\index.html"
@@ -27,7 +342,13 @@
       "old": true
     },
     {
+      "path": "categories\\project\\index.html"
+    },
+    {
       "path": "categories\\react\\index.html"
+    },
+    {
+      "path": "categories\\recipe\\index.html"
     },
     {
       "path": "debug\\1\\index.html"
@@ -42,233 +363,311 @@
       "path": "node\\1\\index.html"
     },
     {
-      "path": "react\\1\\index.html"
+      "path": "qr.png"
     },
     {
-      "path": "react\\2\\index.html"
+      "path": "react\\1\\index.html",
+      "old": true
     },
     {
-      "path": "react\\3\\index.html"
+      "path": "react\\2\\index.html",
+      "old": true
     },
     {
-      "path": "react\\4\\index.html"
+      "path": "react\\3\\index.html",
+      "old": true
     },
     {
-      "path": "react\\5\\index.html"
+      "path": "react\\4\\index.html",
+      "old": true
     },
     {
-      "path": "react\\6\\index.html"
+      "path": "react\\5\\index.html",
+      "old": true
     },
     {
-      "path": "react\\7\\index.html"
+      "path": "react\\6\\index.html",
+      "old": true
     },
     {
-      "path": "react\\8\\index.html"
+      "path": "react\\7\\index.html",
+      "old": true
     },
     {
-      "path": "react\\assets\\files\\2\\styles.zip"
+      "path": "react\\8\\index.html",
+      "old": true
     },
     {
-      "path": "react\\assets\\files\\3\\src.zip"
+      "path": "react\\assets\\files\\2\\styles.zip",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\10-11_527.jpg"
+      "path": "react\\assets\\files\\3\\src.zip",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\10-11_528.jpg"
+      "path": "react\\assets\\imgs\\10-11_527.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\10-11_529.jpg"
+      "path": "react\\assets\\imgs\\10-11_528.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\10-16_530.jpg"
+      "path": "react\\assets\\imgs\\10-11_529.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\10-25_533.jpg"
+      "path": "react\\assets\\imgs\\10-16_530.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\10-25_534.jpg"
+      "path": "react\\assets\\imgs\\10-25_533.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\10-29_536.jpg"
+      "path": "react\\assets\\imgs\\10-25_534.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\10-29_537.jpg"
+      "path": "react\\assets\\imgs\\10-29_536.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\10-29_538.jpg"
+      "path": "react\\assets\\imgs\\10-29_537.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\10-29_539.jpg"
+      "path": "react\\assets\\imgs\\10-29_538.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\11-05_540.jpg"
+      "path": "react\\assets\\imgs\\10-29_539.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\11-05_541.jpg"
+      "path": "react\\assets\\imgs\\11-05_540.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\11-20_545.jpg"
+      "path": "react\\assets\\imgs\\11-05_541.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\11-20_546.jpg"
+      "path": "react\\assets\\imgs\\11-20_545.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\11-20_547.jpg"
+      "path": "react\\assets\\imgs\\11-20_546.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\11-20_548.jpg"
+      "path": "react\\assets\\imgs\\11-20_547.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\11-23_549.jpg"
+      "path": "react\\assets\\imgs\\11-20_548.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\11-23_550.jpg"
+      "path": "react\\assets\\imgs\\11-23_549.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\11-23_551.jpg"
+      "path": "react\\assets\\imgs\\11-23_550.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\11-23_552.jpg"
+      "path": "react\\assets\\imgs\\11-23_551.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\11-23_553.jpg"
+      "path": "react\\assets\\imgs\\11-23_552.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\11-23_554.jpg"
+      "path": "react\\assets\\imgs\\11-23_553.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\11-23_555.jpg"
+      "path": "react\\assets\\imgs\\11-23_554.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\11-23_556.jpg"
+      "path": "react\\assets\\imgs\\11-23_555.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\11-23_557.jpg"
+      "path": "react\\assets\\imgs\\11-23_556.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\11-23_558.jpg"
+      "path": "react\\assets\\imgs\\11-23_557.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\11-23_559.jpg"
+      "path": "react\\assets\\imgs\\11-23_558.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\11-23_560.jpg"
+      "path": "react\\assets\\imgs\\11-23_559.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\11-23_561.jpg"
+      "path": "react\\assets\\imgs\\11-23_560.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\11-23_562.jpg"
+      "path": "react\\assets\\imgs\\11-23_561.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\11-23_563.jpg"
+      "path": "react\\assets\\imgs\\11-23_562.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\11-23_564.jpg"
+      "path": "react\\assets\\imgs\\11-23_563.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\11-23_565.jpg"
+      "path": "react\\assets\\imgs\\11-23_564.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\11-23_566.jpg"
+      "path": "react\\assets\\imgs\\11-23_565.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\11-23_567.jpg"
+      "path": "react\\assets\\imgs\\11-23_566.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\11-23_568.jpg"
+      "path": "react\\assets\\imgs\\11-23_567.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\11-28_570.jpg"
+      "path": "react\\assets\\imgs\\11-23_568.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\2-1.png"
+      "path": "react\\assets\\imgs\\11-28_570.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\2023-10-06_083527.jpg"
+      "path": "react\\assets\\imgs\\2-1.png",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\2023-10-06_083948.jpg"
+      "path": "react\\assets\\imgs\\2023-10-06_083527.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\2024-04-08_145352.jpg"
+      "path": "react\\assets\\imgs\\2023-10-06_083948.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\2024-04-08_145540.jpg"
+      "path": "react\\assets\\imgs\\2024-04-08_145352.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\2024-04-08_145745.jpg"
+      "path": "react\\assets\\imgs\\2024-04-08_145540.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\2024-04-08_172203.jpg"
+      "path": "react\\assets\\imgs\\2024-04-08_145745.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\5-1.jpg"
+      "path": "react\\assets\\imgs\\2024-04-08_172203.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\5.jpg"
+      "path": "react\\assets\\imgs\\5-1.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\a_04.png"
+      "path": "react\\assets\\imgs\\5.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\a02.png"
+      "path": "react\\assets\\imgs\\a_04.png",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\a03.png"
+      "path": "react\\assets\\imgs\\a02.png",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\a04.png"
+      "path": "react\\assets\\imgs\\a03.png",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\a5.png"
+      "path": "react\\assets\\imgs\\a04.png",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\a6.png"
+      "path": "react\\assets\\imgs\\a5.png",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\a7.png"
+      "path": "react\\assets\\imgs\\a6.png",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\compo.jpg"
+      "path": "react\\assets\\imgs\\a7.png",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\compo.png"
+      "path": "react\\assets\\imgs\\compo.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\compo2.png"
+      "path": "react\\assets\\imgs\\compo.png",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\drawio.png"
+      "path": "react\\assets\\imgs\\compo2.png",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\event.png"
+      "path": "react\\assets\\imgs\\drawio.png",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\hierarchy.jpg"
+      "path": "react\\assets\\imgs\\event.png",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\key.jpg"
+      "path": "react\\assets\\imgs\\hierarchy.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\mission2-1a.png"
+      "path": "react\\assets\\imgs\\key.jpg",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\mission2-1b.png"
+      "path": "react\\assets\\imgs\\mission2-1a.png",
+      "old": true
     },
     {
-      "path": "react\\assets\\imgs\\pointes.png"
+      "path": "react\\assets\\imgs\\mission2-1b.png",
+      "old": true
+    },
+    {
+      "path": "react\\assets\\imgs\\pointes.png",
+      "old": true
     },
     {
       "path": "react\\footnote\\index.html",
       "old": true
     },
     {
-      "path": "react\\image.png"
+      "path": "react\\image.png",
+      "old": true
     },
     {
-      "path": "react\\issue\\index.html"
+      "path": "react\\issue\\index.html",
+      "old": true
     },
     {
       "path": "resources\\css\\retype.css"
