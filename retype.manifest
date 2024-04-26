@@ -1,6 +1,6 @@
 {
   "version": "3.5.0",
-  "created": "2024-04-25T08:42:36Z",
+  "created": "2024-04-26T12:10:07Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -60,6 +60,15 @@
     },
     {
       "path": "레시피앱\\assets\\2-3.png"
+    },
+    {
+      "path": "레시피앱\\assets\\2-4.png"
+    },
+    {
+      "path": "레시피앱\\assets\\2-5.png"
+    },
+    {
+      "path": "레시피앱\\assets\\2-6.png"
     },
     {
       "path": "레시피앱\\assets\\2024-04-19_150227.jpg"
