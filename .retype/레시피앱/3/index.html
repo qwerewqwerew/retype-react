@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/retype-react">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.767448603220">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.767612594451">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -38,12 +38,12 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.767448603220" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.767612594451" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.767448603220" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.767612594451" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.767448603220" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.767448603220" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.767612594451" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.767612594451" defer></script>
 
     <style>
       @import url('https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.8/static/pretendard.css');
@@ -1128,13 +1128,14 @@ export default App;</code></pre>
     </h3>
 </doc-anchor-target>
 <ul>
-<li>./src/App.js 파일의 컴포넌트의 이름을 Foods에서 FoodLists로 변경하자. 그리고 Movie 컴포넌트는 모두 삭제하자.</li>
+<li>./src/App.js 파일의 컴포넌트의 이름을 Foods에서 Fruit로 변경하자. 그리고 Foods 컴포넌트는 모두 삭제하자.</li>
+<li>h1 의 컨텐츠도 hello 로 변경한다.</li>
 </ul>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-jsx"><code v-pre class="language-jsx">/* import Orange from './Orange'; */
 
 const Fruit = () =&gt; {
-	return &lt;h3&gt;Fruit&lt;/h3&gt;;
+	return &lt;h1&gt;I like orange&lt;/h1&gt;;
 };
 
 function App() {
@@ -1179,8 +1180,10 @@ function App() {
 export default App;</code></pre>
 </doc-codeblock></div>
 <ul>
-<li>이게 바로 props를 이용하여 Fruit 컴포넌트에 데이터를 보내는 방법이다. Fruit 컴포넌트에 사용한 props의 이름은 fav이고, fav에 &quot;banana&quot;라는 값을 담아 Fruit 컴포넌트에 보낸 것이다.</li>
-<li>props에는 불리언 값(true, false), 숫자, 배열과 같은 다양한 형태의 데이터를 담을 수 있다. 여기서 주의할 점은 <strong>&#x27;props에 있는 데이터는 문자열인 경우를 제외하면 모두 중괄호 ()로 값을 감싸야 한다는 점</strong>&#x27;이다.</li>
+<li>이게 바로 props를 이용하여 Fruit 컴포넌트에 데이터를 보내는 방법이다.<br />
+Fruit 컴포넌트에 사용한 props의 이름은 fav이고, fav에 &quot;banana&quot;라는 값을 담아 Fruit 컴포넌트에 보낸 것이다.</li>
+<li>props에는 불리언 값(true, false), 숫자, 배열과 같은 다양한 형태의 데이터를 담을 수 있다.<br />
+여기서 주의할 점은 <strong>props에 있는 데이터는 문자열인 경우를 제외하면 모두 중괄호 <code v-pre>{}</code>로 값을 감싸야 한다는 점</strong>이다.</li>
 </ul>
 <doc-anchor-target id="115-fruit-컴포넌트에-props-전달하기3">
     <h3>
@@ -1221,7 +1224,8 @@ something 의 값은 자바스크립트의 논리자료형 true 이므로 `{}`�
 </doc-anchor-target>
 <ul>
 <li>./src/App.js 파일을 수정한 상태에서 리액트 앱을 실행해 보자.</li>
-<li>그러면 아무런 변화가 없을 것이다. 왜 그럴까? Fruit 컴포넌트에 props를 보내기만 했을 뿐 아직 사용하지 않았기 때문이다. 그럼 Fruit 컴포넌트에서 props를 사용하려면 어떻게 해야 할까?</li>
+<li>그러면 아무런 변화가 없을 것이다. 왜 그럴까? Fruit 컴포넌트에 props를 보내기만 했을 뿐 아직 사용하지 않았기 때문이다.<br />
+그럼 Fruit 컴포넌트에서 props를 사용하려면 어떻게 해야 할까?</li>
 </ul>
 <doc-anchor-target id="117-fruit-컴포넌트에-props-전달하기5">
     <h3>
@@ -1234,24 +1238,19 @@ something 의 값은 자바스크립트의 논리자료형 true 이므로 `{}`�
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-jsx"><code v-pre class="language-jsx">const Fruit = (props) =&gt; {
   console.log(props);
-  return &lt;h3&gt;Fruit&lt;/h3&gt;;
+  return &lt;h1&gt;I like orange&lt;/h1&gt;;
 };</code></pre>
 </doc-codeblock></div>
 </li>
 </ul>
 <p><figure class="content-center">
-    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/f2b063ab-5763-4522-82a6-f18f4aaa1c70/161b3c8d-7cee-4a12-a15f-21a9a2af79cd/Untitled.png" alt="Untitled">
-    <figcaption class="caption">Untitled</figcaption>
+    <img src="../assets/3-2.png" alt="">
+    <figcaption class="caption"></figcaption>
 </figure>
-</p>
-<p><figure class="content-center">
-    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/f2b063ab-5763-4522-82a6-f18f4aaa1c70/56f69c53-880d-4ee5-b43e-90352c2298f2/Untitled.png" alt="Untitled">
-    <figcaption class="caption">Untitled</figcaption>
-</figure>
-</p>
-<p><figure class="content-center">
-    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/f2b063ab-5763-4522-82a6-f18f4aaa1c70/e3ca0d83-7818-4804-a5f4-7334cc46e237/Untitled.png" alt="Untitled">
-    <figcaption class="caption">Untitled</figcaption>
+<br />
+<figure class="content-center">
+    <img src="../assets/3-3.png" alt="">
+    <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <ul>
@@ -1299,7 +1298,7 @@ function App() {
     </h3>
 </doc-anchor-target>
 <ul>
-<li>./src/App.js 파일에서 Fruit 컴포넌트에 있는 데이터 &quot;banana&quot;를 화면에 출력하자면 props.fav를 중괄호로 감싸면 된다.</li>
+<li><code v-pre>/src/App.js</code> 파일에서 Fruit 컴포넌트에 있는 데이터 &quot;banana&quot;를 화면에 출력하자면 props.fav를 중괄호로 감싸면 된다.</li>
 </ul>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-jsx"><code v-pre class="language-jsx">...
@@ -1309,9 +1308,6 @@ const Fruit = (props) =&gt; {
 };
 ...</code></pre>
 </doc-codeblock></div>
-<ul>
-<li></li>
-</ul>
 <doc-anchor-target id="1111-구조-분해-할당으로-props-사용하기">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#1111-구조-분해-할당으로-props-사용하기">#</doc-anchor-trigger>
