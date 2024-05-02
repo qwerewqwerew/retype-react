@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/retype-react">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.767946223515">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.767959354001">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -27,23 +27,23 @@
     <meta property="og:url" content="https://qwerewqwerew.github.io/retype-react/레시피앱/5/">
     <meta property="og:title" content="레시피앱-5-Hooks">
     <meta property="og:description" content="1. 클래스컴포넌트 VS 함수컴포넌트">
-    <meta property="og:image" content="https://qwerewqwerew.github.io/retype-react/레시피앱/assets/p2.jpg">
+    <meta property="og:image" content="https://qwerewqwerew.github.io/retype-react/레시피앱/assets/5-26.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://qwerewqwerew.github.io/retype-react/레시피앱/5/">
     <meta property="twitter:title" content="레시피앱-5-Hooks">
     <meta property="twitter:description" content="1. 클래스컴포넌트 VS 함수컴포넌트">
-    <meta property="twitter:image" content="https://qwerewqwerew.github.io/retype-react/레시피앱/assets/p2.jpg">
+    <meta property="twitter:image" content="https://qwerewqwerew.github.io/retype-react/레시피앱/assets/5-26.png">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.767946223515" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.767959354001" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.767946223515" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.767959354001" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.767946223515" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.767946223515" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.767959354001" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.767959354001" defer></script>
 
     <style>
     @import url(https://qwerewqwerew.github.io/source/style/common.css);
@@ -226,6 +226,53 @@
 </li>
 <li><doc-anchor-trigger to="#11-%EC%A0%95%EB%A6%AC">11. 정리</doc-anchor-trigger></li>
 </ul>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>3차시 컴포넌트의 props 를 기억 할 것이다.<br />
+props란 컴포넌트 간 주고받는 데이터이며 부모가 자식에게 전달할수 있다고 배웠다.<br />
+그리고 상황예시로 여러 친구를 초대하고 한 테이블 위 3개의 동일한 접시에 3종류의 각기 다른 음식을 전달하는 사례를 들어 설명하였다.<br />
+<div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path d="M14.78 3.653a3.936 3.936 0 1 1 5.567 5.567l-3.627 3.627a3.936 3.936 0 0 1-5.88-.353.75.75 0 0 0-1.18.928 5.436 5.436 0 0 0 8.12.486l3.628-3.628a5.436 5.436 0 1 0-7.688-7.688l-3 3a.75.75 0 0 0 1.06 1.061l3-3Z"/><path d="M7.28 11.153a3.936 3.936 0 0 1 5.88.353.75.75 0 0 0 1.18-.928 5.436 5.436 0 0 0-8.12-.486L2.592 13.72a5.436 5.436 0 1 0 7.688 7.688l3-3a.75.75 0 1 0-1.06-1.06l-3 3a3.936 3.936 0 0 1-5.567-5.568l3.627-3.627Z"/></svg>
+        </span>
+        <span class="inline-block font-medium ml-2">영상링크 18:29</span>
+    </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>https://www.youtube.com/watch?v=ReP1iOyNxF4</span>
+    </div>
+    <a href="https://www.youtube.com/watch?v=ReP1iOyNxF4" target="_blank" class="absolute block inset-0"></a>
+</div>
+<br />
+그림 1을 리액트 컴포넌트로 구현 할 경우 그림 2 의 구조가 될 것 이다.<br />
+햄버거,딸기,사과는 컴포넌트로 전달되는 props 즉 속성의 값이 된다.<br />
+<figure class="content-center">
+    <img src="../assets/5-26.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p class="red">이번 차시 학습 내용은 아래의 그림처럼 친구가 음식을 먹어버렸을 경우 이다.<br />
+Plate 컴포넌트의 햄버거라는 값이 있다가 없어지게 하려면 어떻게 해야 할까?<br />
+<figure class="content-center">
+    <img src="../assets/5-27.jpg" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p class="h1">접시의 햄버거가 <mark>있는 상태에서 없는 상태로 바꾸면</mark> 된다. </p>
+        </div>
+    </div>
+</div>
 <div class="comment_box"><p>리액트 훅은 함수형 컴포넌트(Functional Component)가 클래스형 컴포넌트(Class Component)의 기능을 사용 할 수 있도록 하는 함수이다<br />
 use라는 접두사로 시작하며 컴포넌트 함수내에 작성해야 한다.</p>
 </div>
@@ -791,7 +838,7 @@ value의 값이 공백이며 value 의 값을 변경하려면 setInput 함수를
 </li>
 <li><p>setInterval 함수 사용시 컴포넌트가 언마운트 될때에도 함수는 계속 실행되어 메모리의 누수가 발생할수 있다.<br />
 useEffect 의 return 문에 clearInterval 함수를 작성하여 setInterval 을 중단시킬경우 Time 컴포넌트의 언마운트시 실행되므로 사이드이펙트(부수효과)를 사전예방 할수있다<br />
-<img src="./assets/5-26.png" class="shadow" alt="" /></p>
+<img src="../assets/5-26.png" class="shadow" alt="" /></p>
 </li>
 </ul>
 <doc-anchor-target id="11-정리">
