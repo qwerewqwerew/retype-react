@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/retype-react">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.767851178712">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.767945528981">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -17,7 +17,7 @@
     <!-- Primary Meta Tags -->
     <title>레시피앱-4-발전형컴포넌트</title>
     <meta name="title" content="레시피앱-4-발전형컴포넌트">
-    <meta name="description" content="1. 비슷한 컴포넌트 여러 개 만들기">
+    <meta name="description" content="Content 2- 1.2. 앞에서 만든 컴포넌트 형태 다시 살펴보기- 1.3. 과일 데이터 만들기1- 1.4. 과일 데이터 만들기2">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://qwerewqwerew.github.io/retype-react/레시피앱/4/">
@@ -26,24 +26,24 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://qwerewqwerew.github.io/retype-react/레시피앱/4/">
     <meta property="og:title" content="레시피앱-4-발전형컴포넌트">
-    <meta property="og:description" content="1. 비슷한 컴포넌트 여러 개 만들기">
-    <meta property="og:image" content="https://qwerewqwerew.github.io/retype-react/레시피앱/assets/4-1.png">
+    <meta property="og:description" content="Content 2- 1.2. 앞에서 만든 컴포넌트 형태 다시 살펴보기- 1.3. 과일 데이터 만들기1- 1.4. 과일 데이터 만들기2">
+    <meta property="og:image" content="https://qwerewqwerew.github.io/retype-react/레시피앱/assets/05-02_643.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://qwerewqwerew.github.io/retype-react/레시피앱/4/">
     <meta property="twitter:title" content="레시피앱-4-발전형컴포넌트">
-    <meta property="twitter:description" content="1. 비슷한 컴포넌트 여러 개 만들기">
-    <meta property="twitter:image" content="https://qwerewqwerew.github.io/retype-react/레시피앱/assets/4-1.png">
+    <meta property="twitter:description" content="Content 2- 1.2. 앞에서 만든 컴포넌트 형태 다시 살펴보기- 1.3. 과일 데이터 만들기1- 1.4. 과일 데이터 만들기2">
+    <meta property="twitter:image" content="https://qwerewqwerew.github.io/retype-react/레시피앱/assets/05-02_643.jpg">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.767851178712" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.767945528981" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.767851178712" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.767945528981" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.767851178712" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.767851178712" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.767945528981" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.767945528981" defer></script>
 
     <style>
       @import url('@import url(https://qwerewqwerew.github.io/source/style/common.css);');
@@ -199,13 +199,11 @@
     </h3>
 </doc-anchor-target>
 <ul>
-<li><doc-anchor-trigger to="#1-%EB%B9%84%EC%8A%B7%ED%95%9C-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%97%AC%EB%9F%AC-%EA%B0%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0">1. 비슷한 컴포넌트 여러 개 만들기</doc-anchor-trigger>
+<li><doc-anchor-trigger to="#content-2">Content 2</doc-anchor-trigger><br />
+- <doc-anchor-trigger to="#12-%EC%95%9E%EC%97%90%EC%84%9C-%EB%A7%8C%EB%93%A0-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%ED%98%95%ED%83%9C-%EB%8B%A4%EC%8B%9C-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0">1.2. 앞에서 만든 컴포넌트 형태 다시 살펴보기</doc-anchor-trigger><br />
+- <doc-anchor-trigger to="#13-%EA%B3%BC%EC%9D%BC-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%A7%8C%EB%93%A4%EA%B8%B01">1.3. 과일 데이터 만들기1</doc-anchor-trigger><br />
+- <doc-anchor-trigger to="#14-%EA%B3%BC%EC%9D%BC-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%A7%8C%EB%93%A4%EA%B8%B02">1.4. 과일 데이터 만들기2</doc-anchor-trigger>
 <ul>
-<li><doc-anchor-trigger to="#11-%EC%95%9E%EC%97%90%EC%84%9C-%EB%A7%8C%EB%93%A0-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%ED%98%95%ED%83%9C-%EB%8B%A4%EC%8B%9C-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0">1.1. 앞에서 만든 컴포넌트 형태 다시 살펴보기</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#12-%EA%B3%BC%EC%9D%BC-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%A7%8C%EB%93%A4%EA%B8%B01">1.2. 과일 데이터 만들기1</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#13-%EA%B3%BC%EC%9D%BC-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%A7%8C%EB%93%A4%EA%B8%B02">1.3. 과일 데이터 만들기2</doc-anchor-trigger></li>
-</ul>
-</li>
 <li><doc-anchor-trigger to="#2-map-%ED%95%A8%EC%88%98%EB%A1%9C-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EB%A7%8E%EC%9D%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0">2. map() 함수로 컴포넌트 많이 만들기</doc-anchor-trigger>
 <ul>
 <li><doc-anchor-trigger to="#21-map-%ED%95%A8%EC%88%98-%EC%82%AC%EC%9A%A9%EB%B2%95-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B01">2.1. map() 함수 사용법 알아보기1</doc-anchor-trigger></li>
@@ -226,20 +224,61 @@
 </ul>
 </li>
 </ul>
+</li>
+</ul>
 <doc-anchor-target id="1-비슷한-컴포넌트-여러-개-만들기">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#1-비슷한-컴포넌트-여러-개-만들기">#</doc-anchor-trigger>
         <span>1. 비슷한 컴포넌트 여러 개 만들기</span>
     </h2>
 </doc-anchor-target>
-<div class="comment_box"><p>우리는 앞에서 컴포넌트를 많이 만들 때 <Fruit /> <Fruit /> <Fruit /> ... 와 같이 컴포넌트를 직접 입력했다.<br />
+<div class="comment_box"><p>우리는 앞에서 컴포넌트를 많이 만들 때 <code v-pre>&lt;Fruit /&gt; &lt;Fruit /&gt; &lt;Fruit /&gt; ... </code>와 같이 컴포넌트를 직접 입력했다.<br />
 이게 최선의 방법일까?<br />
 어떻게 하면 컴포넌트를 효율적으로 출력할 수 있는지 알아보자.</p>
 </div>
-<doc-anchor-target id="11-앞에서-만든-컴포넌트-형태-다시-살펴보기">
+<doc-anchor-target id="11-시작파일-내려받기">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#11-앞에서-만든-컴포넌트-형태-다시-살펴보기">#</doc-anchor-trigger>
-        <span>1.1. 앞에서 만든 컴포넌트 형태 다시 살펴보기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#11-시작파일-내려받기">#</doc-anchor-trigger>
+        <span>1.1. 시작파일 내려받기</span>
+    </h3>
+</doc-anchor-target>
+<blockquote>
+<p>만약 전시간 파일이 없을 경우 아래의 파일을 다운로드 하여 진행한다<br />
+<a href="../assets/04/start.zip" target="_blank" class="no-link inline-flex align-middle items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-green-500 hover:bg-green-700 text-white px-4 h-10 text-sm rounded-md">
+    <span><svg xmlns="http://www.w3.org/2000/svg" class="mb-px inline-flex mr-2" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M4.75 17.25a.75.75 0 0 1 .75.75v2.25c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V18a.75.75 0 0 1 1.5 0v2.25A1.75 1.75 0 0 1 18.25 22H5.75A1.75 1.75 0 0 1 4 20.25V18a.75.75 0 0 1 .75-.75Z"/><path d="M5.22 9.97a.749.749 0 0 1 1.06 0l4.97 4.969V2.75a.75.75 0 0 1 1.5 0v12.189l4.97-4.969a.749.749 0 1 1 1.06 1.06l-6.25 6.25a.749.749 0 0 1-1.06 0l-6.25-6.25a.749.749 0 0 1 0-1.06Z"/></g></svg></span>
+    <span>지난수업파일</span>
+</a></p>
+</blockquote>
+<doc-panel id="파일활용방법" collapsed>
+    <template #title>파일활용방법</template>
+<ol>
+<li>다운로드 받은 start.zip 파일의 압축을 푼다</li>
+<li>새 리액트 앱을 설치한다. 리액트 앱 설치를 모를경우 아래 링크를 참고한다.<br />
+<div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path d="M14.78 3.653a3.936 3.936 0 1 1 5.567 5.567l-3.627 3.627a3.936 3.936 0 0 1-5.88-.353.75.75 0 0 0-1.18.928 5.436 5.436 0 0 0 8.12.486l3.628-3.628a5.436 5.436 0 1 0-7.688-7.688l-3 3a.75.75 0 0 0 1.06 1.061l3-3Z"/><path d="M7.28 11.153a3.936 3.936 0 0 1 5.88.353.75.75 0 0 0 1.18-.928 5.436 5.436 0 0 0-8.12-.486L2.592 13.72a5.436 5.436 0 1 0 7.688 7.688l3-3a.75.75 0 1 0-1.06-1.06l-3 3a3.936 3.936 0 0 1-5.567-5.568l3.627-3.627Z"/></svg>
+        </span>
+        <span class="inline-block font-medium ml-2">리액트 설치안내</span>
+    </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>../../리액트좀해라/1/</span>
+    </div>
+    <a href="../../리액트좀해라/1/" target="_blank" class="absolute block inset-0"></a>
+</div>
+</li>
+<li>리액트 앱의 설치가 왼료 되었으면 1번의 파일압축을 푼다</li>
+<li>압축을 풀게 되면 start/src 폴더가 있다.</li>
+<li>2번의 src폴더에 4번의 src 폴더를 덮어 씌운다.<br />
+<img src="../assets/05-02_643.jpg" alt="" /></li>
+<li>2번의 폴더를 루트로 선택하여 vscode를 연다.</li>
+<li>vscode 의 터미널에 npm start 를 입력하여 앱을 실행한다.</li>
+</ol>
+</doc-panel>
+<doc-anchor-target id="12-앞에서-만든-컴포넌트-형태-다시-살펴보기">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#12-앞에서-만든-컴포넌트-형태-다시-살펴보기">#</doc-anchor-trigger>
+        <span>1.2. 앞에서 만든 컴포넌트 형태 다시 살펴보기</span>
     </h3>
 </doc-anchor-target>
 <ul>
@@ -274,10 +313,10 @@ export default App;</code></pre>
 <li>지금부터 이 문제를 해결하는 방법을 알아 보자.<br />
 다만! 우리는 아직 서버에서 데이터를 받아오는 방법을 모르니까 일단 서버에서 데이터를 받았다고 가정하고, 그 데이터를 출력하는 방법을 알아보자.</li>
 </ul>
-<doc-anchor-target id="12-과일-데이터-만들기1">
+<doc-anchor-target id="13-과일-데이터-만들기1">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#12-과일-데이터-만들기1">#</doc-anchor-trigger>
-        <span>1.2. 과일 데이터 만들기1</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#13-과일-데이터-만들기1">#</doc-anchor-trigger>
+        <span>1.3. 과일 데이터 만들기1</span>
     </h3>
 </doc-anchor-target>
 <ul>
@@ -307,10 +346,10 @@ function App() {
 
 export default App;</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="13-과일-데이터-만들기2">
+<doc-anchor-target id="14-과일-데이터-만들기2">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#13-과일-데이터-만들기2">#</doc-anchor-trigger>
-        <span>1.3. 과일 데이터 만들기2</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#14-과일-데이터-만들기2">#</doc-anchor-trigger>
+        <span>1.4. 과일 데이터 만들기2</span>
     </h3>
 </doc-anchor-target>
 <ul>
