@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/retype-react">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.768126630404">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.768126868871">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -38,12 +38,12 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.768126630404" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.768126868871" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.768126630404" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.768126868871" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.768126630404" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.768126630404" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.768126868871" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.768126868871" defer></script>
 
     <style>
       @import url(https://qwerewqwerew.github.io/source/style/common.css);
@@ -295,8 +295,8 @@ function App() {
 	return (
 		&lt;div&gt;
 			&lt;h1&gt;Hello&lt;/h1&gt;
-			&lt;Fruit fav='banana' /&gt;
-			&lt;Fruit fav='orange' /&gt;
+			&lt;Fruit fav='바나나' /&gt;
+			&lt;Fruit fav='오렌지' /&gt;
 			&lt;Fruit fav='apple' /&gt;
 			&lt;Fruit fav='melon' /&gt;
 		&lt;/div&gt;
@@ -336,8 +336,8 @@ function App() {
 	return (
 		&lt;div&gt;
 			&lt;h1&gt;Hello&lt;/h1&gt;
-			&lt;Fruit fav='banana' /&gt;
-			&lt;Fruit fav='orange' /&gt;
+			&lt;Fruit fav='바나나' /&gt;
+			&lt;Fruit fav='오렌지' /&gt;
 			&lt;Fruit fav='apple' /&gt;
 			&lt;Fruit fav='melon' /&gt;
 		&lt;/div&gt;
@@ -367,10 +367,10 @@ export default App;</code></pre>
 </ul>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <pre class="language-jsx"><code v-pre class="language-jsx">const fruitDB = [
-	{ name: 'banana', image: 'http://qwerew.cafe24.com/images/banana.png' },
-	{ name: 'orange', image: 'http://qwerew.cafe24.com/images/orange.png' },
-	{ name: 'apple', image: 'http://qwerew.cafe24.com/images/apple.png' },
-	{ name: 'melon', image: 'http://qwerew.cafe24.com/images/melon.jpg' },
+	{ name: '바나나 ', image: 'http://qwerew.cafe24.com/images/banana.png' },
+	{ name: '오렌지', image: 'http://qwerew.cafe24.com/images/orange.png' },
+	{ name: '사과', image: 'http://qwerew.cafe24.com/images/apple.png' },
+	{  name: '메론', image: 'http://qwerew.cafe24.com/images/melon.jpg' },
 ];
 
 ...
@@ -483,11 +483,11 @@ console.log(add);</code></pre>
 <pre class="language-none"><code v-pre class="language-none">(생략...)
 const fruitDB = [
   {
-      name : 'banana',
+      name : '바나나',
       image: 'http://qwerew.cafe24.com/images/banana.png',
   },
   {
-      name : 'orange',
+      name : '오렌지',
       image: 'http://qwerew.cafe24.com/images/orange.png',
   },
 (생략...)</code></pre>
@@ -518,10 +518,10 @@ dish에는 배열에 있는 원소, 즉 객체 [name: &#x27;...&#x27;, image: &#
 </p>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <pre class="language-jsx"><code v-pre class="language-jsx">const fruitDB = [
-	{ name: 'banana', image: 'http://qwerew.cafe24.com/images/banana.png' },
-	{ name: 'orange', image: 'http://qwerew.cafe24.com/images/orange.png' },
-	{ name: 'apple', image: 'http://qwerew.cafe24.com/images/apple.png' },
-	{ name: 'melon', image: 'http://qwerew.cafe24.com/images/melon.jpg' },
+	{ name: '바나나', image: 'http://qwerew.cafe24.com/images/banana.png' },
+	{ name: '오렌지', image: 'http://qwerew.cafe24.com/images/orange.png' },
+	{ name: '사과', image: 'http://qwerew.cafe24.com/images/apple.png' },
+	{  name: '메론', image: 'http://qwerew.cafe24.com/images/melon.jpg' },
 ];
 
 const Fruit = (props) =&gt; {
@@ -586,10 +586,10 @@ export default App;</code></pre>
 </ul>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <pre class="language-jsx"><code v-pre class="language-jsx">const fruitDB = [
-	{ id: 1, name: 'banana', image: 'http://qwerew.cafe24.com/images/banana.png' },
-	{ id: 2, name: 'orange', image: 'http://qwerew.cafe24.com/images/orange.png' },
-	{ id: 3, name: 'apple', image: 'http://qwerew.cafe24.com/images/apple.png' },
-	{ id: 4, name: 'melon', image: 'http://qwerew.cafe24.com/images/melon.jpg' },
+	{ id: 1, name: '바나나', image: 'http://qwerew.cafe24.com/images/banana.png' },
+	{ id: 2, name: '오렌지', image: 'http://qwerew.cafe24.com/images/orange.png' },
+	{ id: 3, name: '사과', image: 'http://qwerew.cafe24.com/images/apple.png' },
+	{ id: 4,  name: '메론', image: 'http://qwerew.cafe24.com/images/melon.jpg' },
 ];</code></pre>
 </doc-codeblock></div>
 <ul>
@@ -597,12 +597,12 @@ export default App;</code></pre>
 <li>그리고 나면 아래와 같이 key prop을 추가하면 바로 경고 문구가 사라진 것을 볼 수 있다.</li>
 </ul>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<pre class="language-jsx"><code v-pre class="language-jsx">/* import Orange from './Orange'; */
+<pre class="language-jsx"><code v-pre class="language-jsx">/* import 오렌지 from './오렌지'; */
 const fruitDB = [
-	{ id: 1, name: 'banana', image: 'http://qwerew.cafe24.com/images/banana.png' },
-	{ id: 2, name: 'orange', image: 'http://qwerew.cafe24.com/images/orange.png' },
-	{ id: 3, name: 'apple', image: 'http://qwerew.cafe24.com/images/apple.png' },
-	{ id: 4, name: 'melon', image: 'http://qwerew.cafe24.com/images/melon.jpg' },
+	{ id: 1, name: '바나나', image: 'http://qwerew.cafe24.com/images/banana.png' },
+	{ id: 2, name: '오렌지', image: 'http://qwerew.cafe24.com/images/orange.png' },
+	{ id: 3, name: '사과', image: 'http://qwerew.cafe24.com/images/apple.png' },
+	{ id: 4,  name: '메론', image: 'http://qwerew.cafe24.com/images/melon.jpg' },
 ];
 
 const Fruit = (props) =&gt; {
@@ -668,12 +668,12 @@ export default App;</code></pre>
 <li>그런 다음 renderFruit() 함수를 정의하자</li>
 </ul>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
-<pre class="language-jsx"><code v-pre class="language-jsx">/* import Orange from './Orange'; */
+<pre class="language-jsx"><code v-pre class="language-jsx">/* import 오렌지 from './오렌지'; */
 const fruitDB = [
-	{ id: 1, name: 'banana', image: 'http://qwerew.cafe24.com/images/banana.png' },
-	{ id: 2, name: 'orange', image: 'http://qwerew.cafe24.com/images/orange.png' },
-	{ id: 3, name: 'apple', image: 'http://qwerew.cafe24.com/images/apple.png' },
-	{ id: 4, name: 'melon', image: 'http://qwerew.cafe24.com/images/melon.jpg' },
+	{ id: 1, name: '바나나', image: 'http://qwerew.cafe24.com/images/banana.png' },
+	{ id: 2, name: '오렌지', image: 'http://qwerew.cafe24.com/images/orange.png' },
+	{ id: 3, name: '사과', image: 'http://qwerew.cafe24.com/images/apple.png' },
+	{ id: 4,  name: '메론', image: 'http://qwerew.cafe24.com/images/melon.jpg' },
 ];
 
 const Fruit = (props) =&gt; {
@@ -742,10 +742,10 @@ function App() {
 </ul>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <pre class="language-jsx"><code v-pre class="language-jsx">const fruitDB = [
-	{ id: 1, name: 'banana', image: 'http://qwerew.cafe24.com/images/banana.png' },
-	{ id: 2, name: 'orange', image: 'http://qwerew.cafe24.com/images/orange.png' },
-	{ id: 3, name: 'apple', image: 'http://qwerew.cafe24.com/images/apple.png' },
-	{ id: 4, name: 'melon', image: 'http://qwerew.cafe24.com/images/melon.jpg' },
+	{ id: 1, name: '바나나', image: 'http://qwerew.cafe24.com/images/banana.png' },
+	{ id: 2, name: '오렌지', image: 'http://qwerew.cafe24.com/images/orange.png' },
+	{ id: 3, name: '사과', image: 'http://qwerew.cafe24.com/images/apple.png' },
+	{ id: 4,  name: '메론', image: 'http://qwerew.cafe24.com/images/melon.jpg' },
 ];
 
 const Fruit = (props) =&gt; {
