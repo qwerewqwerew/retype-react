@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/retype-react">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.768129697934">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.768137485817">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -38,12 +38,12 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.768129697934" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.768137485817" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.768129697934" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.768137485817" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.768129697934" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.768129697934" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.768137485817" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.768137485817" defer></script>
 
     <style>
       @import url(https://qwerewqwerew.github.io/source/style/common.css);
@@ -320,7 +320,7 @@ export default App;</code></pre>
     </h3>
 </doc-anchor-target>
 <ul>
-<li>서버에서 넘어온 데이터를 저장할 수 있도록 fruitILike라는 변수를 만든 다음 빈 배열을 할당하자.<br />
+<li>서버에서 넘어온 데이터를 저장할 수 있도록 fruitIDB라는 변수를 만든 다음 빈 배열을 할당하자.<br />
 그리고 아쉽지만 App 컴포넌트 안에 한 땀 한 땀 입력했던 Fruit 컴포넌트는 모두 삭제하자.</li>
 </ul>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
@@ -379,7 +379,7 @@ export default App;</code></pre>
     </h2>
 </doc-anchor-target>
 <ul>
-<li>fruitILike에 있는 데이터로 컴포넌트를 여러 개 만들려면 자바스크립트 함수 map()의 사용 방법을 알아야 한다.</li>
+<li>fruitIDB에 있는 데이터로 컴포넌트를 여러 개 만들려면 자바스크립트 함수 map()의 사용 방법을 알아야 한다.</li>
 </ul>
 <doc-anchor-target id="21-map-함수-사용법-알아보기1">
     <h3>
@@ -473,7 +473,7 @@ console.log(add);</code></pre>
 </doc-anchor-target>
 <ul>
 <li>자 이제 크롬 브라우저에서 벗어나 VSCode 화면으로 돌아가서 ./src/App.js를 보자.<br />
-그리고 fruitILike 배열을 다시 한번 눈으로 확인하면서 map 함수를 어떻게 적용할지 상상해 보자.</li>
+그리고 fruitIDB 배열을 다시 한번 눈으로 확인하면서 map 함수를 어떻게 적용할지 상상해 보자.</li>
 </ul>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">(생략...)
@@ -644,7 +644,7 @@ export default App;</code></pre>
     </h3>
 </doc-anchor-target>
 <ul>
-<li>{fruitILike.map(dish =&gt; ( <Fruit key={dish.id} name={dish.name} picture={dish.image} /> ))}를 {fruitILike.map( renderFruit )}로 변경하자.</li>
+<li>{fruitIDB.map(dish =&gt; ( <Fruit key={dish.id} name={dish.name} picture={dish.image} /> ))}를 {fruitIDB.map( renderFruit )}로 변경하자.</li>
 </ul>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <pre class="language-jsx"><code v-pre class="language-jsx">...
