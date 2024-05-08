@@ -9,15 +9,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/retype-react">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.768210056216">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.768455764433">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
-    <title>레시피앱-5-Hooks</title>
-    <meta name="title" content="레시피앱-5-Hooks">
-    <meta name="description" content="1. Component State(상태관리)">
+    <title>레시피앱-5-컴포넌트의 관리 (useEffect,useState)</title>
+    <meta name="title" content="레시피앱-5-컴포넌트의 관리 (useEffect,useState)">
+    <meta name="description" content="1.1. 시작파일">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://qwerewqwerew.github.io/retype-react/레시피앱/5/">
@@ -25,24 +25,25 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://qwerewqwerew.github.io/retype-react/레시피앱/5/">
-    <meta property="og:title" content="레시피앱-5-Hooks">
-    <meta property="og:description" content="1. Component State(상태관리)">
+    <meta property="og:title" content="레시피앱-5-컴포넌트의 관리 (useEffect,useState)">
+    <meta property="og:description" content="1.1. 시작파일">
     <meta property="og:image" content="https://qwerewqwerew.github.io/retype-react/레시피앱/assets/5-26.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://qwerewqwerew.github.io/retype-react/레시피앱/5/">
-    <meta property="twitter:title" content="레시피앱-5-Hooks">
-    <meta property="twitter:description" content="1. Component State(상태관리)">
+    <meta property="twitter:title" content="레시피앱-5-컴포넌트의 관리 (useEffect,useState)">
+    <meta property="twitter:description" content="1.1. 시작파일">
     <meta property="twitter:image" content="https://qwerewqwerew.github.io/retype-react/레시피앱/assets/5-26.png">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.768210056216" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.768455764433" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.768210056216" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.768455764433" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.768210056216" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.768455764433" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.768455764433" defer></script>
 
     <style>
       @import url(https://qwerewqwerew.github.io/source/style/common.css);
@@ -177,10 +178,10 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="레시피앱-5-hooks" class="break-words">
+<doc-anchor-target id="레시피앱-5-컴포넌트의-관리-useeffectusestate" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#레시피앱-5-hooks">#</doc-anchor-trigger>
-        <span>레시피앱-5-Hooks</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#레시피앱-5-컴포넌트의-관리-useeffectusestate">#</doc-anchor-trigger>
+        <span>레시피앱-5-컴포넌트의 관리 (useEffect,useState)</span>
     </h1>
 </doc-anchor-target>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
@@ -197,13 +198,23 @@
     </h3>
 </doc-anchor-target>
 <ul>
+<li><doc-anchor-trigger to="#11-%EC%8B%9C%EC%9E%91%ED%8C%8C%EC%9D%BC">1.1. 시작파일</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#12-%EC%99%84%EB%A3%8C%ED%8C%8C%EC%9D%BC">1.2. 완료파일</doc-anchor-trigger></li>
 <li><doc-anchor-trigger to="#1-component-state%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC">1. Component State(상태관리)</doc-anchor-trigger>
 <ul>
 <li><doc-anchor-trigger to="#11-%ED%95%A8%EC%88%98%ED%98%95-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%9D%98-%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC">1.1. 함수형 컴포넌트의 상태관리</doc-anchor-trigger>
 <ul>
-<li><doc-anchor-trigger to="#111-usestate">1.1.1. useState</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#111-usestate">1.1.1. useState()</doc-anchor-trigger>
+<ul>
+<li><doc-anchor-trigger to="#1111-%EC%B9%B4%EC%9A%B4%ED%84%B0%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90-1">1.1.1.1. 카운터를 만들어보자-1</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#1112-%EC%B9%B4%EC%9A%B4%ED%84%B0%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90-2">1.1.1.2. 카운터를 만들어보자-2</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#1113-%EC%B9%B4%EC%9A%B4%ED%84%B0%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90-3">1.1.1.3. 카운터를 만들어보자-3</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#1114-%EC%B9%B4%EC%9A%B4%ED%84%B0%EB%A5%BC-%EA%B0%9C%EC%84%A0-%ED%95%B4%EB%B3%B4%EC%9E%90">1.1.1.4. 카운터를 개선 해보자</doc-anchor-trigger></li>
 </ul>
 </li>
+</ul>
+</li>
+<li><doc-anchor-trigger to="#12-%ED%80%B4%EC%A6%88%ED%80%B4%EC%A6%88">1.2. 퀴즈퀴즈</doc-anchor-trigger></li>
 </ul>
 </li>
 <li><doc-anchor-trigger to="#2-component-lifecycle%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0">2. Component LifeCycle(생명주기)</doc-anchor-trigger>
@@ -216,45 +227,106 @@
 </li>
 <li><doc-anchor-trigger to="#22-%ED%95%A8%EC%88%98%ED%98%95-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%9D%98-%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0">2.2. 함수형 컴포넌트의 생명주기</doc-anchor-trigger>
 <ul>
-<li><doc-anchor-trigger to="#221-useeffect">2.2.1. useEffect</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#221-useeffect">2.2.1. useEffect</doc-anchor-trigger>
+<ul>
+<li><doc-anchor-trigger to="#2211-%EB%AC%B4%ED%95%9C%EB%A3%A8%ED%94%84-%EB%AC%B8%EC%A0%9C%EC%83%81%ED%99%A9-%EB%A7%8C%EB%93%A4%EA%B8%B0">2.2.1.1. 무한루프 문제상황 만들기</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#2212-mount-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EB%A0%8C%EB%8D%94%EB%A7%81-%EC%A7%81%EC%A0%84-%EB%94%B1-%ED%95%9C%EB%B2%88-%EC%8B%A4%ED%96%89">2.2.1.2. Mount-컴포넌트 렌더링 직전 딱 한번 실행</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#2213-update-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EB%A0%8C%EB%8D%94%EC%8B%9C">2.2.1.3. Update-컴포넌트 렌더시</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#2214-unmount-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EA%B0%80-%EC%82%AC%EB%9D%BC%EC%A7%88%EB%95%8C-%EC%8B%A4%ED%96%89">2.2.1.4. UnMount-컴포넌트가 사라질때 실행</doc-anchor-trigger></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-<blockquote class="my-box-blue">
+</li>
+</ul>
+<hr>
 <p>3차시 컴포넌트의 props 를 기억 할 것이다.<br />
-props란 컴포넌트 간 주고받는 데이터이며 부모가 자식에게 전달할수 있다고 배웠다.<br />
-그리고 상황예시로 여러 친구를 초대하고 한 테이블 위 3개의 동일한 접시에 3종류의 각기 다른 음식을 전달하는<br />
-사례를 들어 설명하였다.<br />
+props란 컴포넌트 간 주고받는 데이터이며 부모가 자식에게 전달할수 있다고 배웠다.</p>
+<p>예시로 여러 친구를 초대하고 한 테이블 위 3개의 동일한 접시에 3종류의 각기 다른 음식을 전달하는 사례를 들어 설명하였다. <a href="https://www.youtube.com/watch?v=ReP1iOyNxF4"><span class="docs-emoji">&#x1F517;</span> 영상링크 18:29</a><br />
+<strong>그림 1</strong> 을 리액트 컴포넌트로 구현 할 경우 <strong>그림 2</strong> 의 구조가 될 것 이다.<br />
+햄버거,딸기,사과는 컴포넌트로 전달되는 props 즉 속성의 값이 된다.<br />
+<figure class="content-center">
+    <img src="../assets/5-26.png" alt="" class="w80">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>이번 차시의 학습 내용은 아래의 그림처럼 친구가 음식을 먹어버렸을 경우 이다.</p>
+<p class="h5"><strong>Plate 컴포넌트의 햄버거라는 값이 있다가 없어지게 하려면 어떻게 해야 할까?</strong><br />
+<figure class="content-center">
+    <img src="../assets/5-27.jpg" alt="" class="w80">
+    <figcaption class="caption"></figcaption>
+</figure>
+<br />
+Plate 컴포넌트의 햄버거가 <mark>있는 상태에서 없는 상태로 바꾸면</mark> 된다. </p>
+<p class="h5">컴포넌트의 상태관리 와 라이프 사이클에 대해 알아보자 </p>
+<hr>
+<doc-anchor-target id="11-시작파일">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#11-시작파일">#</doc-anchor-trigger>
+        <span>1.1. 시작파일</span>
+    </h2>
+</doc-anchor-target>
+<blockquote>
+<p>만약 전시간 파일이 없을 경우 아래의 파일을 다운로드 하여 진행한다<br />
+<a href="../assets/05/start.zip" target="_blank" class="no-link inline-flex align-middle items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-green-500 hover:bg-green-700 text-white px-4 h-10 text-sm rounded-md">
+    <span><svg xmlns="http://www.w3.org/2000/svg" class="mb-px inline-flex mr-2" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M4.75 17.25a.75.75 0 0 1 .75.75v2.25c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V18a.75.75 0 0 1 1.5 0v2.25A1.75 1.75 0 0 1 18.25 22H5.75A1.75 1.75 0 0 1 4 20.25V18a.75.75 0 0 1 .75-.75Z"/><path d="M5.22 9.97a.749.749 0 0 1 1.06 0l4.97 4.969V2.75a.75.75 0 0 1 1.5 0v12.189l4.97-4.969a.749.749 0 1 1 1.06 1.06l-6.25 6.25a.749.749 0 0 1-1.06 0l-6.25-6.25a.749.749 0 0 1 0-1.06Z"/></g></svg></span>
+    <span>지난 수업 파일</span>
+</a></p>
+</blockquote>
+<doc-panel id="파일활용방법" collapsed>
+    <template #title>파일활용방법</template>
+<ol>
+<li>다운로드 받은 start.zip 파일의 압축을 푼다</li>
+<li>새 리액트 앱을 설치한다. 리액트 앱 설치를 모를경우 아래 링크를 참고한다.<br />
 <div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
     <div class="flex items-center text-blue-500 dark:text-blue-400">
         <span class="inline-block mb-px">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path d="M14.78 3.653a3.936 3.936 0 1 1 5.567 5.567l-3.627 3.627a3.936 3.936 0 0 1-5.88-.353.75.75 0 0 0-1.18.928 5.436 5.436 0 0 0 8.12.486l3.628-3.628a5.436 5.436 0 1 0-7.688-7.688l-3 3a.75.75 0 0 0 1.06 1.061l3-3Z"/><path d="M7.28 11.153a3.936 3.936 0 0 1 5.88.353.75.75 0 0 0 1.18-.928 5.436 5.436 0 0 0-8.12-.486L2.592 13.72a5.436 5.436 0 1 0 7.688 7.688l3-3a.75.75 0 1 0-1.06-1.06l-3 3a3.936 3.936 0 0 1-5.567-5.568l3.627-3.627Z"/></svg>
         </span>
-        <span class="inline-block font-medium ml-2">영상링크 18:29</span>
+        <span class="inline-block font-medium ml-2">리액트 설치안내</span>
     </div>
     <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
-        <span>https://www.youtube.com/watch?v=ReP1iOyNxF4</span>
+        <span>../../리액트좀해라/1/</span>
     </div>
-    <a href="https://www.youtube.com/watch?v=ReP1iOyNxF4" target="_blank" class="absolute block inset-0"></a>
+    <a href="../../리액트좀해라/1/" target="_blank" class="absolute block inset-0"></a>
 </div>
-<br />
-그림 1을 리액트 컴포넌트로 구현 할 경우 그림 2 의 구조가 될 것 이다.<br />
-햄버거,딸기,사과는 컴포넌트로 전달되는 props 즉 속성의 값이 된다.<br />
-<img src="../assets/5-26.png" class="w50" alt="" /></p>
-<p class="blue">이번 차시 학습 내용은 아래의 그림처럼 친구가 음식을 먹어버렸을 경우 이다.<br />
-<strong>Plate 컴포넌트의 햄버거라는 값이 있다가 없어지게 하려면 어떻게 해야 할까?</strong> <br />
-<img src="../assets/5-27.jpg" class="w50" alt="" /></p>
-<p class="h5">Plate 컴포넌트의 햄버거가 <mark>있는 상태에서 없는 상태로 바꾸면</mark> 된다. </p>
-<p class="h5">컴포넌트 내부의 데이터를 변경하는 것을  <strong>상태관리</strong> 라고 하며 상태관리를 이해하려면 컴포넌트의 LifeCycle도 이해해야 한다. </p>
-</blockquote>
+</li>
+<li>리액트 앱의 설치가 왼료 되었으면 1번의 파일압축을 푼다</li>
+<li>압축을 풀게 되면 start/src 폴더가 있다.</li>
+<li>2번의 src폴더에 4번의 src 폴더를 덮어 씌운다.<br />
+<img src="../assets/05-02_643.jpg" alt="" /></li>
+<li>2번의 폴더를 루트로 선택하여 vscode를 연다.</li>
+<li>vscode 의 터미널에 npm start 를 입력하여 앱을 실행한다.</li>
+</ol>
+</doc-panel>
+<doc-anchor-target id="12-완료파일">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#12-완료파일">#</doc-anchor-trigger>
+        <span>1.2. 완료파일</span>
+    </h2>
+</doc-anchor-target>
+<p><a href="./assets/05/chap05_fin.zip" target="_blank" class="no-link inline-flex align-middle items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-green-500 hover:bg-green-700 text-white px-4 h-10 text-sm rounded-md">
+    <span><svg xmlns="http://www.w3.org/2000/svg" class="mb-px inline-flex mr-2" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M4.75 17.25a.75.75 0 0 1 .75.75v2.25c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V18a.75.75 0 0 1 1.5 0v2.25A1.75 1.75 0 0 1 18.25 22H5.75A1.75 1.75 0 0 1 4 20.25V18a.75.75 0 0 1 .75-.75Z"/><path d="M5.22 9.97a.749.749 0 0 1 1.06 0l4.97 4.969V2.75a.75.75 0 0 1 1.5 0v12.189l4.97-4.969a.749.749 0 1 1 1.06 1.06l-6.25 6.25a.749.749 0 0 1-1.06 0l-6.25-6.25a.749.749 0 0 1 0-1.06Z"/></g></svg></span>
+    <span>유튜브강의 완료 파일</span>
+</a></p>
 <doc-anchor-target id="1-component-state상태관리">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#1-component-state상태관리">#</doc-anchor-trigger>
         <span>1. Component State(상태관리)</span>
     </h2>
 </doc-anchor-target>
+<doc-panel id="클래스형-vs-함수형-상태관리" collapsed>
+    <template #title>클래스형 vs 함수형 상태관리</template>
+<p>아래 코드샌드박스의 코드에서  Timer.js 는 함수형 컴포넌트의 상태관리 예시이고 Timer2.js는 클래스형 컴포넌트의 상태관리예시이다.</p>
+<p>
+<figure>
+    <div class="relative w-full mb-6 overflow-hidden" style="height: 900px; max-width: 100%;">
+        <iframe class="w-full h-full border-0" src="https://codesandbox.io/p/sandbox/riaegteu-usestate-qg9dyg" allowfullscreen></iframe>
+    </div>
+</figure>
+</p>
+</doc-panel>
 <doc-anchor-target id="11-함수형-컴포넌트의-상태관리">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#11-함수형-컴포넌트의-상태관리">#</doc-anchor-trigger>
@@ -264,9 +336,209 @@ props란 컴포넌트 간 주고받는 데이터이며 부모가 자식에게 �
 <doc-anchor-target id="111-usestate">
     <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#111-usestate">#</doc-anchor-trigger>
-        <span>1.1.1. useState</span>
+        <span>1.1.1. useState()</span>
     </h4>
 </doc-anchor-target>
+<div class="my-box-blue"><p>
+<div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path d="M14.78 3.653a3.936 3.936 0 1 1 5.567 5.567l-3.627 3.627a3.936 3.936 0 0 1-5.88-.353.75.75 0 0 0-1.18.928 5.436 5.436 0 0 0 8.12.486l3.628-3.628a5.436 5.436 0 1 0-7.688-7.688l-3 3a.75.75 0 0 0 1.06 1.061l3-3Z"/><path d="M7.28 11.153a3.936 3.936 0 0 1 5.88.353.75.75 0 0 0 1.18-.928 5.436 5.436 0 0 0-8.12-.486L2.592 13.72a5.436 5.436 0 1 0 7.688 7.688l3-3a.75.75 0 1 0-1.06-1.06l-3 3a3.936 3.936 0 0 1-5.567-5.568l3.627-3.627Z"/></svg>
+        </span>
+        <span class="inline-block font-medium ml-2">공식참조문서</span>
+    </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>https://react.dev/reference/react/useState</span>
+    </div>
+    <a href="https://react.dev/reference/react/useState" target="_blank" class="absolute block inset-0"></a>
+</div>
+</p>
+<p>위에서 언급했듯 컴포넌트 내부에서 A -&gt; B 로 변경돼야 하는 것들이 있다.</p>
+<p class="shadow">예를 들면 버튼컴포넌트의 클릭시 텍스트가 로그인 -&gt; 로그아웃 으로 바뀌는 경우를 생각해 볼수 있다.<br />
+<img src="../assets/button.gif" alt="" /> </p>
+<p>위의 그림과 같은 사례가 컴포넌트 내 데이터가 변경되는 사례이다.</p>
+<p>이런 경우 <code v-pre>useState()</code> 라는 리액트의 <a href="../../reference/hooks/"><span class="docs-emoji">&#x1F517;</span>Hook</a>을 사용한다.<br />
+Hook이란 간단히 말하면 리액트에서 제공하는 메서드이다.</p>
+<p><em>리액트 v16 이하에서는 컴포넌트의 형태에 따라 state 와 Hook 을 구분하였으나 v16.8이상부터는 useState 를 사용하여 처리한다.</em></p>
+<p class="h5">함수형 컴포넌트에서는 useState() 라는 훅을 사용하여 컴포넌트의 상태관리를 한다  </p>
+<details markdown='block'>
+  <summary>
+ 🐨<i class="c-light-70">보충설명 : 컴포넌트 내부의 데이터 변경이 도대체 무슨 말일까?</i>
+  </summary>
+  <pre>컴포넌트에 대한 이해가 충분치 않을 경우 내부의 데이터 라는 말이 이해가 선뜻 되지 않는다.</pre>
+  <pre>컴포넌트는 쉽게 말해 화면 구현 시 외형이 유사한 컨테이닝 블록들을 함수로 만들어 놓고 불러서 사용하는 것이다.</pre>
+  <pre>비슷한 외형을 가진 구조는 함수로 만들어 사용하고 섹션별 콘텐츠는 props나 state 라는 데이터로 주입한다.</pre>
+  <pre>이때 다른 컴포넌트에서 주입되는 데이터의 이름은 props 컴포넌트 함수 안에서 주입되는 데이터의 이름은 state라고 한다</pre>
+</details>
+</div>
+<div class="my-box-blue"><p class="h6 c-tone-20">기본문법 </p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-javascript"><code v-pre class="language-javascript">import { useState } from 'react';
+const [&lt;상태 값 저장 변수&gt;, &lt;상태 값 갱신 함수&gt;] = useState(&lt;상태 초기 값&gt;);</code></pre>
+</doc-codeblock></div>
+</div>
+<doc-anchor-target id="1111-카운터를-만들어보자-1">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#1111-카운터를-만들어보자-1">#</doc-anchor-trigger>
+        <span>1.1.1.1. 카운터를 만들어보자-1</span>
+    </h5>
+</doc-anchor-target>
+<ol>
+<li>src/Counter.js 파일을 생성한다.
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">Counter.js</div>
+<pre class="language-javascript"><code v-pre class="language-javascript"> const Counter = () =&gt; {
+ 	return (
+ 		&lt;&gt;
+ 			&lt;div&gt;Counter&lt;/div&gt;
+ 		&lt;/&gt;
+ 	);
+ };
+ export default Counter;</code></pre>
+</doc-codeblock></div>
+</li>
+<li>Counter 컴포넌트를 App 컴포넌트에서 임포트한다.
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">App.js</div>
+<pre class="language-javascript"><code v-pre class="language-javascript"> import Counter from &quot;./Counter&quot;;
+ ...
+ function App() {
+ 	return (
+ ...
+ 		&lt;Counter /&gt;
+ ...</code></pre>
+</doc-codeblock></div>
+</li>
+<li>Counter 컴포넌트 상단에 useState 임포트한다.<br />
+useState란 리액트의 훅 종류의 하나로 리액트에서 제공하는 내장 함수이다.<br />
+제이쿼리의 show(), hide() 와 유사하다.<br />
+Counter 컴포넌트의 내부에 콘솔로그로 useState 함수의 반환값을 출력해본다.
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">Counter.js</div>
+<pre class="language-javascript"><code v-pre class="language-javascript"> import { useState } from 'react';
+ const Counter = () =&gt; {
+ 	console.log(useState());
+ ...</code></pre>
+</doc-codeblock></div>
+</li>
+</ol>
+<blockquote>
+<p>useState함수(훅)를 콘솔창에서 호출시 반환되는 값이 있는데 배열임을 알수있다.<br />
+두개의 값이 반환되며 0번에는 변수를 선언하였으나 초기화하지 않았을때 볼수있는 undefined 자료형이 보이고 1번에는 함수가 보인다.<br />
+<img src="../assets/5-1.jpg" class="w60 shadow" alt="" /><br />
+<strong>리액트의 훅은 사용시 import 해야하며 컴포넌트 함수내에 작성해야 한다.</strong></p>
+</blockquote>
+<hr>
+<doc-anchor-target id="1112-카운터를-만들어보자-2">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#1112-카운터를-만들어보자-2">#</doc-anchor-trigger>
+        <span>1.1.1.2. 카운터를 만들어보자-2</span>
+    </h5>
+</doc-anchor-target>
+<ol>
+<li><p>변수 num 을 선언하고 useState훅을 호출하면서 초기값으로 0 전달한다.</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">Counter.js</div>
+<pre class="language-javascript"><code v-pre class="language-javascript"> import { useState } from 'react';
+ const Counter = () =&gt; {
+ 	let num = useState(0);
+ 		console.log(num);
+ ...</code></pre>
+</doc-codeblock></div>
+<blockquote>
+<p>콘솔로그에 num 변수의 값을 확인하면 undefined 가 아닌 0이 확인된다.<br />
+인덱스번호 1번에 반환 되는 함수는 지금 초기화한 이 변수의 값을 업데이트하는 함수이다.<br />
+<img src="../assets/5-2.png" class="shadow" alt="" /></p>
+</blockquote>
+</li>
+<li><p>num의 반환값이 배열이므로 배열내 원소들을 각각 변수에 할당해보자</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">Counter.js</div>
+<pre class="language-javascript"><code v-pre class="language-javascript"> ...
+ const Counter = () =&gt; {
+ 	let num = useState(0);
+ 	let count=num[0];
+ 	let setCount=num[1];
+ 	console.log(count);
+ 	console.log(setCount);
+ ...</code></pre>
+</doc-codeblock></div>
+</li>
+</ol>
+<blockquote>
+<p>변수 count 에는 num 의 첫번째 값이 확인된다.<br />
+변수 setCount 에는 num 의 두번째 값이 확인된다.<br />
+<img src="../assets/5-3.png" class="shadow" alt="" /></p>
+</blockquote>
+<hr>
+<doc-anchor-target id="1113-카운터를-만들어보자-3">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#1113-카운터를-만들어보자-3">#</doc-anchor-trigger>
+        <span>1.1.1.3. 카운터를 만들어보자-3</span>
+    </h5>
+</doc-anchor-target>
+<ol>
+<li>카운트함수를 작성한다.
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">Counter.js</div>
+<pre class="language-javascript"><code v-pre class="language-javascript"> ...
+ const updateCount = () =&gt; {
+ 	setCount(count + 1);
+ };
+ ...</code></pre>
+</doc-codeblock></div>
+</li>
+<li>버튼에 이벤트리스너를 연결한다. <code v-pre>h1</code> 사이의 데이터를 변수 로 수정한다.
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">Counter.js</div>
+<pre class="language-javascript"><code v-pre class="language-javascript"> ...
+ return (
+ 	&lt;&gt;
+ 		&lt;h1&gt;{count}&lt;/h1&gt;
+ 		&lt;button onClick={updateCount}&gt;클릭&lt;/button&gt;
+ 	&lt;/&gt;
+ );
+ ...</code></pre>
+</doc-codeblock></div>
+<div class="my-box-red"><img src="../assets/5-4.png" class="shadow" alt="" /><br />
+이벤트리스너에 바로 setCount 함수호출을 연결할경우 위와 같은 에러 메시지가 확인된다.이유는 리액트에서 컴포넌트를 다루는 방식은 함수이며 자바스크립트의 함수는 호출시 함수내의 모든 변수와 함수가 초기화 되기 때문이다. (자바스크립트의 평가방식)바로 호출하지 말고 변수를 참조하는 방법으로 작성해야 한다.<code v-pre>&lt;button onClick={()=&gt;setCount(count + 1)}&gt;더하기&lt;/button&gt;</code></div>
+</li>
+</ol>
+<p><a href="../../%EB%A6%AC%EC%95%A1%ED%8A%B8%EC%A2%80%ED%95%B4%EB%9D%BC/4/"><span class="docs-emoji">&#x1F517;</span> 리액트의 이벤트 학습하기</a></p>
+<hr>
+<doc-anchor-target id="1114-카운터를-개선-해보자">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#1114-카운터를-개선-해보자">#</doc-anchor-trigger>
+        <span>1.1.1.4. 카운터를 개선 해보자</span>
+    </h5>
+</doc-anchor-target>
+<ol>
+<li>useState 훅의 반환값을 변수에 할당 받는 부분을 구조 분해 할당 문법을 사용하면 간결하게 수정할수 있다.
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">Counter.js</div>
+<pre class="language-javascript"><code v-pre class="language-javascript"> ...
+ let [count, setCount] = useState(0);
+ ...</code></pre>
+</doc-codeblock></div>
+</li>
+</ol>
+<doc-anchor-target id="12-퀴즈퀴즈">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#12-퀴즈퀴즈">#</doc-anchor-trigger>
+        <span>1.2. 퀴즈퀴즈</span>
+    </h3>
+</doc-anchor-target>
+<p>실행화면<br />
+<figure class="content-center">
+    <img src="../assets/5-1.gif" alt="" class="shadow">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">지시문</div>
+<pre class="language-markdown"><code v-pre class="language-markdown">컴포넌트를 생성하여 위의 그림처럼 클릭하면 상태를 업데이트 한다.
+🍔 를 클릭하면 🍗 으로 상태가 1회 변경되도록 한다. (토글아님)</code></pre>
+</doc-codeblock></div>
 <doc-anchor-target id="2-component-lifecycle생명주기">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#2-component-lifecycle생명주기">#</doc-anchor-trigger>
@@ -277,7 +549,7 @@ props란 컴포넌트 간 주고받는 데이터이며 부모가 자식에게 �
 <p>컴포넌트 라이프사이클은 컴포넌트의 생성부터 소멸에 이르는 일련의 주기를 말한다.<br />
 모든 리액트 컴포넌트는 Lifecycle을 가진다.<br />
 리액트의 컴포넌트 유형별(클래스,함수) 생명주기 관리방식의 차이가 있다<br />
-우리는 함수형 컴포넌트의 생명주기만을 다룰 것이며 클래스형의 생명주기는 교안의 자료를 참고하도록 하자.</p>
+우리는 함수형 컴포넌트의 생명주기만을 다룰 것이며 클래스형의 생명주기는 아래 2.1의 자료를 참고하도록 하자.</p>
 </blockquote>
 <doc-anchor-target id="21-클래스형-컴포넌트와-생명주기">
     <h3>
@@ -332,18 +604,337 @@ props란 컴포넌트 간 주고받는 데이터이며 부모가 자식에게 �
 <img src="../assets/5-9.png" class="shadow w80" alt="alt" /></li>
 </ol>
 </doc-panel>
+<hr>
 <doc-anchor-target id="22-함수형-컴포넌트의-생명주기">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#22-함수형-컴포넌트의-생명주기">#</doc-anchor-trigger>
         <span>2.2. 함수형 컴포넌트의 생명주기</span>
     </h3>
 </doc-anchor-target>
-<doc-anchor-target id="221-useeffect">
+<p>앞서 언급했듯 컴포넌트의 생명주기는 사람의 성장 과정 처럼 컴포넌트가 화면에서 렌더되는 일련의 과정을 의미한다.<br />
+이것을 학습해야 하는 이유는 생명주기별 사용할수 있는 함수나 발생할수 있는 효과가 다르기 때문이다.<br />
+<figure class="content-center">
+    <img src="../assets/5-33.jpg" alt="" class="shadow w70">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<div class="my-box-blue"><p>함수형 컴포넌트의 생명주기는 3단계로 구성된다.<br />
+아래 그림과 표를 참고하자.</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>단계</th>
+<th>설명</th>
+<th>useEffect 용법</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mount (생성)</td>
+<td>컴포넌트가 생성되는 단계</td>
+<td><code v-pre>useEffect(()=&gt;{},[])</code></td>
+</tr>
+<tr>
+<td>Update (갱신)</td>
+<td>컴포넌트가 그려지고 변화하는 단계</td>
+<td><code v-pre>useEffect(()=&gt;{})</code> <br> <code v-pre>useEffect(()=&gt;{},[변수명])</code></td>
+</tr>
+<tr>
+<td>UnMount (소멸)</td>
+<td>컴포넌트가 사라지는 단계</td>
+<td><code v-pre>useEffect(()=&gt;{ return 실행문 },[])</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="comment_box"><p class="center">함수형 컴포넌트의 생명주기 다이어그램 <br />
+<figure class="content-center">
+    <img src="../assets/5-27.png" alt="react-hooks-flow : https://github.com/donavon/hook-flow">
+    <figcaption class="caption">react-hooks-flow : https://github.com/donavon/hook-flow</figcaption>
+</figure>
+</p>
+</div>
+</div>
+<p class="h5">함수형 컴포넌트에서는 <code v-pre>useEffect()</code> 훅을 사용하여 생명주기를 관리한다. </p>
+<div><doc-anchor-target id="221-useeffect">
     <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#221-useeffect">#</doc-anchor-trigger>
         <span>2.2.1. useEffect</span>
     </h4>
 </doc-anchor-target>
+<p>
+<div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path d="M14.78 3.653a3.936 3.936 0 1 1 5.567 5.567l-3.627 3.627a3.936 3.936 0 0 1-5.88-.353.75.75 0 0 0-1.18.928 5.436 5.436 0 0 0 8.12.486l3.628-3.628a5.436 5.436 0 1 0-7.688-7.688l-3 3a.75.75 0 0 0 1.06 1.061l3-3Z"/><path d="M7.28 11.153a3.936 3.936 0 0 1 5.88.353.75.75 0 0 0 1.18-.928 5.436 5.436 0 0 0-8.12-.486L2.592 13.72a5.436 5.436 0 1 0 7.688 7.688l3-3a.75.75 0 1 0-1.06-1.06l-3 3a3.936 3.936 0 0 1-5.567-5.568l3.627-3.627Z"/></svg>
+        </span>
+        <span class="inline-block font-medium ml-2">공식참조문서</span>
+    </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>https://react.dev/reference/react/useEffect</span>
+    </div>
+    <a href="https://react.dev/reference/react/useEffect" target="_blank" class="absolute block inset-0"></a>
+</div>
+<br />
+useEffect 는 두개의 인수를 받는데 첫번째는 필수이고 두번째는 선택이다.<br />
+첫번째 인수는 함수를 두번쨰 인수는 배열을 받는데 이 두번째 배열에 따라 생명주기가 달라진다.</p>
+<doc-anchor-target id="2211-무한루프-문제상황-만들기">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2211-무한루프-문제상황-만들기">#</doc-anchor-trigger>
+        <span>2.2.1.1. 무한루프 문제상황 만들기</span>
+    </h5>
+</doc-anchor-target>
+<p><doc-anchor-trigger to="#1113-%EC%B9%B4%EC%9A%B4%ED%84%B0%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90-3">카운터만들기 예제</doc-anchor-trigger>에서 버튼 클릭이벤트 발생시 바로 setState 함수를 호출할 경우  <code v-pre>Too many re-renders. React limits ...  infinite loop...</code> 라는 에러가 발생하는 것을 확인했다.<br />
+그래서 우리는 이문제를 별도의 함수를 만들고 상태를 업데이트 하도록 작성하였다. 그후 클릭이벤트 발생시 이 함수를 이벤트핸들러로 전달하여 에러를 해결하였다.</p>
+<p>이번에는 이 문제를 useEffect 를 사용하여 해결해보자.</p>
+<ol>
+<li>LifeCycle 컴포넌트를 만들고 컴포넌트 코드를 작성한다.<br />
+App 컴포넌트에 LifeCycle 컴포넌트를 임포트 한다.
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">LifeCycle.js</div>
+<pre class="language-javascript"><code v-pre class="language-javascript"> import { useState } from 'react';
+
+ const LifeCycle = () =&gt; {
+ 	const [mount, setMount] = useState(0);
+ 	setMount(mount + 1);
+ 	return (
+ 		&lt;&gt;
+ 			&lt;h1&gt;Mount:{mount}&lt;/h1&gt;
+ 		&lt;/&gt;
+ 	);
+ };
+ export default LifeCycle;
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li>아래와 같은 에러가 뜬다.<br />
+state가 변경되면서 컴포넌트 함수가 호출되며 리렌더링되고<br />
+컴포넌트 함수내의 모든 함수와 변수의 값이 초기화 되면서 무한 반복이 일어난다<br />
+<img src="../assets/5-11.png" class="shadow" alt="" /></li>
+</ol>
+<hr>
+<doc-anchor-target id="2212-mount-컴포넌트-렌더링-직전-딱-한번-실행">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2212-mount-컴포넌트-렌더링-직전-딱-한번-실행">#</doc-anchor-trigger>
+        <span>2.2.1.2. Mount-컴포넌트 렌더링 직전 딱 한번 실행</span>
+    </h5>
+</doc-anchor-target>
+<p>위의 에러를 해결해보자</p>
+<div class="my-box-blue"><p class="h5">[마운트시 딱한번 실행] 의존성배열을 비움</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript"><code v-pre class="language-javascript">//의존성 배열에 빈값을 넣으면 컴포넌트 마운트시 한번만 실행된다.
+useEffect(() =&gt; {
+  //실행문
+}, []);
+</code></pre>
+</doc-codeblock></div>
+</div>
+</div>
+<ol>
+<li>LifeCycle 컴포넌트에서 useEffect 를 임포트 한다.</li>
+<li>useEffect 를 작성한다.
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">LifeCycle.js</div>
+<pre class="language-javascript"><code v-pre class="language-javascript"> import { useState, useEffect } from 'react';
+ const LifeCycle = () =&gt; {
+ 	const [mount, setMount] = useState(0);
+ 	useEffect(() =&gt; {
+ 		console.log('마운트 됨');
+ 	}, []);
+ 	return (
+ 		&lt;&gt;
+ 			&lt;h1&gt;
+ 				Mount:{mount} &lt;button onClick={() =&gt; setMount((mount) =&gt; mount + 1)}&gt;click&lt;/button&gt;
+ 			&lt;/h1&gt;
+ 		&lt;/&gt;
+ 	);
+ };
+ export default LifeCycle;</code></pre>
+</doc-codeblock></div>
+</li>
+<li>이제 오류가 사라지고 LifeCycle 컴포넌트의 mount 변수의 값은 버튼을 클릭할떄 마다 증가한다.</li>
+<li><code v-pre>setMount()</code> 함수를 사용하여  <code v-pre>mount</code>변수의 값을 업데이트 할 경우 바로 재할당이 불가하며 콜백함수를 사용해야 하는 점을 주의한다.<br />
+<a href="https://react.dev/reference/react/useState#examples-updater"><span class="docs-emoji">&#x1F517;</span>참조링크</a><br />
+위의 공식사이트 참조문서링크를 보면 이전상태를 기반으로 상태를 업데이트 할 경우 변수의 값을 바로 변경하지 말고 함수를 사용하여 변경하라고 되어있다.</li>
+<li><code v-pre>useEffect()</code>의 인수로 함수와 빈배열을 전달하면 컴포넌트가 <strong>마운트(그려지기 직전) 될때 딱 한번 전달받은 함수를 실행</strong>한다.</li>
+<li>콘솔창을 열고 메시지를 확인하면 useEffect 내에 작성한 콘솔함수는 1회만 실행되고 더이상 실행되지 않는다.<br />
+<img src="./asset/5-12.jpg" alt="" /></li>
+</ol>
+<hr>
+<doc-anchor-target id="2213-update-컴포넌트-렌더시">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2213-update-컴포넌트-렌더시">#</doc-anchor-trigger>
+        <span>2.2.1.3. Update-컴포넌트 렌더시</span>
+    </h5>
+</doc-anchor-target>
+<p>이번에는 컴포넌트가 리렌더 될 때 마다 실행해보자.</p>
+<div class="my-box-blue"><p class="h5">[컴포넌트 리렌더시 실행] 의존성배열을 지움</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript"><code v-pre class="language-javascript">//의존성 배열을 삭제하면 컴포넌트 리렌더시 마다 실행된다.
+useEffect(() =&gt; {
+  //실행문
+});</code></pre>
+</doc-codeblock></div>
+</div>
+<ol>
+<li>LifeCycle.js 를 수정한다. 상태관리를 추가한다.
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">LifeCycle.js</div>
+<pre class="language-javascript" data-line="4-6"><code v-pre class="language-javascript"> ....
+ const [rerender, setRerender] = useState(0);
+ ...
+ useEffect(() =&gt; {
+ 	console.log('리렌더 됨');
+ });
+ return (
+ 	&lt;h1&gt;
+ 		rerender:{rerender} &lt;button onClick={() =&gt; setRerender((rerender) =&gt; rerender + 1)}&gt;click&lt;/button&gt;
+ 	&lt;/h1&gt;
+ ...</code></pre>
+</doc-codeblock></div>
+</li>
+<li>콘솔창을 열고 마운트 버튼과 리렌더 버튼을 마구 눌러 콘솔 메시지 출력횟수를 비교해본다.<br />
+<img src="../assets/5-2.gif" class="w40" alt="마운트는 한번만 출력되고 무엇을 클릭하던 리렌더가 출력된다" /></li>
+</ol>
+<hr>
+<p>이번에는 특정 값 변경시 함수를 실행해보자</p>
+<div class="my-box-blue"><p class="h5">[특정값의 업데이트시 실행] 의존성배열의 값을 특정함</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript"><code v-pre class="language-javascript">// 의존성 배열에 작성한 변수의 값이 변경될때 마다 실행된다.
+useEffect(() =&gt; {
+  //실행문
+},[변수명]);</code></pre>
+</doc-codeblock></div>
+</div>
+<ol>
+<li>아래 코드중 표시된 부분을 추가한다.
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">LifeCycle.js</div>
+<pre class="language-javascript" data-line="6,13-16,25-27"><code v-pre class="language-javascript"> import { useState, useEffect } from 'react';
+
+ const LifeCycle = () =&gt; {
+ 	const [mount, setMount] = useState(0);
+ 	const [rerender, setRerender] = useState(0);
+ 	const [update, setUpdate] = useState(0);
+ 	useEffect(() =&gt; {
+ 		console.log('마운트 됨');
+ 	}, []);
+ 	useEffect(() =&gt; {
+ 		console.log('리렌더 됨');
+ 	});
+ 	useEffect(() =&gt; {
+ 		console.log('업데이트 됨');
+ 	},[update]);
+
+ 	return (
+ 		&lt;&gt;
+ 			&lt;h1&gt;
+ 				Mount:{mount} &lt;button onClick={() =&gt; setMount((mount) =&gt; mount + 1)}&gt;click&lt;/button&gt;
+ 			&lt;/h1&gt;
+ 			&lt;h1&gt;
+ 				rerender:{rerender} &lt;button onClick={() =&gt; setRerender((rerender) =&gt; rerender + 1)}&gt;click&lt;/button&gt;
+ 			&lt;/h1&gt;
+ 			&lt;h1&gt;
+ 				Update:{update} &lt;button onClick={() =&gt; setUpdate((update) =&gt; update + 1)}&gt;click&lt;/button&gt;
+ 			&lt;/h1&gt;
+ 		&lt;/&gt;
+ 	);
+ };
+ export default LifeCycle;</code></pre>
+</doc-codeblock></div>
+</li>
+<li>버튼을 번갈아 클릭하면서 콘솔메시지를 살펴보자.<br />
+업데이트 버튼 클릭시 update 변수의 값이 변경되었기 때문에 컴포넌트의 리렌더후 업데이트가 실행된다.<br />
+그래서 콘솔메시지는 리렌더됨-&gt;업데이트됨 이 확인된다.<br />
+<strong>useEffect의 의존성배열에 값을 넣으면 해당 값이 업데이트 될때 실행된다.</strong></li>
+</ol>
+<hr>
+<doc-anchor-target id="2214-unmount-컴포넌트가-사라질때-실행">
+    <h5>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2214-unmount-컴포넌트가-사라질때-실행">#</doc-anchor-trigger>
+        <span>2.2.1.4. UnMount-컴포넌트가 사라질때 실행</span>
+    </h5>
+</doc-anchor-target>
+<div class="my-box-blue"><p class="h5">[UnMount] 의존성배열 비움 &amp; return</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-javascript"><code v-pre class="language-javascript">useEffect(() =&gt; {
+  return //실행문
+}, []);</code></pre>
+</doc-codeblock></div>
+<p>빈 의존성 배열과 리턴문에 함수를 작성하면 컴포넌트 소멸시 해당함수를 실행하게 된다.</p>
+</div>
+<ol>
+<li><p>UnMount 컴포넌트를 LifeCycle에 중첩하여 작성한다.</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">LifeCycle.js</div>
+<pre class="language-javascript" data-line="3-11,18"><code v-pre class="language-javascript"> import { useState, useEffect } from 'react';
+
+ const UnMount = () =&gt; {
+ 	console.log('타이머준비중');
+ 	useEffect(() =&gt; {
+ 		const timer = setInterval(() =&gt; {
+ 			console.log('타이머진행중');
+ 		}, 1000);
+ 	});
+ 	return &lt;p&gt;타이머진행중&lt;/p&gt;;
+ };
+
+ const LifeCycle = () =&gt; {
+ ...
+ 	return (
+ 		&lt;&gt;
+ ...
+ 			&lt;UnMount /&gt;
+ 		&lt;/&gt;
+ ...</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>콘솔창에서를 확인하면 초단위로 계속 메시지가 실행되는것을 확인한다.<br />
+<img src="../assets/5-25.jpg" alt="" /></p>
+</li>
+<li><p>타이머를 종료하는 버튼을 추가해보자. LifeCycle 컴포넌트 내에 작성한다.<br />
+<a href="../../%EB%A6%AC%EC%95%A1%ED%8A%B8%EC%A2%80%ED%95%B4%EB%9D%BC/7/"><span class="docs-emoji">&#x1F517;</span>동적스타일&amp;조건부렌더링 강의 링크</a></p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">LifeCycle.js</div>
+<pre class="language-javascript"><code v-pre class="language-javascript"> const [stop, setStop] = useState(false);
+ ...</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p><code v-pre>return</code>문 내에 작성한다.</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">LifeCycle.js</div>
+<pre class="language-javascript"><code v-pre class="language-javascript"> &lt;div&gt;
+ 	{!stop ? &lt;UnMount /&gt; : &quot;타이머준비중&quot;}
+ 	&lt;button onClick={() =&gt; setStop(!stop)}&gt;stop&lt;/button&gt;
+ &lt;/div&gt;
+ ...</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>실행화면에서 stop 클릭시 화면은 업데이트 되나 콘솔메시지는 계속 진행 되고 있다.<br />
+<img src="../assets/5-26.jpg" class="w70" alt="" /></p>
+</li>
+<li><p>이제 정리함수를 작성한다. <code v-pre>UnMount</code> 컴포넌트의 useEffect 함수에 작성해야 한다.</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">LifeCycle.js</div>
+<pre class="language-javascript" data-line="7-10"><code v-pre class="language-javascript"> const UnMount = () =&gt; {
+ console.log('타이머준비중');
+ useEffect(() =&gt; {
+ 	const timer = setInterval(() =&gt; {
+ 		console.log('타이머진행중');
+ 	}, 1000);
+ 	return ()=&gt;{
+ 		console.log(&quot;타이머종료&quot;);
+ 		clearInterval(timer)
+ 	};
+ });
+ return &lt;p&gt;타이머진행중&lt;/p&gt;;
+ };</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>이제 stop 버튼을 클릭하면 실행화면과 콘솔메시지가 모두 종료 되었다.</p>
+</li>
+</ol>
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
                                     <span>
@@ -361,6 +952,12 @@ props란 컴포넌트 간 주고받는 데이터이며 부모가 자식에게 �
                                 </a></span>
                                         <span class="mr-2"><a href="../../tags/node/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
                                     <span>node</span>
+                                </a></span>
+                                        <span class="mr-2"><a href="../../tags/usestate/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>usestate</span>
+                                </a></span>
+                                        <span class="mr-2"><a href="../../tags/useeffect/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>useeffect</span>
                                 </a></span>
                                     </span>
                                 </div>
@@ -429,6 +1026,6 @@ props란 컴포넌트 간 주고받는 데이터이며 부모가 자식에게 �
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "레시피앱-5-Hooks", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "레시피앱-5-컴포넌트의 관리 (useEffect,useState)", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
