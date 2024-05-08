@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/retype-react">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.768471694313">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.768473571484">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -17,7 +17,7 @@
     <!-- Primary Meta Tags -->
     <title>레시피앱-5-컴포넌트의 관리 (useEffect,useState)</title>
     <meta name="title" content="레시피앱-5-컴포넌트의 관리 (useEffect,useState)">
-    <meta name="description" content="1.1. 시작파일">
+    <meta name="description" content="1. 시작파일">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://qwerewqwerew.github.io/retype-react/레시피앱/5/">
@@ -26,24 +26,24 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://qwerewqwerew.github.io/retype-react/레시피앱/5/">
     <meta property="og:title" content="레시피앱-5-컴포넌트의 관리 (useEffect,useState)">
-    <meta property="og:description" content="1.1. 시작파일">
+    <meta property="og:description" content="1. 시작파일">
     <meta property="og:image" content="https://qwerewqwerew.github.io/retype-react/레시피앱/assets/5-26.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://qwerewqwerew.github.io/retype-react/레시피앱/5/">
     <meta property="twitter:title" content="레시피앱-5-컴포넌트의 관리 (useEffect,useState)">
-    <meta property="twitter:description" content="1.1. 시작파일">
+    <meta property="twitter:description" content="1. 시작파일">
     <meta property="twitter:image" content="https://qwerewqwerew.github.io/retype-react/레시피앱/assets/5-26.png">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.768471694313" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.768473571484" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.768471694313" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.768473571484" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.768471694313" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.768471694313" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.768473571484" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.768473571484" defer></script>
 
     <style>
       @import url(https://qwerewqwerew.github.io/source/style/common.css);
@@ -198,41 +198,42 @@
     </h3>
 </doc-anchor-target>
 <ul>
-<li><doc-anchor-trigger to="#11-%EC%8B%9C%EC%9E%91%ED%8C%8C%EC%9D%BC">1.1. 시작파일</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#12-%EC%99%84%EB%A3%8C%ED%8C%8C%EC%9D%BC">1.2. 완료파일</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#1-component-state%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC">1. Component State(상태관리)</doc-anchor-trigger>
+<li><doc-anchor-trigger to="#1-%EC%8B%9C%EC%9E%91%ED%8C%8C%EC%9D%BC">1. 시작파일</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#2-%EC%99%84%EB%A3%8C%ED%8C%8C%EC%9D%BC">2. 완료파일</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#3-component-state%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC">3. Component State(상태관리)</doc-anchor-trigger>
 <ul>
-<li><doc-anchor-trigger to="#11-%ED%95%A8%EC%88%98%ED%98%95-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%9D%98-%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC">1.1. 함수형 컴포넌트의 상태관리</doc-anchor-trigger>
+<li><doc-anchor-trigger to="#31-%ED%81%B4%EB%9E%98%EC%8A%A4%ED%98%95-vs-%ED%95%A8%EC%88%98%ED%98%95-%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC">3.1. 클래스형 vs 함수형 상태관리</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#32-%ED%95%A8%EC%88%98%ED%98%95-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%9D%98-%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC">3.2. 함수형 컴포넌트의 상태관리</doc-anchor-trigger>
 <ul>
-<li><doc-anchor-trigger to="#111-usestate">1.1.1. useState()</doc-anchor-trigger>
+<li><doc-anchor-trigger to="#321-usestate">3.2.1. useState()</doc-anchor-trigger>
 <ul>
-<li><doc-anchor-trigger to="#1111-%EC%B9%B4%EC%9A%B4%ED%84%B0%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90-1">1.1.1.1. 카운터를 만들어보자-1</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#1112-%EC%B9%B4%EC%9A%B4%ED%84%B0%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90-2">1.1.1.2. 카운터를 만들어보자-2</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#1113-%EC%B9%B4%EC%9A%B4%ED%84%B0%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90-3">1.1.1.3. 카운터를 만들어보자-3</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#1114-%EC%B9%B4%EC%9A%B4%ED%84%B0%EB%A5%BC-%EA%B0%9C%EC%84%A0-%ED%95%B4%EB%B3%B4%EC%9E%90">1.1.1.4. 카운터를 개선 해보자</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#3211-%EC%B9%B4%EC%9A%B4%ED%84%B0%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90-1">3.2.1.1. 카운터를 만들어보자-1</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#3212-%EC%B9%B4%EC%9A%B4%ED%84%B0%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90-2">3.2.1.2. 카운터를 만들어보자-2</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#3213-%EC%B9%B4%EC%9A%B4%ED%84%B0%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90-3">3.2.1.3. 카운터를 만들어보자-3</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#3214-%EC%B9%B4%EC%9A%B4%ED%84%B0%EB%A5%BC-%EA%B0%9C%EC%84%A0-%ED%95%B4%EB%B3%B4%EC%9E%90">3.2.1.4. 카운터를 개선 해보자</doc-anchor-trigger></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><doc-anchor-trigger to="#12-%ED%80%B4%EC%A6%88%ED%80%B4%EC%A6%88">1.2. 퀴즈퀴즈</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#33-%ED%80%B4%EC%A6%88%ED%80%B4%EC%A6%88">3.3. 퀴즈퀴즈</doc-anchor-trigger></li>
 </ul>
 </li>
-<li><doc-anchor-trigger to="#2-component-lifecycle%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0">2. Component LifeCycle(생명주기)</doc-anchor-trigger>
+<li><doc-anchor-trigger to="#4-component-lifecycle%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0">4. Component LifeCycle(생명주기)</doc-anchor-trigger>
 <ul>
-<li><doc-anchor-trigger to="#21-%ED%81%B4%EB%9E%98%EC%8A%A4%ED%98%95-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%99%80-%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0">2.1. 클래스형 컴포넌트와 생명주기</doc-anchor-trigger>
+<li><doc-anchor-trigger to="#41-%ED%81%B4%EB%9E%98%EC%8A%A4%ED%98%95-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%99%80-%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0">4.1. 클래스형 컴포넌트와 생명주기</doc-anchor-trigger>
 <ul>
-<li><doc-anchor-trigger to="#211-%ED%81%B4%EB%9E%98%EC%8A%A4%ED%98%95-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8">2.1.1. 클래스형 컴포넌트</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#212-%ED%81%B4%EB%9E%98%EC%8A%A4%ED%98%95-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0">2.1.2. 클래스형 컴포넌트 생명주기</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#411-%ED%81%B4%EB%9E%98%EC%8A%A4%ED%98%95-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8">4.1.1. 클래스형 컴포넌트</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#412-%ED%81%B4%EB%9E%98%EC%8A%A4%ED%98%95-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0">4.1.2. 클래스형 컴포넌트 생명주기</doc-anchor-trigger></li>
 </ul>
 </li>
-<li><doc-anchor-trigger to="#22-%ED%95%A8%EC%88%98%ED%98%95-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%9D%98-%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0">2.2. 함수형 컴포넌트의 생명주기</doc-anchor-trigger>
+<li><doc-anchor-trigger to="#42-%ED%95%A8%EC%88%98%ED%98%95-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%9D%98-%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0">4.2. 함수형 컴포넌트의 생명주기</doc-anchor-trigger>
 <ul>
-<li><doc-anchor-trigger to="#221-useeffect">2.2.1. useEffect</doc-anchor-trigger>
+<li><doc-anchor-trigger to="#421-useeffect">4.2.1. useEffect</doc-anchor-trigger>
 <ul>
-<li><doc-anchor-trigger to="#2211-%EB%AC%B4%ED%95%9C%EB%A3%A8%ED%94%84-%EB%AC%B8%EC%A0%9C%EC%83%81%ED%99%A9-%EB%A7%8C%EB%93%A4%EA%B8%B0">2.2.1.1. 무한루프 문제상황 만들기</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#2212-mount-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EB%A0%8C%EB%8D%94%EB%A7%81-%EC%A7%81%EC%A0%84-%EB%94%B1-%ED%95%9C%EB%B2%88-%EC%8B%A4%ED%96%89">2.2.1.2. Mount-컴포넌트 렌더링 직전 딱 한번 실행</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#2213-update-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EB%A0%8C%EB%8D%94%EC%8B%9C">2.2.1.3. Update-컴포넌트 렌더시</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#2214-unmount-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EA%B0%80-%EC%82%AC%EB%9D%BC%EC%A7%88%EB%95%8C-%EC%8B%A4%ED%96%89">2.2.1.4. UnMount-컴포넌트가 사라질때 실행</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#4211-%EB%AC%B4%ED%95%9C%EB%A3%A8%ED%94%84-%EB%AC%B8%EC%A0%9C%EC%83%81%ED%99%A9-%EB%A7%8C%EB%93%A4%EA%B8%B0">4.2.1.1. 무한루프 문제상황 만들기</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#4212-mount-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EB%A0%8C%EB%8D%94%EB%A7%81-%EC%A7%81%EC%A0%84-%EB%94%B1-%ED%95%9C%EB%B2%88-%EC%8B%A4%ED%96%89">4.2.1.2. Mount-컴포넌트 렌더링 직전 딱 한번 실행</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#4213-update-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EB%A0%8C%EB%8D%94%EC%8B%9C">4.2.1.3. Update-컴포넌트 렌더시</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#4214-unmount-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EA%B0%80-%EC%82%AC%EB%9D%BC%EC%A7%88%EB%95%8C-%EC%8B%A4%ED%96%89">4.2.1.4. UnMount-컴포넌트가 사라질때 실행</doc-anchor-trigger></li>
 </ul>
 </li>
 </ul>
@@ -261,10 +262,10 @@ props란 컴포넌트 간 주고받는 데이터이며 부모가 자식에게 �
 Plate 컴포넌트의 햄버거가 <mark>있는 상태에서 없는 상태로 바꾸면</mark> 된다. </p>
 <p class="h5">컴포넌트의 상태관리 와 라이프 사이클에 대해 알아보자 </p>
 <hr>
-<doc-anchor-target id="11-시작파일">
+<doc-anchor-target id="1-시작파일">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#11-시작파일">#</doc-anchor-trigger>
-        <span>1.1. 시작파일</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#1-시작파일">#</doc-anchor-trigger>
+        <span>1. 시작파일</span>
     </h2>
 </doc-anchor-target>
 <blockquote>
@@ -300,21 +301,27 @@ Plate 컴포넌트의 햄버거가 <mark>있는 상태에서 없는 상태로 �
 <li>vscode 의 터미널에 npm start 를 입력하여 앱을 실행한다.</li>
 </ol>
 </doc-panel>
-<doc-anchor-target id="12-완료파일">
+<doc-anchor-target id="2-완료파일">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#12-완료파일">#</doc-anchor-trigger>
-        <span>1.2. 완료파일</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2-완료파일">#</doc-anchor-trigger>
+        <span>2. 완료파일</span>
     </h2>
 </doc-anchor-target>
 <p><a href="./assets/05/chap05_fin.zip" target="_blank" class="no-link inline-flex align-middle items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-green-500 hover:bg-green-700 text-white px-4 h-10 text-sm rounded-md">
     <span><svg xmlns="http://www.w3.org/2000/svg" class="mb-px inline-flex mr-2" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M4.75 17.25a.75.75 0 0 1 .75.75v2.25c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V18a.75.75 0 0 1 1.5 0v2.25A1.75 1.75 0 0 1 18.25 22H5.75A1.75 1.75 0 0 1 4 20.25V18a.75.75 0 0 1 .75-.75Z"/><path d="M5.22 9.97a.749.749 0 0 1 1.06 0l4.97 4.969V2.75a.75.75 0 0 1 1.5 0v12.189l4.97-4.969a.749.749 0 1 1 1.06 1.06l-6.25 6.25a.749.749 0 0 1-1.06 0l-6.25-6.25a.749.749 0 0 1 0-1.06Z"/></g></svg></span>
     <span>유튜브강의 완료 파일</span>
 </a></p>
-<doc-anchor-target id="1-component-state상태관리">
+<doc-anchor-target id="3-component-state상태관리">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#1-component-state상태관리">#</doc-anchor-trigger>
-        <span>1. Component State(상태관리)</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#3-component-state상태관리">#</doc-anchor-trigger>
+        <span>3. Component State(상태관리)</span>
     </h2>
+</doc-anchor-target>
+<doc-anchor-target id="31-클래스형-vs-함수형-상태관리">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#31-클래스형-vs-함수형-상태관리">#</doc-anchor-trigger>
+        <span>3.1. 클래스형 vs 함수형 상태관리</span>
+    </h3>
 </doc-anchor-target>
 <doc-panel id="클래스형-vs-함수형-상태관리" collapsed>
     <template #title>클래스형 vs 함수형 상태관리</template>
@@ -327,16 +334,16 @@ Plate 컴포넌트의 햄버거가 <mark>있는 상태에서 없는 상태로 �
 </figure>
 </p>
 </doc-panel>
-<doc-anchor-target id="11-함수형-컴포넌트의-상태관리">
+<doc-anchor-target id="32-함수형-컴포넌트의-상태관리">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#11-함수형-컴포넌트의-상태관리">#</doc-anchor-trigger>
-        <span>1.1. 함수형 컴포넌트의 상태관리</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#32-함수형-컴포넌트의-상태관리">#</doc-anchor-trigger>
+        <span>3.2. 함수형 컴포넌트의 상태관리</span>
     </h3>
 </doc-anchor-target>
-<doc-anchor-target id="111-usestate">
+<doc-anchor-target id="321-usestate">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#111-usestate">#</doc-anchor-trigger>
-        <span>1.1.1. useState()</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#321-usestate">#</doc-anchor-trigger>
+        <span>3.2.1. useState()</span>
     </h4>
 </doc-anchor-target>
 <div class="my-box-blue"><p>
@@ -354,11 +361,10 @@ Plate 컴포넌트의 햄버거가 <mark>있는 상태에서 없는 상태로 �
 </div>
 </p>
 <p>위에서 언급했듯 컴포넌트 내부에서 A -&gt; B 로 변경돼야 하는 것들이 있다.</p>
-<p class="shadow">예를 들면 버튼컴포넌트의 클릭시 텍스트가 로그인 -&gt; 로그아웃 으로 바뀌는 경우를 생각해 볼수 있다.<br />
+<p class="shadow">예를 들면 아래의 버튼 컴포넌트처럼 클릭시 텍스트가 로그인 -&gt; 로그아웃 으로 바뀌는 경우를 생각해 볼수 있다.<br />
 <img src="../assets/button.gif" alt="" /> </p>
-<p>위의 그림과 같은 사례가 컴포넌트 내 데이터가 변경되는 사례이다.</p>
-<p>이런 경우 <code v-pre>useState()</code> 라는 리액트의 <a href="../../reference/hooks/"><span class="docs-emoji">&#x1F517;</span>Hook</a>을 사용한다.<br />
-Hook이란 간단히 말하면 리액트에서 제공하는 메서드이다.</p>
+<p>이런 경우 <code v-pre>useState()</code> 라는 리액트의 <a href="../../reference/hooks/"><span class="docs-emoji">&#x1F517;</span>Hook</a>을 사용한다.</p>
+<p>Hook이란 간단히 말하면 리액트에서 제공하는 메서드이다.</p>
 <p><em>리액트 v16 이하에서는 컴포넌트의 형태에 따라 state 와 Hook 을 구분하였으나 v16.8이상부터는 useState 를 사용하여 처리한다.</em></p>
 <p class="h5">함수형 컴포넌트에서는 useState() 라는 훅을 사용하여 컴포넌트의 상태관리를 한다  </p>
 <details markdown='block'>
@@ -377,10 +383,10 @@ Hook이란 간단히 말하면 리액트에서 제공하는 메서드이다.</p>
 const [&lt;상태 값 저장 변수&gt;, &lt;상태 값 갱신 함수&gt;] = useState(&lt;상태 초기 값&gt;);</code></pre>
 </doc-codeblock></div>
 </div>
-<doc-anchor-target id="1111-카운터를-만들어보자-1">
+<doc-anchor-target id="3211-카운터를-만들어보자-1">
     <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#1111-카운터를-만들어보자-1">#</doc-anchor-trigger>
-        <span>1.1.1.1. 카운터를 만들어보자-1</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#3211-카운터를-만들어보자-1">#</doc-anchor-trigger>
+        <span>3.2.1.1. 카운터를 만들어보자-1</span>
     </h5>
 </doc-anchor-target>
 <ol>
@@ -429,10 +435,10 @@ Counter 컴포넌트의 내부에 콘솔로그로 useState 함수의 반환값�
 <strong>리액트의 훅은 사용시 import 해야하며 컴포넌트 함수내에 작성해야 한다.</strong></p>
 </blockquote>
 <hr>
-<doc-anchor-target id="1112-카운터를-만들어보자-2">
+<doc-anchor-target id="3212-카운터를-만들어보자-2">
     <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#1112-카운터를-만들어보자-2">#</doc-anchor-trigger>
-        <span>1.1.1.2. 카운터를 만들어보자-2</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#3212-카운터를-만들어보자-2">#</doc-anchor-trigger>
+        <span>3.2.1.2. 카운터를 만들어보자-2</span>
     </h5>
 </doc-anchor-target>
 <ol>
@@ -471,10 +477,10 @@ Counter 컴포넌트의 내부에 콘솔로그로 useState 함수의 반환값�
 <img src="../assets/5-3.png" class="shadow" alt="" /></p>
 </blockquote>
 <hr>
-<doc-anchor-target id="1113-카운터를-만들어보자-3">
+<doc-anchor-target id="3213-카운터를-만들어보자-3">
     <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#1113-카운터를-만들어보자-3">#</doc-anchor-trigger>
-        <span>1.1.1.3. 카운터를 만들어보자-3</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#3213-카운터를-만들어보자-3">#</doc-anchor-trigger>
+        <span>3.2.1.3. 카운터를 만들어보자-3</span>
     </h5>
 </doc-anchor-target>
 <ol>
@@ -509,10 +515,10 @@ Counter 컴포넌트의 내부에 콘솔로그로 useState 함수의 반환값�
 </ol>
 <p><a href="../../%EB%A6%AC%EC%95%A1%ED%8A%B8%EC%A2%80%ED%95%B4%EB%9D%BC/4/"><span class="docs-emoji">&#x1F517;</span> 리액트의 이벤트 학습하기</a></p>
 <hr>
-<doc-anchor-target id="1114-카운터를-개선-해보자">
+<doc-anchor-target id="3214-카운터를-개선-해보자">
     <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#1114-카운터를-개선-해보자">#</doc-anchor-trigger>
-        <span>1.1.1.4. 카운터를 개선 해보자</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#3214-카운터를-개선-해보자">#</doc-anchor-trigger>
+        <span>3.2.1.4. 카운터를 개선 해보자</span>
     </h5>
 </doc-anchor-target>
 <ol>
@@ -525,10 +531,10 @@ Counter 컴포넌트의 내부에 콘솔로그로 useState 함수의 반환값�
 </doc-codeblock></div>
 </li>
 </ol>
-<doc-anchor-target id="12-퀴즈퀴즈">
+<doc-anchor-target id="33-퀴즈퀴즈">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#12-퀴즈퀴즈">#</doc-anchor-trigger>
-        <span>1.2. 퀴즈퀴즈</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#33-퀴즈퀴즈">#</doc-anchor-trigger>
+        <span>3.3. 퀴즈퀴즈</span>
     </h3>
 </doc-anchor-target>
 <p>실행화면<br />
@@ -542,10 +548,10 @@ Counter 컴포넌트의 내부에 콘솔로그로 useState 함수의 반환값�
 <pre class="language-markdown"><code v-pre class="language-markdown">컴포넌트를 생성하여 위의 그림처럼 클릭하면 상태를 업데이트 한다.
 🍔 를 클릭하면 🍗 으로 상태가 1회 변경되도록 한다. (토글아님)</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="2-component-lifecycle생명주기">
+<doc-anchor-target id="4-component-lifecycle생명주기">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2-component-lifecycle생명주기">#</doc-anchor-trigger>
-        <span>2. Component LifeCycle(생명주기)</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#4-component-lifecycle생명주기">#</doc-anchor-trigger>
+        <span>4. Component LifeCycle(생명주기)</span>
     </h2>
 </doc-anchor-target>
 <blockquote class="my-box-blue">
@@ -554,18 +560,18 @@ Counter 컴포넌트의 내부에 콘솔로그로 useState 함수의 반환값�
 리액트의 컴포넌트 유형별(클래스,함수) 생명주기 관리방식의 차이가 있다<br />
 우리는 함수형 컴포넌트의 생명주기만을 다룰 것이며 클래스형의 생명주기는 아래 2.1의 자료를 참고하도록 하자.</p>
 </blockquote>
-<doc-anchor-target id="21-클래스형-컴포넌트와-생명주기">
+<doc-anchor-target id="41-클래스형-컴포넌트와-생명주기">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#21-클래스형-컴포넌트와-생명주기">#</doc-anchor-trigger>
-        <span>2.1. 클래스형 컴포넌트와 생명주기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#41-클래스형-컴포넌트와-생명주기">#</doc-anchor-trigger>
+        <span>4.1. 클래스형 컴포넌트와 생명주기</span>
     </h3>
 </doc-anchor-target>
 <doc-panel id="클래스형-컴포넌트와-생명주기" collapsed>
     <template #title>클래스형 컴포넌트와 생명주기</template>
-<doc-anchor-target id="211-클래스형-컴포넌트">
+<doc-anchor-target id="411-클래스형-컴포넌트">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#211-클래스형-컴포넌트">#</doc-anchor-trigger>
-        <span>2.1.1. 클래스형 컴포넌트</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#411-클래스형-컴포넌트">#</doc-anchor-trigger>
+        <span>4.1.1. 클래스형 컴포넌트</span>
     </h4>
 </doc-anchor-target>
 <ol>
@@ -581,10 +587,10 @@ Counter 컴포넌트의 내부에 콘솔로그로 useState 함수의 반환값�
 </figure>
 </li>
 </ol>
-<doc-anchor-target id="212-클래스형-컴포넌트-생명주기">
+<doc-anchor-target id="412-클래스형-컴포넌트-생명주기">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#212-클래스형-컴포넌트-생명주기">#</doc-anchor-trigger>
-        <span>2.1.2. 클래스형 컴포넌트 생명주기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#412-클래스형-컴포넌트-생명주기">#</doc-anchor-trigger>
+        <span>4.1.2. 클래스형 컴포넌트 생명주기</span>
     </h4>
 </doc-anchor-target>
 <p>컴포넌트가 화면에 렌더링 되고 데이터를 표시하고 화면에서 사라지기 까지의 일련의 단계를 의미한다.<br />
@@ -608,10 +614,10 @@ Counter 컴포넌트의 내부에 콘솔로그로 useState 함수의 반환값�
 </ol>
 </doc-panel>
 <hr>
-<doc-anchor-target id="22-함수형-컴포넌트의-생명주기">
+<doc-anchor-target id="42-함수형-컴포넌트의-생명주기">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#22-함수형-컴포넌트의-생명주기">#</doc-anchor-trigger>
-        <span>2.2. 함수형 컴포넌트의 생명주기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#42-함수형-컴포넌트의-생명주기">#</doc-anchor-trigger>
+        <span>4.2. 함수형 컴포넌트의 생명주기</span>
     </h3>
 </doc-anchor-target>
 <p>앞서 언급했듯 컴포넌트의 생명주기는 사람의 성장 과정 처럼 컴포넌트가 화면에서 렌더되는 일련의 과정을 의미한다.<br />
@@ -660,10 +666,10 @@ Counter 컴포넌트의 내부에 콘솔로그로 useState 함수의 반환값�
 </div>
 </div>
 <p class="h5">함수형 컴포넌트에서는 <code v-pre>useEffect()</code> 훅을 사용하여 생명주기를 관리한다. </p>
-<div><doc-anchor-target id="221-useeffect">
+<div><doc-anchor-target id="421-useeffect">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#221-useeffect">#</doc-anchor-trigger>
-        <span>2.2.1. useEffect</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#421-useeffect">#</doc-anchor-trigger>
+        <span>4.2.1. useEffect</span>
     </h4>
 </doc-anchor-target>
 <p>
@@ -682,10 +688,10 @@ Counter 컴포넌트의 내부에 콘솔로그로 useState 함수의 반환값�
 <br />
 useEffect 는 두개의 인수를 받는데 첫번째는 필수이고 두번째는 선택이다.<br />
 첫번째 인수는 함수를 두번쨰 인수는 배열을 받는데 이 두번째 배열에 따라 생명주기가 달라진다.</p>
-<doc-anchor-target id="2211-무한루프-문제상황-만들기">
+<doc-anchor-target id="4211-무한루프-문제상황-만들기">
     <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2211-무한루프-문제상황-만들기">#</doc-anchor-trigger>
-        <span>2.2.1.1. 무한루프 문제상황 만들기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#4211-무한루프-문제상황-만들기">#</doc-anchor-trigger>
+        <span>4.2.1.1. 무한루프 문제상황 만들기</span>
     </h5>
 </doc-anchor-target>
 <p><doc-anchor-trigger to="#1113-%EC%B9%B4%EC%9A%B4%ED%84%B0%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90-3">카운터만들기 예제</doc-anchor-trigger>에서 버튼 클릭이벤트 발생시 바로 setState 함수를 호출할 경우  <code v-pre>Too many re-renders. React limits ...  infinite loop...</code> 라는 에러가 발생하는 것을 확인했다.<br />
@@ -717,10 +723,10 @@ state가 변경되면서 컴포넌트 함수가 호출되며 리렌더링되고<
 <img src="../assets/5-11.png" class="shadow" alt="" /></li>
 </ol>
 <hr>
-<doc-anchor-target id="2212-mount-컴포넌트-렌더링-직전-딱-한번-실행">
+<doc-anchor-target id="4212-mount-컴포넌트-렌더링-직전-딱-한번-실행">
     <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2212-mount-컴포넌트-렌더링-직전-딱-한번-실행">#</doc-anchor-trigger>
-        <span>2.2.1.2. Mount-컴포넌트 렌더링 직전 딱 한번 실행</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#4212-mount-컴포넌트-렌더링-직전-딱-한번-실행">#</doc-anchor-trigger>
+        <span>4.2.1.2. Mount-컴포넌트 렌더링 직전 딱 한번 실행</span>
     </h5>
 </doc-anchor-target>
 <p>위의 에러를 해결해보자</p>
@@ -765,10 +771,10 @@ useEffect(() =&gt; {
 <img src="./asset/5-12.jpg" alt="" /></li>
 </ol>
 <hr>
-<doc-anchor-target id="2213-update-컴포넌트-렌더시">
+<doc-anchor-target id="4213-update-컴포넌트-렌더시">
     <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2213-update-컴포넌트-렌더시">#</doc-anchor-trigger>
-        <span>2.2.1.3. Update-컴포넌트 렌더시</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#4213-update-컴포넌트-렌더시">#</doc-anchor-trigger>
+        <span>4.2.1.3. Update-컴포넌트 렌더시</span>
     </h5>
 </doc-anchor-target>
 <p>이번에는 컴포넌트가 리렌더 될 때 마다 실행해보자.</p>
@@ -853,10 +859,10 @@ useEffect(() =&gt; {
 <strong>useEffect의 의존성배열에 값을 넣으면 해당 값이 업데이트 될때 실행된다.</strong></li>
 </ol>
 <hr>
-<doc-anchor-target id="2214-unmount-컴포넌트가-사라질때-실행">
+<doc-anchor-target id="4214-unmount-컴포넌트가-사라질때-실행">
     <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2214-unmount-컴포넌트가-사라질때-실행">#</doc-anchor-trigger>
-        <span>2.2.1.4. UnMount-컴포넌트가 사라질때 실행</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#4214-unmount-컴포넌트가-사라질때-실행">#</doc-anchor-trigger>
+        <span>4.2.1.4. UnMount-컴포넌트가 사라질때 실행</span>
     </h5>
 </doc-anchor-target>
 <div class="my-box-blue"><p class="h5">[UnMount] 의존성배열 비움 &amp; return</p>
