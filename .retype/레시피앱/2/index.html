@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/retype-react">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.768210012579">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.768455672004">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -17,7 +17,7 @@
     <!-- Primary Meta Tags -->
     <title>레시피앱-2-시작</title>
     <meta name="title" content="레시피앱-2-시작">
-    <meta name="description" content="1. create-react-app으로 리액트 앱 만들기">
+    <meta name="description" content="1. 영상보기">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://qwerewqwerew.github.io/retype-react/레시피앱/2/">
@@ -26,24 +26,24 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://qwerewqwerew.github.io/retype-react/레시피앱/2/">
     <meta property="og:title" content="레시피앱-2-시작">
-    <meta property="og:description" content="1. create-react-app으로 리액트 앱 만들기">
+    <meta property="og:description" content="1. 영상보기">
     <meta property="og:image" content="https://qwerewqwerew.github.io/retype-react/레시피앱/assets/2-6.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://qwerewqwerew.github.io/retype-react/레시피앱/2/">
     <meta property="twitter:title" content="레시피앱-2-시작">
-    <meta property="twitter:description" content="1. create-react-app으로 리액트 앱 만들기">
+    <meta property="twitter:description" content="1. 영상보기">
     <meta property="twitter:image" content="https://qwerewqwerew.github.io/retype-react/레시피앱/assets/2-6.png">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.768210012579" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.768455672004" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.768210012579" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.768455672004" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.768210012579" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.768210012579" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.768455672004" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.768455672004" defer></script>
 
     <style>
       @import url(https://qwerewqwerew.github.io/source/style/common.css);
@@ -198,44 +198,52 @@
     </h3>
 </doc-anchor-target>
 <ul>
-<li><doc-anchor-trigger to="#1-create-react-app%EC%9C%BC%EB%A1%9C-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%95%B1-%EB%A7%8C%EB%93%A4%EA%B8%B0">1. create-react-app으로 리액트 앱 만들기</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#2-readme-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0">2. README 수정하기</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#3-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%95%B1-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0">3. 리액트 앱 실행하기</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#4-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%95%B1-%EC%A2%85%EB%A3%8C%ED%95%98%EA%B8%B0">4. 리액트 앱 종료하기</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#5-%EB%B9%84%EC%A3%BC%EC%96%BC-%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4-%EC%BD%94%EB%93%9C-%ED%86%B5%ED%95%A9-%ED%84%B0%EB%AF%B8%EB%84%90%EC%97%90%EC%84%9C-%EC%8B%A4%ED%96%89%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95">5. 비주얼 스튜디오 코드 통합 터미널에서 실행하는 방법</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#6-%EA%B9%83%ED%97%88%EB%B8%8C%EC%97%90-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%95%B1-%EC%97%85%EB%A1%9C%EB%93%9C%ED%95%98%EA%B8%B0">6. 깃허브에 리액트 앱 업로드하기</doc-anchor-trigger>
+<li><doc-anchor-trigger to="#1-%EC%98%81%EC%83%81%EB%B3%B4%EA%B8%B0">1. 영상보기</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#2-create-react-app%EC%9C%BC%EB%A1%9C-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%95%B1-%EB%A7%8C%EB%93%A4%EA%B8%B0">2. create-react-app으로 리액트 앱 만들기</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#3-readme-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0">3. README 수정하기</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#4-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%95%B1-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0">4. 리액트 앱 실행하기</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#5-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%95%B1-%EC%A2%85%EB%A3%8C%ED%95%98%EA%B8%B0">5. 리액트 앱 종료하기</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#6-%EB%B9%84%EC%A3%BC%EC%96%BC-%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4-%EC%BD%94%EB%93%9C-%ED%86%B5%ED%95%A9-%ED%84%B0%EB%AF%B8%EB%84%90%EC%97%90%EC%84%9C-%EC%8B%A4%ED%96%89%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95">6. 비주얼 스튜디오 코드 통합 터미널에서 실행하는 방법</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#7-%EA%B9%83%ED%97%88%EB%B8%8C%EC%97%90-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%95%B1-%EC%97%85%EB%A1%9C%EB%93%9C%ED%95%98%EA%B8%B0">7. 깃허브에 리액트 앱 업로드하기</doc-anchor-trigger>
 <ul>
-<li><doc-anchor-trigger to="#61-%EA%B9%83%ED%97%88%EB%B8%8C%EC%97%90-%EC%A0%80%EC%9E%A5%EC%86%8C-%EB%A7%8C%EB%93%A4%EA%B8%B0">6.1. 깃허브에 저장소 만들기</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#62-%EA%B9%83%ED%97%88%EB%B8%8C-%EC%A0%80%EC%9E%A5%EC%86%8C%EC%97%90-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%95%B1-%EC%97%85%EB%A1%9C%EB%93%9C%ED%95%98%EA%B8%B0">6.2. 깃허브 저장소에 리액트 앱 업로드하기</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#63-%EA%B9%83%ED%97%88%EB%B8%8C-%EC%A0%80%EC%9E%A5%EC%86%8C-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0">6.3. 깃허브 저장소 확인하기</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#71-%EA%B9%83%ED%97%88%EB%B8%8C%EC%97%90-%EC%A0%80%EC%9E%A5%EC%86%8C-%EB%A7%8C%EB%93%A4%EA%B8%B0">7.1. 깃허브에 저장소 만들기</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#72-%EA%B9%83%ED%97%88%EB%B8%8C-%EC%A0%80%EC%9E%A5%EC%86%8C%EC%97%90-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%95%B1-%EC%97%85%EB%A1%9C%EB%93%9C%ED%95%98%EA%B8%B0">7.2. 깃허브 저장소에 리액트 앱 업로드하기</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#73-%EA%B9%83%ED%97%88%EB%B8%8C-%EC%A0%80%EC%9E%A5%EC%86%8C-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0">7.3. 깃허브 저장소 확인하기</doc-anchor-trigger></li>
 </ul>
 </li>
-<li><doc-anchor-trigger to="#7-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%95%B1-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B3%A0-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0">7. 리액트 앱 살펴보고 수정하기</doc-anchor-trigger>
+<li><doc-anchor-trigger to="#8-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%95%B1-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B3%A0-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0">8. 리액트 앱 살펴보고 수정하기</doc-anchor-trigger>
 <ul>
-<li><doc-anchor-trigger to="#71-%EB%A1%9C%EC%BB%AC-%EC%A0%80%EC%9E%A5%EC%86%8C-%EC%B4%88%EA%B8%B0%ED%99%94%ED%95%98%EA%B8%B0">7.1. 로컬 저장소 초기화하기</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#72-public-%ED%8F%B4%EB%8D%94-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0">7.2. public 폴더 살펴보기</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#73-indexhtml-%ED%8C%8C%EC%9D%BC-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0">7.3. index.html 파일 살펴보기</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#74-appjs-%ED%8C%8C%EC%9D%BC-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0">7.4. App.js 파일 수정하기</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#75-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%95%B1-%EB%8B%A4%EC%8B%9C-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0">7.5. 리액트 앱 다시 실행하기</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#76-appjs-%ED%8C%8C%EC%9D%BC-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0">7.6. App.js 파일 수정하기</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#77-%ED%81%AC%EB%A1%AC-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EB%8F%84%EA%B5%AC%EB%A1%9C-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%95%B1-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0">7.7. 크롬 개발자 도구로 리액트 앱 살펴보기</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#78-hello-%EA%B0%80-%ED%99%94%EB%A9%B4%EC%97%90-%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%91%9C%EC%8B%9C%EB%90%98%EB%8A%94%EC%A7%80-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0">7.8. Hello!!!!! 가 화면에 어떻게 표시되는지 살펴보기</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#81-%EB%A1%9C%EC%BB%AC-%EC%A0%80%EC%9E%A5%EC%86%8C-%EC%B4%88%EA%B8%B0%ED%99%94%ED%95%98%EA%B8%B0">8.1. 로컬 저장소 초기화하기</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#82-public-%ED%8F%B4%EB%8D%94-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0">8.2. public 폴더 살펴보기</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#83-indexhtml-%ED%8C%8C%EC%9D%BC-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0">8.3. index.html 파일 살펴보기</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#84-appjs-%ED%8C%8C%EC%9D%BC-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0">8.4. App.js 파일 수정하기</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#85-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%95%B1-%EB%8B%A4%EC%8B%9C-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0">8.5. 리액트 앱 다시 실행하기</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#86-appjs-%ED%8C%8C%EC%9D%BC-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0">8.6. App.js 파일 수정하기</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#87-%ED%81%AC%EB%A1%AC-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EB%8F%84%EA%B5%AC%EB%A1%9C-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%95%B1-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0">8.7. 크롬 개발자 도구로 리액트 앱 살펴보기</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#88-hello-%EA%B0%80-%ED%99%94%EB%A9%B4%EC%97%90-%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%91%9C%EC%8B%9C%EB%90%98%EB%8A%94%EC%A7%80-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0">8.8. Hello!!!!! 가 화면에 어떻게 표시되는지 살펴보기</doc-anchor-trigger></li>
 </ul>
 </li>
-<li><doc-anchor-trigger to="#8-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%95%B1-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0">8. 리액트 앱 동작 원리 알아보기</doc-anchor-trigger>
+<li><doc-anchor-trigger to="#9-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%95%B1-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0">9. 리액트 앱 동작 원리 알아보기</doc-anchor-trigger>
 <ul>
-<li><doc-anchor-trigger to="#81-indexjs-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0">8.1. index.js 살펴보기</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#82-indexhtml-%EC%88%98%EC%A0%95%ED%95%B4-%EB%B3%B4%EA%B8%B0">8.2. index.html 수정해 보기</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#83-indexjs-%EC%88%98%EC%A0%95%ED%95%98%EC%97%AC-%EC%98%A4%EB%A5%98-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0">8.3. index.js 수정하여 오류 해결하기</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#84-%ED%8C%8C%EC%9D%BC-%EC%9B%90%EB%9E%98%EB%8C%80%EB%A1%9C-%EB%8F%8C%EB%A0%A4%EB%86%93%EA%B8%B0">8.4. 파일 원래대로 돌려놓기</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#91-indexjs-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0">9.1. index.js 살펴보기</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#92-indexhtml-%EC%88%98%EC%A0%95%ED%95%B4-%EB%B3%B4%EA%B8%B0">9.2. index.html 수정해 보기</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#93-indexjs-%EC%88%98%EC%A0%95%ED%95%98%EC%97%AC-%EC%98%A4%EB%A5%98-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0">9.3. index.js 수정하여 오류 해결하기</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#94-%ED%8C%8C%EC%9D%BC-%EC%9B%90%EB%9E%98%EB%8C%80%EB%A1%9C-%EB%8F%8C%EB%A0%A4%EB%86%93%EA%B8%B0">9.4. 파일 원래대로 돌려놓기</doc-anchor-trigger></li>
 </ul>
 </li>
-<li><doc-anchor-trigger to="#9-%EC%99%84%EC%84%B1%EC%BD%94%EB%93%9C">9. 완성코드</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#10-%EC%99%84%EC%84%B1%EC%BD%94%EB%93%9C">10. 완성코드</doc-anchor-trigger></li>
 </ul>
-<doc-anchor-target id="1-create-react-app으로-리액트-앱-만들기">
+<doc-anchor-target id="1-영상보기">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#1-create-react-app으로-리액트-앱-만들기">#</doc-anchor-trigger>
-        <span>1. create-react-app으로 리액트 앱 만들기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#1-영상보기">#</doc-anchor-trigger>
+        <span>1. 영상보기</span>
+    </h2>
+</doc-anchor-target>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rcCWzkgqW00?si=SZNoHGl0ZBIlY57i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<doc-anchor-target id="2-create-react-app으로-리액트-앱-만들기">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2-create-react-app으로-리액트-앱-만들기">#</doc-anchor-trigger>
+        <span>2. create-react-app으로 리액트 앱 만들기</span>
     </h2>
 </doc-anchor-target>
 <ol>
@@ -249,10 +257,10 @@
 </doc-codeblock></div>
 </li>
 </ol>
-<doc-anchor-target id="2-readme-수정하기">
+<doc-anchor-target id="3-readme-수정하기">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2-readme-수정하기">#</doc-anchor-trigger>
-        <span>2. README 수정하기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#3-readme-수정하기">#</doc-anchor-trigger>
+        <span>3. README 수정하기</span>
     </h2>
 </doc-anchor-target>
 <blockquote>
@@ -262,10 +270,10 @@
 <pre class="language-none"><code v-pre class="language-none"># recipe App 2024
 </code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="3-리액트-앱-실행하기">
+<doc-anchor-target id="4-리액트-앱-실행하기">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#3-리액트-앱-실행하기">#</doc-anchor-trigger>
-        <span>3. 리액트 앱 실행하기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#4-리액트-앱-실행하기">#</doc-anchor-trigger>
+        <span>4. 리액트 앱 실행하기</span>
     </h2>
 </doc-anchor-target>
 <blockquote>
@@ -274,29 +282,29 @@
 </blockquote>
 <p class="h2"><img src="../assets/2-6.png" alt="" /><br />
 <a href="../../debug/1/">위 경고 발생시 해결방법</a> </p>
-<doc-anchor-target id="4-리액트-앱-종료하기">
+<doc-anchor-target id="5-리액트-앱-종료하기">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#4-리액트-앱-종료하기">#</doc-anchor-trigger>
-        <span>4. 리액트 앱 종료하기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#5-리액트-앱-종료하기">#</doc-anchor-trigger>
+        <span>5. 리액트 앱 종료하기</span>
     </h2>
 </doc-anchor-target>
 <blockquote>
 <p>터미널의 명령프롬프트로 돌아가서 <kbd> Ctrl</kbd> + <kbd> C</kbd> 를 누르면 리액트 앱이 종료된다.</p>
 </blockquote>
-<doc-anchor-target id="5-비주얼-스튜디오-코드-통합-터미널에서-실행하는-방법">
+<doc-anchor-target id="6-비주얼-스튜디오-코드-통합-터미널에서-실행하는-방법">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#5-비주얼-스튜디오-코드-통합-터미널에서-실행하는-방법">#</doc-anchor-trigger>
-        <span>5. 비주얼 스튜디오 코드 통합 터미널에서 실행하는 방법</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#6-비주얼-스튜디오-코드-통합-터미널에서-실행하는-방법">#</doc-anchor-trigger>
+        <span>6. 비주얼 스튜디오 코드 통합 터미널에서 실행하는 방법</span>
     </h2>
 </doc-anchor-target>
 <ul>
 <li>터미널 &gt; 새 터미널을 실행하여 터미널에서 실행할 수도 있다.<br />
 <img src="../assets/04-25_630.jpg" alt="" /></li>
 </ul>
-<doc-anchor-target id="6-깃허브에-리액트-앱-업로드하기">
+<doc-anchor-target id="7-깃허브에-리액트-앱-업로드하기">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#6-깃허브에-리액트-앱-업로드하기">#</doc-anchor-trigger>
-        <span>6. 깃허브에 리액트 앱 업로드하기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#7-깃허브에-리액트-앱-업로드하기">#</doc-anchor-trigger>
+        <span>7. 깃허브에 리액트 앱 업로드하기</span>
     </h2>
 </doc-anchor-target>
 <blockquote>
@@ -305,10 +313,10 @@
 <p class="c-de-10"> npm 을 사용하여 설치한 리액트 앱은 깃 초기화가 이미 되어있다.<br />
 vsCode 의 탐색기로 확인하면 .git 폴더가 보일것이다.</p>
 </blockquote>
-<doc-anchor-target id="61-깃허브에-저장소-만들기">
+<doc-anchor-target id="71-깃허브에-저장소-만들기">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#61-깃허브에-저장소-만들기">#</doc-anchor-trigger>
-        <span>6.1. 깃허브에 저장소 만들기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#71-깃허브에-저장소-만들기">#</doc-anchor-trigger>
+        <span>7.1. 깃허브에 저장소 만들기</span>
     </h3>
 </doc-anchor-target>
 <p>
@@ -328,10 +336,10 @@ vsCode 의 탐색기로 확인하면 .git 폴더가 보일것이다.</p>
 <ul>
 <li>Create a new repository 를 클릭후 Repository name 을 입력하여 생성한다.</li>
 </ul>
-<doc-anchor-target id="62-깃허브-저장소에-리액트-앱-업로드하기">
+<doc-anchor-target id="72-깃허브-저장소에-리액트-앱-업로드하기">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#62-깃허브-저장소에-리액트-앱-업로드하기">#</doc-anchor-trigger>
-        <span>6.2. 깃허브 저장소에 리액트 앱 업로드하기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#72-깃허브-저장소에-리액트-앱-업로드하기">#</doc-anchor-trigger>
+        <span>7.2. 깃허브 저장소에 리액트 앱 업로드하기</span>
     </h3>
 </doc-anchor-target>
 <ul>
@@ -344,52 +352,52 @@ git commit -m &quot;깃허브에 리액트 앱 업로드하기&quot;
 git push -u origin main
 </code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="63-깃허브-저장소-확인하기">
+<doc-anchor-target id="73-깃허브-저장소-확인하기">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#63-깃허브-저장소-확인하기">#</doc-anchor-trigger>
-        <span>6.3. 깃허브 저장소 확인하기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#73-깃허브-저장소-확인하기">#</doc-anchor-trigger>
+        <span>7.3. 깃허브 저장소 확인하기</span>
     </h3>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-batch"><code v-pre class="language-batch">https://github.com/깃허브아이디/레파지토리이름</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="7-리액트-앱-살펴보고-수정하기">
+<doc-anchor-target id="8-리액트-앱-살펴보고-수정하기">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#7-리액트-앱-살펴보고-수정하기">#</doc-anchor-trigger>
-        <span>7. 리액트 앱 살펴보고 수정하기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#8-리액트-앱-살펴보고-수정하기">#</doc-anchor-trigger>
+        <span>8. 리액트 앱 살펴보고 수정하기</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="71-로컬-저장소-초기화하기">
+<doc-anchor-target id="81-로컬-저장소-초기화하기">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#71-로컬-저장소-초기화하기">#</doc-anchor-trigger>
-        <span>7.1. 로컬 저장소 초기화하기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#81-로컬-저장소-초기화하기">#</doc-anchor-trigger>
+        <span>8.1. 로컬 저장소 초기화하기</span>
     </h3>
 </doc-anchor-target>
 <ul>
 <li>VSCode의 탐색기를 살펴보면 recipe-app 폴더 안에 우리가 자주 소스를 수정하게 될 public, src 폴더를 볼 수 있다.</li>
 </ul>
-<doc-anchor-target id="72-public-폴더-살펴보기">
+<doc-anchor-target id="82-public-폴더-살펴보기">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#72-public-폴더-살펴보기">#</doc-anchor-trigger>
-        <span>7.2. public 폴더 살펴보기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#82-public-폴더-살펴보기">#</doc-anchor-trigger>
+        <span>8.2. public 폴더 살펴보기</span>
     </h3>
 </doc-anchor-target>
 <ul>
 <li>public 폴더에는 favicon.ico 파일이 있는데 이건 브라우저 제목과 함께 표시되는 아이콘이다.</li>
 </ul>
-<doc-anchor-target id="73-indexhtml-파일-살펴보기">
+<doc-anchor-target id="83-indexhtml-파일-살펴보기">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#73-indexhtml-파일-살펴보기">#</doc-anchor-trigger>
-        <span>7.3. index.html 파일 살펴보기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#83-indexhtml-파일-살펴보기">#</doc-anchor-trigger>
+        <span>8.3. index.html 파일 살펴보기</span>
     </h3>
 </doc-anchor-target>
 <ul>
 <li>public/index.html파일에는 자주 보는 html 문서의 코드가 보인다. .</li>
 </ul>
-<doc-anchor-target id="74-appjs-파일-수정하기">
+<doc-anchor-target id="84-appjs-파일-수정하기">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#74-appjs-파일-수정하기">#</doc-anchor-trigger>
-        <span>7.4. App.js 파일 수정하기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#84-appjs-파일-수정하기">#</doc-anchor-trigger>
+        <span>8.4. App.js 파일 수정하기</span>
     </h3>
 </doc-anchor-target>
 <ul>
@@ -404,10 +412,10 @@ function App() {
 
 export default App;</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="75-리액트-앱-다시-실행하기">
+<doc-anchor-target id="85-리액트-앱-다시-실행하기">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#75-리액트-앱-다시-실행하기">#</doc-anchor-trigger>
-        <span>7.5. 리액트 앱 다시 실행하기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#85-리액트-앱-다시-실행하기">#</doc-anchor-trigger>
+        <span>8.5. 리액트 앱 다시 실행하기</span>
     </h3>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -417,10 +425,10 @@ export default App;</code></pre>
 <li><kbd> Ctrl</kbd>+<kbd>C</kbd> 를 눌러 실행 중이던 리액트 앱을 종료하고 다시 실행한다.</li>
 <li>에러 없이 코드를 입력했다면 화면에 아무것도 표시되지 않은 빈 브라우저 화면이 실행된다.</li>
 </ul>
-<doc-anchor-target id="76-appjs-파일-수정하기">
+<doc-anchor-target id="86-appjs-파일-수정하기">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#76-appjs-파일-수정하기">#</doc-anchor-trigger>
-        <span>7.6. App.js 파일 수정하기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#86-appjs-파일-수정하기">#</doc-anchor-trigger>
+        <span>8.6. App.js 파일 수정하기</span>
     </h3>
 </doc-anchor-target>
 <ul>
@@ -440,30 +448,30 @@ function App() {
 
 export default App;</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="77-크롬-개발자-도구로-리액트-앱-살펴보기">
+<doc-anchor-target id="87-크롬-개발자-도구로-리액트-앱-살펴보기">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#77-크롬-개발자-도구로-리액트-앱-살펴보기">#</doc-anchor-trigger>
-        <span>7.7. 크롬 개발자 도구로 리액트 앱 살펴보기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#87-크롬-개발자-도구로-리액트-앱-살펴보기">#</doc-anchor-trigger>
+        <span>8.7. 크롬 개발자 도구로 리액트 앱 살펴보기</span>
     </h3>
 </doc-anchor-target>
 <ul>
 <li>크롬 브라우저 창에서 <kbd>F12</kbd>를 눌러 개발자 도구를 실행한 다음 [Elements] 탭을 눌러보자. 그러면 앞에서 입력한 <code v-pre>&lt;h1&gt; Hello!!!!! &lt;/h1&gt;</code>를 볼 수 있다.<br />
 전체 코드를 보면<code v-pre>index.html</code>파일과<code v-pre>App.js</code>파일이 합쳐진 것 같이 보인다.</li>
 </ul>
-<doc-anchor-target id="78-hello-가-화면에-어떻게-표시되는지-살펴보기">
+<doc-anchor-target id="88-hello-가-화면에-어떻게-표시되는지-살펴보기">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#78-hello-가-화면에-어떻게-표시되는지-살펴보기">#</doc-anchor-trigger>
-        <span>7.8. Hello!!!!! 가 화면에 어떻게 표시되는지 살펴보기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#88-hello-가-화면에-어떻게-표시되는지-살펴보기">#</doc-anchor-trigger>
+        <span>8.8. Hello!!!!! 가 화면에 어떻게 표시되는지 살펴보기</span>
     </h3>
 </doc-anchor-target>
 <ul>
 <li><code v-pre>public/index.html</code> 파일을 열어서 body 엘리먼트 주변을 살펴보자.</li>
 <li><code v-pre>&lt;div id=&quot;root&quot;&gt; &lt;/div&gt;</code> 사이에 아무것도 없다. 그런데 위 2.7에서는 이 공간에 코드가 들어가 있다. 어떻게 된 걸까?</li>
 </ul>
-<doc-anchor-target id="8-리액트-앱-동작-원리-알아보기">
+<doc-anchor-target id="9-리액트-앱-동작-원리-알아보기">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#8-리액트-앱-동작-원리-알아보기">#</doc-anchor-trigger>
-        <span>8. 리액트 앱 동작 원리 알아보기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#9-리액트-앱-동작-원리-알아보기">#</doc-anchor-trigger>
+        <span>9. 리액트 앱 동작 원리 알아보기</span>
     </h2>
 </doc-anchor-target>
 <ul>
@@ -472,10 +480,10 @@ export default App;</code></pre>
 <li>이것이 index.html 파일에 없었던 <code v-pre>&lt;div&gt; Hello!!!!! &lt;/div&gt;</code>가 리액트 앱을 실행하면 생기는 원리이다.<br />
 다시말해 index.html의<code v-pre> &lt;div id=&quot;root&quot;&gt;&lt;/div&gt;</code>는 프로젝트 폴더에 있는 파일을 해석하여 넣는 역할을 담당한다.</li>
 </ul>
-<doc-anchor-target id="81-indexjs-살펴보기">
+<doc-anchor-target id="91-indexjs-살펴보기">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#81-indexjs-살펴보기">#</doc-anchor-trigger>
-        <span>8.1. index.js 살펴보기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#91-indexjs-살펴보기">#</doc-anchor-trigger>
+        <span>9.1. index.js 살펴보기</span>
     </h3>
 </doc-anchor-target>
 <ul>
@@ -499,10 +507,10 @@ export default App;</code></pre>
 </ul>
 </li>
 </ul>
-<doc-anchor-target id="82-indexhtml-수정해-보기">
+<doc-anchor-target id="92-indexhtml-수정해-보기">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#82-indexhtml-수정해-보기">#</doc-anchor-trigger>
-        <span>8.2. index.html 수정해 보기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#92-indexhtml-수정해-보기">#</doc-anchor-trigger>
+        <span>9.2. index.html 수정해 보기</span>
     </h3>
 </doc-anchor-target>
 <ul>
@@ -516,10 +524,10 @@ export default App;</code></pre>
 <ul>
 <li><kbd>Ctrl</kbd>+<kbd>C</kbd>를 눌러 종료하고 <code v-pre>npm start</code>로 다시 시작하면 console에 에러가 뜨면서 실행되지 않는다.</li>
 </ul>
-<doc-anchor-target id="83-indexjs-수정하여-오류-해결하기">
+<doc-anchor-target id="93-indexjs-수정하여-오류-해결하기">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#83-indexjs-수정하여-오류-해결하기">#</doc-anchor-trigger>
-        <span>8.3. index.js 수정하여 오류 해결하기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#93-indexjs-수정하여-오류-해결하기">#</doc-anchor-trigger>
+        <span>9.3. index.js 수정하여 오류 해결하기</span>
     </h3>
 </doc-anchor-target>
 <ul>
@@ -530,10 +538,10 @@ export default App;</code></pre>
     <figcaption class="caption">Untitled</figcaption>
 </figure>
 </p>
-<doc-anchor-target id="84-파일-원래대로-돌려놓기">
+<doc-anchor-target id="94-파일-원래대로-돌려놓기">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#84-파일-원래대로-돌려놓기">#</doc-anchor-trigger>
-        <span>8.4. 파일 원래대로 돌려놓기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#94-파일-원래대로-돌려놓기">#</doc-anchor-trigger>
+        <span>9.4. 파일 원래대로 돌려놓기</span>
     </h3>
 </doc-anchor-target>
 <ul>
@@ -543,10 +551,10 @@ export default App;</code></pre>
 일부 HTML만 그리고 이후 엘리먼트를 추가하거나 제거하는 방식으로 화면을 그린다.<br />
 리액트는 화면에 표시될 모든 HTML을 처음부터 그리지 않으니까 빠르게 실행된다.</li>
 </ul>
-<doc-anchor-target id="9-완성코드">
+<doc-anchor-target id="10-완성코드">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#9-완성코드">#</doc-anchor-trigger>
-        <span>9. 완성코드</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#10-완성코드">#</doc-anchor-trigger>
+        <span>10. 완성코드</span>
     </h2>
 </doc-anchor-target>
 <p><a href="https://github.com/qwerewqwerew/recipe-app/tree/48cf984d5ec6ad0a21e132173cc16359e2bf46f7" target="_blank" class="no-link inline-flex align-middle items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-blue-500 hover:bg-blue-700 text-white px-4 h-12 rounded-md">
