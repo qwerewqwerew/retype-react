@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/retype-react">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.768455672004">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.768471698305">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -38,12 +38,12 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.768455672004" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.768471698305" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.768455672004" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.768471698305" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.768455672004" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.768455672004" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.768471698305" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.768471698305" defer></script>
 
     <style>
       @import url(https://qwerewqwerew.github.io/source/style/common.css);
@@ -501,7 +501,10 @@ Counter 컴포넌트의 내부에 콘솔로그로 useState 함수의 반환값�
  ...</code></pre>
 </doc-codeblock></div>
 <div class="my-box-red"><img src="../assets/5-4.png" class="shadow" alt="" /><br />
-이벤트리스너에 바로 setCount 함수호출을 연결할경우 위와 같은 에러 메시지가 확인된다.이유는 리액트에서 컴포넌트를 다루는 방식은 함수이며 자바스크립트의 함수는 호출시 함수내의 모든 변수와 함수가 초기화 되기 때문이다. (자바스크립트의 평가방식)바로 호출하지 말고 변수를 참조하는 방법으로 작성해야 한다.<code v-pre>&lt;button onClick={()=&gt;setCount(count + 1)}&gt;더하기&lt;/button&gt;</code></div>
+이벤트리스너에 바로 setCount 함수를 호출 할 경우 위와 같은 에러 메시지가 확인된다.<br />
+우리의 컴포넌트를 다루는 방식은 함수이고 자바스크립트의 함수는 평가과정에서 내부의 모든 코드가 된다.<br />
+즉 버튼요소의 클릭이벤트리스너에 연결한 함수가 카운터함수 평가과정시 같이 실행 되기 때문에 클릭하기도 전에 호출되어서 실행되는 것이다.<br />
+게다가 updatecount 함수는 컴포넌트 count 변수에 1을 더하면서 리렌더하게 되는 현상이 반복되어서 오류가 발생하게 되므로 바로 호출하지 말고 참조하는 방법으로 작성해야 한다.<code v-pre>&lt;button onClick={()=&gt;setCount(count + 1)}&gt;더하기&lt;/button&gt;</code></div>
 </li>
 </ol>
 <p><a href="../../%EB%A6%AC%EC%95%A1%ED%8A%B8%EC%A2%80%ED%95%B4%EB%9D%BC/4/"><span class="docs-emoji">&#x1F517;</span> 리액트의 이벤트 학습하기</a></p>
