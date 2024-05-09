@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/retype-react">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.768555588047">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.768556113619">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -38,12 +38,12 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.768555588047" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.768556113619" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.768555588047" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.768556113619" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.768555588047" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.768555588047" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.768556113619" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.768556113619" defer></script>
 
     <style>
       @import url(https://qwerewqwerew.github.io/source/style/common.css);
@@ -695,8 +695,8 @@ useEffect 는 두개의 인수를 받는데 첫번째는 필수이고 두번째�
     </h5>
 </doc-anchor-target>
 <p><doc-anchor-trigger to="#1113-%EC%B9%B4%EC%9A%B4%ED%84%B0%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90-3">카운터만들기 예제</doc-anchor-trigger>에서 버튼 클릭이벤트 발생시 바로 setState 함수를 호출할 경우  <code v-pre>Too many re-renders. React limits ...  infinite loop...</code> 라는 에러가 발생하는 것을 확인했다.<br />
-그래서 우리는 이문제를 별도의 함수를 만들고 상태를 업데이트 하도록 작성하였다. 그후 클릭이벤트 발생시 이 함수를 이벤트핸들러로 전달하여 에러를 해결하였다.</p>
-<p>이번에는 이 문제를 useEffect 를 사용하여 해결해보자.</p>
+그래서 우리는 이문제를 별도의 함수를 만들고 상태를 업데이트 하도록 작성하였다. 그후 클릭이벤트 발생시 이 함수를 이벤트핸들러로 전달하여 에러를 해결하였다.<br />
+만약 컴포넌트의 렌더시 상태를 업데이트 하는 경우라면 어떻게 해야 할까?</p>
 <ol>
 <li>LifeCycle 컴포넌트를 만들고 컴포넌트 코드를 작성한다.<br />
 App 컴포넌트에 LifeCycle 컴포넌트를 임포트 한다.
