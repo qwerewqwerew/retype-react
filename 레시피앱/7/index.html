@@ -15,26 +15,26 @@
     <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
-    <title>2. API 사용해 보기</title>
-    <meta name="title" content="2. API 사용해 보기">
-    <meta name="description" content="1. 시작파일 내려받기">
+    <title>레시피앱-7-API활용</title>
+    <meta name="title" content="레시피앱-7-API활용">
+    <meta name="description" content="1. 시작파일">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://qwerewqwerew.github.io/retype-react/레시피앱/6/">
+    <link rel="canonical" href="https://qwerewqwerew.github.io/retype-react/레시피앱/7/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://qwerewqwerew.github.io/retype-react/레시피앱/6/">
-    <meta property="og:title" content="2. API 사용해 보기">
-    <meta property="og:description" content="1. 시작파일 내려받기">
-    <meta property="og:image" content="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/92eb61aa-37e6-4c36-be07-cff673be5ca5/Untitled.png">
+    <meta property="og:url" content="https://qwerewqwerew.github.io/retype-react/레시피앱/7/">
+    <meta property="og:title" content="레시피앱-7-API활용">
+    <meta property="og:description" content="1. 시작파일">
+    <meta property="og:image" content="https://qwerewqwerew.github.io/retype-react/레시피앱/assets/05-02_643.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://qwerewqwerew.github.io/retype-react/레시피앱/6/">
-    <meta property="twitter:title" content="2. API 사용해 보기">
-    <meta property="twitter:description" content="1. 시작파일 내려받기">
-    <meta property="twitter:image" content="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/92eb61aa-37e6-4c36-be07-cff673be5ca5/Untitled.png">
+    <meta property="twitter:url" content="https://qwerewqwerew.github.io/retype-react/레시피앱/7/">
+    <meta property="twitter:title" content="레시피앱-7-API활용">
+    <meta property="twitter:description" content="1. 시작파일">
+    <meta property="twitter:image" content="https://qwerewqwerew.github.io/retype-react/레시피앱/assets/05-02_643.jpg">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -179,137 +179,10 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="목차">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#목차">#</doc-anchor-trigger>
-        <span>목차 <!-- omit in toc --></span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li><doc-anchor-trigger to="#1-%EC%8B%9C%EC%9E%91%ED%8C%8C%EC%9D%BC-%EB%82%B4%EB%A0%A4%EB%B0%9B%EA%B8%B0">1. 시작파일 내려받기</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#2-app-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EB%B9%84%EC%9A%B0%EA%B8%B0">2. App 컴포넌트 비우기</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#3-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%A1%9C%EB%94%A9-%EC%83%81%ED%83%9C-%ED%91%9C%EC%8B%9C%ED%95%B4%EC%A3%BC%EA%B8%B0">3. 데이터 로딩 상태 표시해주기</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#4-%EC%A1%B0%EA%B1%B4%EB%B6%80%EB%A0%8C%EB%8D%94%EB%A7%81">4. 조건부렌더링</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#5-%EB%A1%9C%EB%94%A9-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0">5. 로딩 구현하기</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#6-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC-%EC%96%B4%EB%94%94%EC%97%90-%EC%A0%80%EC%9E%A5%ED%95%A0%EA%B9%8C">6. 데이터를 어디에 저장할까?</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#7-%EC%97%AC%EA%B8%B0%EA%B9%8C%EC%A7%80-%EA%B9%83%ED%97%88%EB%B8%8C%EC%97%90-%EC%98%AC%EB%A6%AC%EA%B8%B0">7. 여기까지 깃허브에 올리기</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#8-%EC%99%84%EB%A3%8C%ED%8C%8C%EC%9D%BC-%EB%82%B4%EB%A0%A4%EB%B0%9B%EA%B8%B0">8. 완료파일 내려받기</doc-anchor-trigger></li>
-</ul>
-<hr>
-<p><strong><a href="https://www.notion.so/API-6a10a654801b49c8a47c215646fe28d3?pvs=21"><span class="docs-emoji">&#x1F517;</span>API란?</a></strong></p>
-<p>원래는 자바스크립트의 fetch() 함수를 사용해야 하지만 어려우므로 axios를 사용해서 앱을 만들 것이다.</p>
-<ul>
-<li><p><span class="docs-emoji">&#x1F517;</span>fetch 함수 간단맛보기</p>
-<p><a href="https://jsonplaceholder.typicode.com/">https://jsonplaceholder.typicode.com/</a></p>
-<ol>
-<li>위 사이트의 posts 접속
-<ol>
-<li><a href="https://jsonplaceholder.typicode.com/posts">https://jsonplaceholder.typicode.com/posts</a></li>
-</ol>
-</li>
-<li>json 데이터 확인됨</li>
-<li>fatch 함수 작성</li>
-</ol>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-fsharp"><code v-pre class="language-fsharp">&lt;script&gt;
-  let response=fetch('https://jsonplaceholder.typicode.com/posts').then((res)=&gt;{console.log(res);});
-&lt;/script&gt;</code></pre>
-</doc-codeblock></div>
-<p>promise 함수를 사용해서 반환되는 함수들은 then을 통해서 호출할수 있다.</p>
-<ol>
-<li><p>콘솔확인</p>
-<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/92eb61aa-37e6-4c36-be07-cff673be5ca5/Untitled.png" alt="Untitled" /></p>
-</li>
-<li><p>fetch 를 통해 반환되는 값은 우리가 원하는 결과값이 아닌 성공객체 자체 를 반환하므로 원하는 형태와 다르다</p>
-<ol>
-<li>편지를 보내고 답장을 받을때 봉투에 담겨있는것과 같다</li>
-</ol>
-</li>
-<li><p>봉투안의 데이터 출력</p>
-<ol>
-<li>async await 는 then을 간결히 작성할수 있게한다</li>
-</ol>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-fsharp"><code v-pre class="language-fsharp">async function getData(){
-        let rawResponse =await fetch(&quot;https://jsonplaceholder.typicode.com/posts&quot;);
-        let jsonResponse=await rawResponse.json();
-        console.log(jsonResponse);
-      }
-      getData();</code></pre>
-</doc-codeblock></div>
-<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3cc8b3b2-4b80-4e3a-9bde-f34a7e9ef94d/Untitled.png" alt="Untitled" /></p>
-</li>
-</ol>
-<ul>
-<li><p>fetch.js<br />
--</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">export const fetchDb = async () =&gt; {
-	try {
-		let res = await fetch('https://jsonplaceholder.typicode.com/posts');
-		let db = await res.json();
-		return db;
-	} catch (error) {
-		console.error(error);
-	}
-};
-</code></pre>
-</doc-codeblock></div>
-</li>
-<li><p>App.js</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-jsx"><code v-pre class="language-jsx">import { useState, useEffect } from 'react';
-import { fetchDb } from './fetch';
-
-function App() {
-	const [loading, setLoading] = useState({ state: true, data: [] });
-	useEffect(() =&gt; {
-		const loadDB = async () =&gt; {
-			const data = await fetchDb();
-			setLoading({ state: false, data: data });
-		};
-		setTimeout(() =&gt; {
-			loadDB();
-		}, 500);
-	}, []);
-	//console.log(loading.data);
-
-	return (
-		&lt;div className='App'&gt;
-			{loading.state ? (
-				&lt;h1&gt;로딩중입니다...&lt;/h1&gt;
-			) : (
-				loading.data.map((a) =&gt; (
-					&lt;div key={a.id}&gt;
-						&lt;span style=red&gt;{a.title}&lt;/span&gt;
-						&lt;span&gt;{a.userId}&lt;/span&gt;
-					&lt;/div&gt;
-				))
-			)}
-		&lt;/div&gt;
-	);
-}
-
-export default App;
-</code></pre>
-</doc-codeblock></div>
-<p><img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/f2b063ab-5763-4522-82a6-f18f4aaa1c70/01eb112d-ee01-40c4-9946-b9fdf7cfb47d/Untitled.png" alt="Untitled" /></p>
-</li>
-</ul>
-</li>
-<li><p>useEffect 훅이 컴포넌트가 마운트될 때 실행</p>
-</li>
-<li><p>setTimeout이 지연 시간 이후 loadData 함수를 비동기적으로 호출</p>
-</li>
-<li><p>loadData 함수 내에서 fetchDb를 호출하여 데이터를 가져온 후, setLoading을 사용하여 상태를 업데이트함</p>
-</li>
-<li><p>loading.state가 false로 변경되면, 로딩 메시지 대신 가져온 데이터를 렌더링함</p>
-</li>
-</ul>
-<doc-anchor-target id="2-api-사용해-보기" class="break-words">
+<doc-anchor-target id="레시피앱-7-api활용" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2-api-사용해-보기">#</doc-anchor-trigger>
-        <span><strong>2. API 사용해 보기</strong></span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#레시피앱-7-api활용">#</doc-anchor-trigger>
+        <span>레시피앱-7-API활용</span>
     </h1>
 </doc-anchor-target>
 <div class="-mt-3 mb-12 flex flex-wrap text-sm text-gray-400 dark:text-dark-350 items-center">
@@ -319,43 +192,268 @@ export default App;
     <div><a href="../../categories/recipe/">recipe</a></div>
 </div>
 
+<doc-anchor-target id="목차">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#목차">#</doc-anchor-trigger>
+        <span>목차 <!-- omit in toc --></span>
+    </h3>
+</doc-anchor-target>
 <ul>
-<li><p>아래의 사이트에 회원가입을 한다</p>
-<p><a href="https://www.foodsafetykorea.go.kr/api/loginNew.do?menu_no=3817&amp;menu_grp=MENU_NEW07">데이터활용서비스</a></p>
-</li>
-<li><p>화면상단 공공데이터 활용 클릭</p>
-</li>
-<li><p>검색창에 레시피 입력</p>
-<p><img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/f2b063ab-5763-4522-82a6-f18f4aaa1c70/f5a6c8e7-ec50-4a47-a325-9a51fbe97b93/Untitled.png" alt="Untitled" /></p>
-</li>
-<li><p>인증키발급신청</p>
-</li>
+<li><doc-anchor-trigger to="#1-%EC%8B%9C%EC%9E%91%ED%8C%8C%EC%9D%BC">1. 시작파일</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#2-%EC%97%B0%EA%B4%80%EB%A7%81%ED%81%AC">2. 연관링크</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#3-fetch">3. fetch</doc-anchor-trigger>
+<ul>
+<li><doc-anchor-trigger to="#31-fetch-%ED%95%A8%EC%88%98-%EA%B0%84%EB%8B%A8%EB%A7%9B%EB%B3%B4%EA%B8%B0">3.1. fetch 함수 간단맛보기</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#32-%EC%95%B1%EC%97%90-fetch-%EC%A0%81%EC%9A%A9%ED%95%B4%EB%B3%B4%EA%B8%B0">3.2. 앱에 fetch 적용해보기</doc-anchor-trigger></li>
 </ul>
-<doc-anchor-target id="2-1api-문서">
+</li>
+<li><doc-anchor-trigger to="#4-api-%EC%82%AC%EC%9A%A9%ED%95%B4-%EB%B3%B4%EA%B8%B0">4. API 사용해 보기**</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#5-api-%EB%AC%B8%EC%84%9C">5. API 문서</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#6-axios%EC%84%A4%EC%B9%98">6. Axios설치</doc-anchor-trigger>
+<ul>
+<li><doc-anchor-trigger to="#61-%EB%A0%88%EC%8B%9C%ED%94%BC%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B0%9B%EC%95%84%EC%98%A4%EA%B8%B0">6.1. 레시피데이터 받아오기</doc-anchor-trigger></li>
+</ul>
+</li>
+<li><doc-anchor-trigger to="#7-%EB%A0%88%EC%8B%9C%ED%94%BC-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%99%94%EB%A9%B4%EC%97%90-%EA%B7%B8%EB%A6%AC%EA%B8%B0">7. 레시피 데이터 화면에 그리기</doc-anchor-trigger>
+<ul>
+<li><doc-anchor-trigger to="#71-%EA%B0%9D%EC%B2%B4%EC%97%90-%EC%9E%88%EB%8A%94-%ED%82%A4%EC%97%90-%EC%A1%B0%EA%B8%88-%EB%8D%94-%EB%98%91%EB%98%91%ED%95%98%EA%B2%8C-%EC%A0%91%EA%B7%BC%ED%95%98%EA%B8%B0">7.1. 객체에 있는 키에 조금 더 똑똑하게 접근하기</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#72-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0">7.2. 데이터 저장하기</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#73-%ED%95%84%EC%9A%94%ED%95%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A7%8C-%EC%B6%94%EC%B6%9C%ED%95%98%EC%97%AC-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-%ED%95%98%EC%9E%90">7.3. 필요한 데이터만 추출하여 업데이트 하자</doc-anchor-trigger></li>
+</ul>
+</li>
+<li><doc-anchor-trigger to="#8-%EC%99%84%EB%A3%8C%ED%8C%8C%EC%9D%BC-%EB%82%B4%EB%A0%A4%EB%B0%9B%EA%B8%B0">8. 완료파일 내려받기</doc-anchor-trigger></li>
+</ul>
+<hr>
+<doc-anchor-target id="1-시작파일">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2-1api-문서">#</doc-anchor-trigger>
-        <span>2-1API 문서</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#1-시작파일">#</doc-anchor-trigger>
+        <span>1. 시작파일</span>
+    </h2>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab v-cloak id="파일다운로드">
+<template #title>파일다운로드</template>
+<p>만약 이전 파일이 없을 경우 아래의 파일을 다운로드 하여 진행한다<br />
+<a href="./assets/07/start.zip" target="_blank" class="no-link inline-flex align-middle items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-green-500 hover:bg-green-700 text-white px-4 h-10 text-sm rounded-md">
+    <span><svg xmlns="http://www.w3.org/2000/svg" class="mb-px inline-flex mr-2" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M4.75 17.25a.75.75 0 0 1 .75.75v2.25c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V18a.75.75 0 0 1 1.5 0v2.25A1.75 1.75 0 0 1 18.25 22H5.75A1.75 1.75 0 0 1 4 20.25V18a.75.75 0 0 1 .75-.75Z"/><path d="M5.22 9.97a.749.749 0 0 1 1.06 0l4.97 4.969V2.75a.75.75 0 0 1 1.5 0v12.189l4.97-4.969a.749.749 0 1 1 1.06 1.06l-6.25 6.25a.749.749 0 0 1-1.06 0l-6.25-6.25a.749.749 0 0 1 0-1.06Z"/></g></svg></span>
+    <span>시작 파일</span>
+</a></p>
+</doc-tab>
+<doc-tab v-cloak id="파일활용방법">
+<template #title>파일활용방법</template>
+<ol>
+<li>다운로드 받은 start.zip 파일의 압축을 푼다</li>
+<li>새 리액트 앱을 설치한다. 리액트 앱 설치를 모를경우 아래 링크를 참고한다.<br />
+<div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
+    <div class="flex items-center text-blue-500 dark:text-blue-400">
+        <span class="inline-block mb-px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path d="M14.78 3.653a3.936 3.936 0 1 1 5.567 5.567l-3.627 3.627a3.936 3.936 0 0 1-5.88-.353.75.75 0 0 0-1.18.928 5.436 5.436 0 0 0 8.12.486l3.628-3.628a5.436 5.436 0 1 0-7.688-7.688l-3 3a.75.75 0 0 0 1.06 1.061l3-3Z"/><path d="M7.28 11.153a3.936 3.936 0 0 1 5.88.353.75.75 0 0 0 1.18-.928 5.436 5.436 0 0 0-8.12-.486L2.592 13.72a5.436 5.436 0 1 0 7.688 7.688l3-3a.75.75 0 1 0-1.06-1.06l-3 3a3.936 3.936 0 0 1-5.567-5.568l3.627-3.627Z"/></svg>
+        </span>
+        <span class="inline-block font-medium ml-2">리액트 설치안내</span>
+    </div>
+    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
+        <span>../../리액트좀해라/1/</span>
+    </div>
+    <a href="../../리액트좀해라/1/" target="_blank" class="absolute block inset-0"></a>
+</div>
+</li>
+<li>리액트 앱의 설치가 왼료 되었으면 1번의 파일압축을 푼다</li>
+<li>압축을 풀게 되면 start/src 폴더가 있다.</li>
+<li>2번의 src폴더에 4번의 src 폴더를 덮어 씌운다.<br />
+<img src="../assets/05-02_643.jpg" alt="" /></li>
+<li>2번의 폴더를 루트로 선택하여 vscode를 연다.</li>
+<li>vscode 의 터미널에 <code v-pre>npm start</code> 를 입력하여 앱을 실행한다.</li>
+</ol>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="2-연관링크">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2-연관링크">#</doc-anchor-trigger>
+        <span>2. 연관링크</span>
+    </h2>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th><span class="docs-emoji">&#x1F517;</span>연관링크</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../assets/07/api.pdf">API란?</a></td>
+</tr>
+<tr>
+<td><a href="https://qwerewqwerew.github.io/book01/docs/javascript/docs/fetch/#fetch">fetch와 promise 예제</a></td>
+</tr>
+<tr>
+<td><a href="https://developer.mozilla.org/ko/docs/Web/API/Fetch_API/Using_Fetch">MDN fetch </a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="3-fetch">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#3-fetch">#</doc-anchor-trigger>
+        <span>3. fetch</span>
+    </h2>
+</doc-anchor-target>
+<div class="my-box-blue"><p class="h3 blue">fetch() </p>
+<p>fetch 함수는 웹에서 데이터를 요청하고 받아오는 자바스크립트 기능이다.<br />
+간단하게는 fetch(&#x27;주소&#x27;)를 사용해 데이터를 요청하고, .then()을 통해 받은 데이터를 처리한다</p>
+<p>우리의 레시피 앱은 자바스크립트의 fetch() 함수를 사용하는것이 정석이긴 하지만 어려우므로 axios 라이브러리를 사용해서 제작 할 것이다.</p>
+<p>하지만 fetch 를 전혀 모르면 안되므로 기본적인 문법은 알아보도록 하자</p>
+</div>
+<doc-anchor-target id="31-fetch-함수-간단맛보기">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#31-fetch-함수-간단맛보기">#</doc-anchor-trigger>
+        <span>3.1. fetch 함수 간단맛보기</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li><a href="https://jsonplaceholder.typicode.com/posts"><span class="docs-emoji">&#x1F517;</span>더미데이터 사이트</a> 로 이동한다.</li>
+<li>json 데이터를 확인한다. 데이터의 가독성이 안 좋을 경우 이미지의 표시된 부분을 클릭한다.<br />
+<img src="../assets/05-10_661.jpg" class="shadow w80" alt="" /></li>
+<li>vscode 에서 fatch.js 파일을 생성후 코드를 작성한다.
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">src/fetch.js</div>
+<pre class="language-javascript"><code v-pre class="language-javascript">let response = fetch('https://jsonplaceholder.typicode.com/posts').then((res) =&gt; {
+	console.log(res);
+});</code></pre>
+</doc-codeblock></div>
+</li>
+</ol>
+<p>promise 함수를 사용해서 반환되는 함수들은 then을 통해서 호출할수 있다.</p>
+<ol>
+<li>콘솔확인<br />
+<img src="../assets/05-10_662.jpg" class="shadow w80" alt="Untitled" /></li>
+<li>fetch 를 통해 반환되는 값은 우리가 원하는 결과값이 아닌 성공객체 자체 를 반환하므로 우리가 원하는 형태와 다르다.<br />
+편지를 보내고 답장을 받을때 봉투에 담겨 있는것과 같다</li>
+<li>봉투안의 편지를 꺼내듯 데이터 꺼내어 출력 해야 한다.<br />
+async await 는 then을 간결히 작성할수 있게한다
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">src/fetch.js</div>
+<pre class="language-javascript"><code v-pre class="language-javascript">async function getData() {
+ let rawResponse = await fetch('https://jsonplaceholder.typicode.com/posts');
+ let jsonResponse = await rawResponse.json();
+ console.log(jsonResponse);
+}
+getData();</code></pre>
+</doc-codeblock></div>
+<img src="../assets/05-10_663.jpg" class="shadow w80" alt="Untitled" /></li>
+</ol>
+<doc-anchor-target id="32-앱에-fetch-적용해보기">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#32-앱에-fetch-적용해보기">#</doc-anchor-trigger>
+        <span>3.2. 앱에 fetch 적용해보기</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li>이번에는 우리의 앱에 실제 네트워크 통신이 되는 데이터를 연결해보자<br />
+src 폴더에 fetch.js 파일에 fetchDb 모듈을 추가하고 내용을 아래와 같이 작성한다.
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">fetch.js</div>
+<pre class="language-javascript"><code v-pre class="language-javascript">export const fetchDb = async () =&gt; {
+   try {
+      let res = await fetch('https://jsonplaceholder.typicode.com/posts');
+      let db = await res.json();
+      return db;
+   } catch (error) {
+      console.error(error);
+   }
+};</code></pre>
+</doc-codeblock></div>
+</li>
+<li>App.js 에 fetchDb 를 임포트한다</li>
+</ol>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">App.js</div>
+<pre class="language-javascript"><code v-pre class="language-javascript">import { useState, useEffect } from 'react';
+import { fetchDb } from './fetch';
+
+function App() {
+  const [loading, setLoading] = useState({ state: true, data: [] });
+  useEffect(() =&gt; {
+  	const loadDB = async () =&gt; {
+  		const data = await fetchDb();
+  		setLoading({ state: false, data: data });
+  	};
+  	setTimeout(() =&gt; {
+  		loadDB();
+  	}, 500);
+  }, []);
+  //console.log(loading.data);
+
+  return (
+  	&lt;div className='App'&gt;
+  		{loading.state ? (
+  			&lt;h1&gt;로딩중입니다...&lt;/h1&gt;
+  		) : (
+  			loading.data.map((a) =&gt; (
+  				&lt;div key={a.id}&gt;
+  					&lt;span style=red&gt;{a.title}&lt;/span&gt;
+  					&lt;span&gt;{a.userId}&lt;/span&gt;
+  				&lt;/div&gt;
+  			))
+  		)}
+  	&lt;/div&gt;
+  );
+}
+
+export default App;</code></pre>
+</doc-codeblock></div>
+<p><img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/f2b063ab-5763-4522-82a6-f18f4aaa1c70/01eb112d-ee01-40c4-9946-b9fdf7cfb47d/Untitled.png" alt="Untitled" /></p>
+<ul>
+<li>useEffect 훅이 컴포넌트가 마운트될 때 실행</li>
+<li>setTimeout이 지연 시간 이후 loadData 함수를 비동기적으로 호출</li>
+<li>loadData 함수 내에서 fetchDb를 호출하여 데이터를 가져온 후, setLoading을 사용하여 상태를 업데이트함</li>
+<li>loading.state가 false로 변경되면, 로딩 메시지 대신 가져온 데이터를 렌더링함</li>
+</ul>
+<doc-anchor-target id="4-api-사용해-보기">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#4-api-사용해-보기">#</doc-anchor-trigger>
+        <span>4. API 사용해 보기**</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>아래의 사이트에 회원가입을 한다<br />
+<a href="https://www.foodsafetykorea.go.kr/api/loginNew.do?menu_no=3817&amp;menu_grp=MENU_NEW07">데이터활용서비스</a></li>
+<li>화면상단 공공데이터 활용 클릭</li>
+<li>검색창에 레시피 입력<br />
+<img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/f2b063ab-5763-4522-82a6-f18f4aaa1c70/f5a6c8e7-ec50-4a47-a325-9a51fbe97b93/Untitled.png" alt="Untitled" /></li>
+<li>인증키발급신청</li>
+</ul>
+<doc-anchor-target id="5-api-문서">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#5-api-문서">#</doc-anchor-trigger>
+        <span>5. API 문서</span>
     </h2>
 </doc-anchor-target>
 <p><a href="https://www.foodsafetykorea.go.kr/api/newDatasetDetail.do">데이터활용서비스</a></p>
-<doc-anchor-target id="2-axios설치">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2-axios설치">#</doc-anchor-trigger>
-        <span>2. Axios설치</span>
-    </h1>
+<doc-anchor-target id="6-axios설치">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#6-axios설치">#</doc-anchor-trigger>
+        <span>6. Axios설치</span>
+    </h2>
 </doc-anchor-target>
 <p>Axios란 브라우저와 Node.js 환경에서 사용할 수 있는 비동기 HTTP 통신 라이브러리. Axios를 사용하면 HTTP 요청을 쉽게 보내고 응답을 처리할 수 있으며, Promise API를 기반으로 비동기 작업을 용이하게 한다. Axios는 GET, POST, PUT, DELETE 등의 HTTP 메서드를 모두 지원하며, 요청과 응답을 JSON 형태로 자동 변환해준다.</p>
-<p><strong>1. axios 설치하기</strong></p>
+<ol>
+<li>axios 설치하기</li>
+</ol>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-fsharp"><code v-pre class="language-fsharp">npm i axios
+<pre class="language-bash"><code v-pre class="language-bash">npm i axios
 npm start</code></pre>
 </doc-codeblock></div>
-<p><strong>2. 데이터 API 살펴보기</strong></p>
-<p><span class="docs-emoji">&#x1F517;</span>https://openapi.foodsafetykorea.go.kr/api/sample/COOKRCP01/xml/1/5</p>
+<ol start="2">
+<li>데이터 API 살펴보기</li>
+</ol>
+<p><a href="https://openapi.foodsafetykorea.go.kr/api/sample/COOKRCP01/xml/1/5"><span class="docs-emoji">&#x1F517;</span></a></p>
 <p>API는 특정 주소(Endpoint라고 적힌 곳의 주소 참고)를 입력하면 그 주소에 맞는 결과를 보내준다.</p>
 <p><a href="https://www.foodsafetykorea.go.kr/api/newDatasetDetail.do">https://www.foodsafetykorea.go.kr/api/newDatasetDetail.do</a></p>
 <p>기본주소 뒤에 원하는 데이터를 요청인자표를 보고 파라미터로 전달하면 원하는 데이터를 골라서 받을수 있디</p>
-<p><strong>3. 데이터 확인해보기</strong></p>
+<ol start="3">
+<li>데이터 확인해보기</li>
+</ol>
 <p>정말 그런지 API를 바로 사용해 보자.</p>
 <p><figure class="content-center">
     <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/f2b063ab-5763-4522-82a6-f18f4aaa1c70/41dff6b6-f4f5-4203-bb53-ce66f8444b86/Untitled.png" alt="Untitled">
@@ -363,7 +461,7 @@ npm start</code></pre>
 </figure>
 </p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-jsx"><code v-pre class="language-jsx">http://openapi.foodsafetykorea.go.kr/api/인증키/서비스명/요청파일타입/요청시작위치/요청종료위치
+<pre class="language-javascript"><code v-pre class="language-javascript">http://openapi.foodsafetykorea.go.kr/api/인증키/서비스명/요청파일타입/요청시작위치/요청종료위치
 http://openapi.foodsafetykorea.go.kr/api/08cc9b42270a4439b1b5/COOKRCP01/json/1/100</code></pre>
 </doc-codeblock></div>
 <p><figure class="content-center">
@@ -373,138 +471,133 @@ http://openapi.foodsafetykorea.go.kr/api/08cc9b42270a4439b1b5/COOKRCP01/json/1/1
 </p>
 <p><a href="https://www.foodsafetykorea.go.kr/api/newDatasetDetail.do">https://www.foodsafetykorea.go.kr/api/newDatasetDetail.do</a></p>
 <p>상단링크의 api 문서를 확인하여 필요한 정보만 추출해보자</p>
-<doc-anchor-target id="4-레시피데이터-받아오기">
+<doc-anchor-target id="61-레시피데이터-받아오기">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#4-레시피데이터-받아오기">#</doc-anchor-trigger>
-        <span>4. 레시피데이터 받아오기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#61-레시피데이터-받아오기">#</doc-anchor-trigger>
+        <span>6.1. 레시피데이터 받아오기</span>
     </h3>
 </doc-anchor-target>
 <ul>
-<li><p>서버에서 제공하는 데이터를 받아오는 작업은 컴포넌트를 렌더링 하는 작업에 비해 시간이 오래 걸린다.<br />
-그러므로 비동기함수 내부에 axio를 작성하여 통신완료시 까지 기다린후 결과를 반환하도록 한다.</p>
-</li>
-<li><p>데이터를 받아오는 함수 getDB 를 선언하고 비동기 함수 async를 할당한다.</p>
+<li>서버에서 제공하는 데이터를 받아오는 작업은 컴포넌트를 렌더링 하는 작업에 비해 시간이 오래 걸린다.<br />
+그러므로 비동기함수 내부에 axio를 작성하여 통신완료시 까지 기다린후 결과를 반환하도록 한다.</li>
+<li>데이터를 받아오는 함수 getDB 를 선언하고 비동기 함수 async를 할당한다.
 <ul>
 <li>try~catch 문 으로 예외처리를 작성한다.</li>
 </ul>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-jsx"><code v-pre class="language-jsx">const getDB = async () =&gt; {
-	try {
-	//예외발생할 가능성이 있는 문장
-	} catch (error) {
-	//예외상황 발생시 실행문
-	}
+<pre class="language-javascript"><code v-pre class="language-javascript">const getDB = async () =&gt; {
+  try {
+  	//예외발생할 가능성이 있는 문장
+  } catch (error) {
+  	//예외상황 발생시 실행문
+  }
 };</code></pre>
 </doc-codeblock></div>
 </li>
-<li><p>try 문 내에 통신요청과 통신성공시의 응답데이터를 저장하는 문장을 작성한다</p>
+<li>try 문 내에 통신요청과 통신성공시의 응답데이터를 저장하는 문장을 작성한다
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-jsx"><code v-pre class="language-jsx">const getDB = async () =&gt; {
-	try {
-		const DB = await axios.get('http://openapi.foodsafetykorea.go.kr/api/08cc9b42270a4439b1b5/COOKRCP01/json/1/100');
-		console.log(DB); // 응답 데이터 확인.
-
-	} catch (error) {
-		console.error('데이터를 불러오는데 실패했습니다.', error);
-	}
+<pre class="language-javascript"><code v-pre class="language-javascript">const getDB = async () =&gt; {
+  try {
+  	const DB = await axios.get('http://openapi.foodsafetykorea.go.kr/api/08cc9b42270a4439b1b5/COOKRCP01/json/1/100');
+  	console.log(DB); // 응답 데이터 확인.
+  } catch (error) {
+  	console.error('데이터를 불러오는데 실패했습니다.', error);
+  }
 };
 //useEffect로 컴포넌트 마운트시 getDB함수를 호출한다.
 useEffect(() =&gt; {
-	getDB();
-}, []);
-</code></pre>
+  getDB();
+}, []);</code></pre>
 </doc-codeblock></div>
 </li>
-<li><p>콘솔메시지로 반환값을 확인해보자.<br />
+<li>콘솔메시지로 반환값을 확인해보자.<br />
 통신결과 서버에서 전달하고 있는 다양한 데이터가 확인된다<br />
-이중 data 키에 우리가 원하는 레시피데이터가 반환된것이 보인다.</p>
-<p><img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/f2b063ab-5763-4522-82a6-f18f4aaa1c70/a4c1d64b-29b6-4cb0-bd14-3416a25e11ef/Untitled.png" alt="Untitled" /></p>
-</li>
-<li><p>DB 변수에 저장된 여러 하위키중 data에 접근하려면 . ****표기법을 사용한다.</p>
+이중 data 키에 우리가 원하는 레시피데이터가 반환된것이 보인다.<br />
+<img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/f2b063ab-5763-4522-82a6-f18f4aaa1c70/a4c1d64b-29b6-4cb0-bd14-3416a25e11ef/Untitled.png" alt="Untitled" /></li>
+<li>DB 변수에 저장된 여러 하위키중 data에 접근하려면 . ****표기법을 사용한다.
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-jsx"><code v-pre class="language-jsx">console.log(DB.data);`</code></pre>
+<pre class="language-javascript"><code v-pre class="language-javascript">console.log(DB.data);`</code></pre>
 </doc-codeblock></div>
-<p><img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/f2b063ab-5763-4522-82a6-f18f4aaa1c70/9ccf55d3-4ffd-448c-a03b-627fbd2cac75/Untitled.png" alt="Untitled" /></p>
-</li>
+<img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/f2b063ab-5763-4522-82a6-f18f4aaa1c70/9ccf55d3-4ffd-448c-a03b-627fbd2cac75/Untitled.png" alt="Untitled" /></li>
 </ul>
-<doc-anchor-target id="2-영화-데이터-화면에-그리기">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2-영화-데이터-화면에-그리기">#</doc-anchor-trigger>
-        <span><strong>2. 영화 데이터 화면에 그리기</strong></span>
-    </h1>
+<doc-anchor-target id="7-레시피-데이터-화면에-그리기">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#7-레시피-데이터-화면에-그리기">#</doc-anchor-trigger>
+        <span>7. 레시피 데이터 화면에 그리기</span>
+    </h2>
 </doc-anchor-target>
-<doc-anchor-target id="2-1객체에-있는-키에-조금-더-똑똑하게-접근하기">
+<doc-anchor-target id="71-객체에-있는-키에-조금-더-똑똑하게-접근하기">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2-1객체에-있는-키에-조금-더-똑똑하게-접근하기">#</doc-anchor-trigger>
-        <span>2-1객체에 있는 키에 조금 더 똑똑하게 접근하기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#71-객체에-있는-키에-조금-더-똑똑하게-접근하기">#</doc-anchor-trigger>
+        <span>7.1. 객체에 있는 키에 조금 더 똑똑하게 접근하기</span>
     </h3>
 </doc-anchor-target>
 <ul>
-<li><p>통신요청후 구조분해할당을 사용하여 data 키에 결과를 객체로(서버의 데이터 구조가 객체이다) 받는다콘솔메시지를 확인하면 이전과 같이 출력된다</p>
+<li>통신요청후 구조분해할당을 사용하여 data 키에 결과를 객체로(서버의 데이터 구조가 객체이다) 받는다콘솔메시지를 확인하면 이전과 같이 출력된다
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-jsx"><code v-pre class="language-jsx">const getDB = async () =&gt; {
-	try {
-		const {data} = await axios.get('http://openapi.foodsafetykorea.go.kr/api/08cc9b42270a4439b1b5/COOKRCP01/json/1/100');
-		console.log(data); // 응답 데이터 확인.
-		} catch (error) {
-		console.error('데이터를 불러오는데 실패했습니다.', error);
-	}
+<pre class="language-javascript"><code v-pre class="language-javascript">const getDB = async () =&gt; {
+  try {
+  	const { data } = await axios.get('http://openapi.foodsafetykorea.go.kr/api/08cc9b42270a4439b1b5/COOKRCP01/json/1/100');
+  	console.log(data); // 응답 데이터 확인.
+  } catch (error) {
+  	console.error('데이터를 불러오는데 실패했습니다.', error);
+  }
 };</code></pre>
 </doc-codeblock></div>
 </li>
 </ul>
-<doc-anchor-target id="2-2--데이터-저장하기">
+<doc-anchor-target id="72-데이터-저장하기">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2-2--데이터-저장하기">#</doc-anchor-trigger>
-        <span>2-2  데이터 저장하기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#72-데이터-저장하기">#</doc-anchor-trigger>
+        <span>7.2. 데이터 저장하기</span>
     </h3>
 </doc-anchor-target>
 <ul>
-<li><p>저장된 데이터를 setState 함수에 전달하여 컴포넌트의 상태를 업데이트 한다</p>
+<li>저장된 데이터를 setState 함수에 전달하여 컴포넌트의 상태를 업데이트 한다
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-jsx"><code v-pre class="language-jsx">function App() {
-	const [loading, setLoading] = useState({ state: true, data: [] });
-	const getDB = async () =&gt; {
-		try {
-			const {data} = await axios.get('http://openapi.foodsafetykorea.go.kr/api/08cc9b42270a4439b1b5/COOKRCP01/json/1/100');
-			console.log(data); // 응답 데이터 확인.
-			**setLoading({ state: false, data: data.COOKRCP01.row }); // 로딩 상태와 data 업데이트**
-		} catch (error) {
-			console.error('데이터를 불러오는데 실패했습니다.', error);
-		}
-	};
-	useEffect(() =&gt; {
-		getDB();
-	}, []);
-	...</code></pre>
+<pre class="language-javascript"><code v-pre class="language-javascript">function App() {
+  const [loading, setLoading] = useState({ state: true, data: [] });
+  const getDB = async () =&gt; {
+  	try {
+  		const {data} = await axios.get('http://openapi.foodsafetykorea.go.kr/api/08cc9b42270a4439b1b5/COOKRCP01/json/1/100');
+  		console.log(data); // 응답 데이터 확인.
+  		setLoading({ state: false, data: data.COOKRCP01.row }); // 로딩 상태와 data 업데이트
+  	} catch (error) {
+  		console.error('데이터를 불러오는데 실패했습니다.', error);
+  	}
+  };
+  useEffect(() =&gt; {
+  	getDB();
+  }, []);
+  ...</code></pre>
 </doc-codeblock></div>
 </li>
-<li><p>data 를 한번더 분해해서 row키의 데이터만 추출하면 더욱 간결한 코드를 구현할수 있다.</p>
+<li>data 를 한번더 분해해서 row키의 데이터만 추출하면 더욱 간결한 코드를 구현할수 있다.
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-jsx"><code v-pre class="language-jsx">...
-	try {
-		const { data } = await axios.get('http://openapi.foodsafetykorea.go.kr/api/08cc9b42270a4439b1b5/COOKRCP01/json/1/100');
-		**const {	COOKRCP01: { row } } = data;
-		setLoading({ state: false, data: row });**
-	} catch (error) {
-		console.error('데이터를 불러오는데 실패했습니다.', error);
-	}
+<pre class="language-javascript"><code v-pre class="language-javascript">...
+  try {
+  	const { data } = await axios.get('http://openapi.foodsafetykorea.go.kr/api/08cc9b42270a4439b1b5/COOKRCP01/json/1/100');
+  	const {	COOKRCP01: { row } } = data;
+  	setLoading({ state: false, data: row });
+  } catch (error) {
+  	console.error('데이터를 불러오는데 실패했습니다.', error);
+  }
 };
 ...</code></pre>
 </doc-codeblock></div>
 </li>
 </ul>
-<doc-anchor-target id="필요한-데이터만-추출하여-업데이트-하자">
+<doc-anchor-target id="73-필요한-데이터만-추출하여-업데이트-하자">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#필요한-데이터만-추출하여-업데이트-하자">#</doc-anchor-trigger>
-        <span>필요한 데이터만 추출하여 업데이트 하자</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#73-필요한-데이터만-추출하여-업데이트-하자">#</doc-anchor-trigger>
+        <span>7.3. 필요한 데이터만 추출하여 업데이트 하자</span>
     </h3>
 </doc-anchor-target>
 <ul>
 <li>저장된 데이터의 구조를 살펴보고 구조에 맞게 하위키를 작성하여 컴포넌트에 렌더링 시켜보자</li>
 </ul>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-jsx"><code v-pre class="language-jsx">console.log(DB.data); // 응답 데이터 확인.
+<pre class="language-javascript"><code v-pre class="language-javascript">console.log(DB.data); // 응답 데이터 확인.
 setLoading({ state: false, data: DB.data.COOKRCP01.row }); // 로딩 상태와 data 업데이트
 ...
 	loading.data.map((a) =&gt; (
@@ -522,13 +615,16 @@ setLoading({ state: false, data: DB.data.COOKRCP01.row }); // 로딩 상태와 d
 <li>앱을 실행해 보면 처음에는 isLoading... 이 화면에 나타나다가, 데이터가 화면에 렌더되는것을 볼수있다</li>
 </ul>
 <p>주의) 가끔 API가 오작동하며 axios.get()이 제대로 실행되지 않을 수도 있다. 그런 경우에는 1~2분 정도 기다렸다가 다시 리액트 앱을 실행해 보자.</p>
-<doc-anchor-target id="완료코드">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#완료코드">#</doc-anchor-trigger>
-        <span>완료코드</span>
-    </h3>
+<doc-anchor-target id="8-완료파일-내려받기">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#8-완료파일-내려받기">#</doc-anchor-trigger>
+        <span>8. 완료파일 내려받기</span>
+    </h2>
 </doc-anchor-target>
-<p><a href="https://github.com/qwerewqwerew/recipeApp/tree/chap07">GitHub - qwerewqwerew/recipeApp at chap07</a></p>
+<p><a href="./assets/06/06_fin.zip" target="_blank" class="no-link inline-flex align-middle items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-green-500 hover:bg-green-700 text-white px-4 h-10 text-sm rounded-md">
+    <span><svg xmlns="http://www.w3.org/2000/svg" class="mb-px inline-flex mr-2" width="18" height="18" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M4.75 17.25a.75.75 0 0 1 .75.75v2.25c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V18a.75.75 0 0 1 1.5 0v2.25A1.75 1.75 0 0 1 18.25 22H5.75A1.75 1.75 0 0 1 4 20.25V18a.75.75 0 0 1 .75-.75Z"/><path d="M5.22 9.97a.749.749 0 0 1 1.06 0l4.97 4.969V2.75a.75.75 0 0 1 1.5 0v12.189l4.97-4.969a.749.749 0 1 1 1.06 1.06l-6.25 6.25a.749.749 0 0 1-1.06 0l-6.25-6.25a.749.749 0 0 1 0-1.06Z"/></g></svg></span>
+    <span>완료 파일</span>
+</a></p>
 
                                 <div class="flex items-center mt-6 mb-6 clear-both">
                                     <span>
@@ -547,6 +643,12 @@ setLoading({ state: false, data: DB.data.COOKRCP01.row }); // 로딩 상태와 d
                                         <span class="mr-2"><a href="../../tags/node/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
                                     <span>node</span>
                                 </a></span>
+                                        <span class="mr-2"><a href="../../tags/api/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>api</span>
+                                </a></span>
+                                        <span class="mr-2"><a href="../../tags/fetch/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 hover:bg-blue-100 dark:hover:bg-transparent dark:hover:border-blue-200 dark:hover:text-blue-200 transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>fetch</span>
+                                </a></span>
                                     </span>
                                 </div>
                 
@@ -557,20 +659,20 @@ setLoading({ state: false, data: DB.data.COOKRCP01.row }); // 로딩 상태와 d
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../레시피앱/5/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../레시피앱/6/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">레시피앱-​5-​컴포넌트의 관리 (use​Effect,​use​State)</span>
+                                                <span class="block mt-1">레시피앱-​6-​제작준비</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../레시피앱/7/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../리액트좀해라/1/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">레시피앱-​7-​API활용</span>
+                                                <span class="block mt-1">1-​설치</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -614,6 +716,6 @@ setLoading({ state: false, data: DB.data.COOKRCP01.row }); // 로딩 상태와 d
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "레시피앱-6-제작준비", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "레시피앱-7-API활용", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
