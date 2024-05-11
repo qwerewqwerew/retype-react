@@ -1,6 +1,6 @@
 {
   "version": "3.5.0",
-  "created": "2024-05-10T15:25:09Z",
+  "created": "2024-05-11T03:17:18Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -1432,6 +1432,9 @@
     },
     {
       "path": "리액트좀해라\\issue\\index.html"
+    },
+    {
+      "path": "ads.txt"
     },
     {
       "path": "categories\\basic\\index.html"
