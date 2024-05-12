@@ -39,11 +39,16 @@ tags: [리액트, react, React, nodejs, NODE, useState, useEffect]
 
 ## 2. 연관링크
 
-| 🔗연관링크                                                                                      |
-| ----------------------------------------------------------------------------------------------- |
-| [API란?](./assets/07/api.pdf)                                                                   |
-| [fetch와 promise 예제](https://qwerewqwerew.github.io/book01/docs/javascript/docs/fetch/#fetch) |
-| [MDN fetch ](https://developer.mozilla.org/ko/docs/Web/API/Fetch_API/Using_Fetch)               |
+| 🔗연관링크                                                         |
+| ------------------------------------------------------------------ |
+| [공공데이터포털](https://www.data.go.kr/)                          |
+| [문화데이터광장](https://www.culture.go.kr/data/main/main.do#main) |
+| [공간정보오픈플랫폼](https://www.vworld.kr/dev/v4api.do)           |
+| [금융감독원](https://opendart.fss.or.kr/)                          |
+| [네이버](https://developers.naver.com/products/intro/plan/plan.md) |
+| [카카오](https://developers.kakao.com/tool)                        |
+| [서울시](https://data.seoul.go.kr/together/guide/useGuide.do)      |
+| [경기도](https://data.gg.go.kr/portal/mainPage.do)                 |
 
 ## 8. 완료파일
 
