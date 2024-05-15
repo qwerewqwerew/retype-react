@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/retype-react">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.769084903575">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.769085750723">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -38,12 +38,12 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.769084903575" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.769085750723" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.769084903575" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.769085750723" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.769084903575" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.769084903575" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.769085750723" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.769085750723" defer></script>
 
     <style>
       @import url(https://qwerewqwerew.github.io/source/style/common.css);
@@ -290,6 +290,9 @@
 </tr>
 <tr>
 <td><a href="https://developer.mozilla.org/ko/docs/Web/API/Fetch_API/Using_Fetch">MDN fetch </a></td>
+</tr>
+<tr>
+<td><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Control_flow_and_error_handling#try...catch_%EB%AC%B8">MDN try...catch 문 </a></td>
 </tr>
 <tr>
 <td><a href="https://axios-http.com/kr/docs/intro">axios 공식홈 </a></td>
@@ -735,21 +738,21 @@ data 를 한번더 분해해서 row키의 데이터만 추출하면 더욱 간�
 키에 해당하는 내용은 OPEN-API 페이지 하단의 출력항목 표에서 확인할수 있다 <img src="../assets/05-12_680.jpg" class="shadow" alt="" /></p>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <div class="codeblock-title">App.js</div>
-<pre class="language-javascript"><code v-pre class="language-javascript"> ...
- const {	COOKRCP01: { row } } = data;
- setLoading({ state: false, data: row });
- console.log('data', loading.data);
- ...
- 	loading.data.map((a) =&gt; (
- 		&lt;div key={a.RCP_SEQ}&gt;
- 			&lt;span style=red&gt;{a.RCP_NM}&lt;/span&gt;
- 			&lt;span&gt;{a.RCP_WAY2}&lt;/span&gt;
- 			&lt;div&gt;
- 				&lt;span&gt;{a.MANUAL01}&lt;/span&gt;
- 				&lt;span&gt;{a.MANUAL02}&lt;/span&gt;
- 				&lt;span&gt;{a.MANUAL03}&lt;/span&gt;
- 			&lt;/div&gt;
- 		&lt;/div&gt;</code></pre>
+<pre class="language-javascript"><code v-pre class="language-javascript">...
+const {	COOKRCP01: { row } } = data;
+setLoading({ state: false, data: row });
+console.log('data', loading.data);
+...
+ loading.data.map((a) =&gt; (
+ 	&lt;div key={a.RCP_SEQ}&gt;
+ 		&lt;span style=red&gt;{a.RCP_NM}&lt;/span&gt;
+ 		&lt;span&gt;{a.RCP_WAY2}&lt;/span&gt;
+ 		&lt;div&gt;
+ 			&lt;span&gt;{a.MANUAL01}&lt;/span&gt;
+ 			&lt;span&gt;{a.MANUAL02}&lt;/span&gt;
+ 			&lt;span&gt;{a.MANUAL03}&lt;/span&gt;
+ 		&lt;/div&gt;
+ 	&lt;/div&gt;</code></pre>
 </doc-codeblock></div>
 <p><img src="../assets/05-12_681.jpg" class="shadow" alt="" /></p>
 </li>
