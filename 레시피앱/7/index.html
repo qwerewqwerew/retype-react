@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/retype-react">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.768820458477">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.769069318522">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -38,12 +38,12 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.768820458477" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.769069318522" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.768820458477" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.769069318522" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.768820458477" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.768820458477" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.769069318522" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.769069318522" defer></script>
 
     <style>
       @import url(https://qwerewqwerew.github.io/source/style/common.css);
@@ -218,11 +218,12 @@
 <li><doc-anchor-trigger to="#6-%EB%A0%88%EC%8B%9C%ED%94%BC-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%99%94%EB%A9%B4%EC%97%90-%EA%B7%B8%EB%A6%AC%EA%B8%B0">6. 레시피 데이터 화면에 그리기</doc-anchor-trigger>
 <ul>
 <li><doc-anchor-trigger to="#61-%EA%B0%9D%EC%B2%B4%EC%97%90-%EC%9E%88%EB%8A%94-%ED%82%A4%EC%97%90-%EC%A1%B0%EA%B8%88-%EB%8D%94-%EB%98%91%EB%98%91%ED%95%98%EA%B2%8C-%EC%A0%91%EA%B7%BC%ED%95%98%EA%B8%B0">6.1. 객체에 있는 키에 조금 더 똑똑하게 접근하기</doc-anchor-trigger></li>
-<li><doc-anchor-trigger to="#62-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0">6.2. 데이터 저장하기</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#62-%EC%BD%94%EB%93%9C%EA%B0%9C%EC%84%A0%ED%95%98%EA%B8%B0refactoring">6.2. 코드개선하기(Refactoring)</doc-anchor-trigger></li>
 <li><doc-anchor-trigger to="#63-%ED%95%84%EC%9A%94%ED%95%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A7%8C-%EC%B6%94%EC%B6%9C%ED%95%98%EC%97%AC-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-%ED%95%98%EC%9E%90">6.3. 필요한 데이터만 추출하여 업데이트 하자</doc-anchor-trigger></li>
 </ul>
 </li>
-<li><doc-anchor-trigger to="#7-%EC%99%84%EB%A3%8C%ED%8C%8C%EC%9D%BC-%EB%82%B4%EB%A0%A4%EB%B0%9B%EA%B8%B0">7. 완료파일 내려받기</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#7-%EC%97%AC%EA%B8%B0%EA%B9%8C%EC%A7%80-%EA%B9%83%ED%97%88%EB%B8%8C%EC%97%90-%EC%98%AC%EB%A6%AC%EA%B8%B0">7. 여기까지 깃허브에 올리기</doc-anchor-trigger></li>
+<li><doc-anchor-trigger to="#8-%EC%99%84%EB%A3%8C%ED%8C%8C%EC%9D%BC-%EB%82%B4%EB%A0%A4%EB%B0%9B%EA%B8%B0">8. 완료파일 내려받기</doc-anchor-trigger></li>
 </ul>
 <hr>
 <doc-anchor-target id="1-시작파일">
@@ -261,7 +262,7 @@
 <li>리액트 앱의 설치가 왼료 되었으면 1번의 파일압축을 푼다</li>
 <li>압축을 풀게 되면 start/src 폴더가 있다.</li>
 <li>2번의 src폴더에 4번의 src 폴더를 덮어 씌운다.<br />
-<img src="../assets/05-02_643.jpg" alt="" /></li>
+<img src="../assets/05-02_643.jpg" class="shadow" alt="" /></li>
 <li>2번의 폴더를 루트로 선택하여 vscode를 연다.</li>
 <li>vscode 의 터미널에 <code v-pre>npm start</code> 를 입력하여 앱을 실행한다.</li>
 </ol>
@@ -400,7 +401,7 @@ export default App;</code></pre>
 </doc-codeblock></div>
 </li>
 <li><p>콘솔로그를 확인해보자<br />
-<img src="../assets/05-12_669.jpg" alt="Untitled" /><br />
+<img src="../assets/05-12_669.jpg" class="shadow" alt="Untitled" /><br />
 100개의 데이터가 확인된다 이 데이터는 fetchDB에서 전달받은 것이다.</p>
 </li>
 <li><p>코드설명</p>
@@ -437,7 +438,7 @@ export default App;</code></pre>
 </table>
 </div>
 </li>
-<li><p>&#x27;data&#x27;를 화면에 표시하기</p>
+<li><p><code v-pre>data</code> 를 화면에 표시하기</p>
 </li>
 </ol>
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
@@ -472,13 +473,13 @@ export default App;</code></pre>
 <img src="../assets/05-12_670.jpg" class="shadow" alt="" /></p>
 </li>
 <li><p>OPEN-API 탭 클릭<br />
-<img src="../assets/05-12_671.jpg" alt="" /></p>
+<img src="../assets/05-12_671.jpg" class="shadow" alt="" /></p>
 </li>
 <li><p>인증키발급신청 클릭<br />
-<img src="../assets/05-12_672.jpg" alt="" /></p>
+<img src="../assets/05-12_672.jpg" class="shadow" alt="" /></p>
 </li>
 <li><p>약관동의 후 활용목적을 간단히 기재한다.<br />
-<img src="../assets/05-12_673.jpg" alt="" /></p>
+<img src="../assets/05-12_673.jpg" class="shadow" alt="" /></p>
 </li>
 <li><p>1~2일 이후 회원 가입시 작성한 이메일이나 식품안전나라의 인증키 신청현황에서 발급된 키를 확인한다.</p>
 </li>
@@ -495,7 +496,7 @@ export default App;</code></pre>
         <span>5.1. API 연결하기</span>
     </h3>
 </doc-anchor-target>
-<ol start="2">
+<ol>
 <li><p>API 요청주소 살펴보기<br />
 API요청주소는 로그인시에만 공개되므로 하단의 링크를 이용하여 확인한다.<br />
 <div class="mb-6 px-5 py-4 flex justify-between relative border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded transition-colors duration-150">
@@ -516,7 +517,7 @@ API요청주소는 로그인시에만 공개되므로 하단의 링크를 이용
 <li><p>요청주소의 샘플주소를 복사하여 주소창에 넣으면 데이터가 확인된다.</p>
 </li>
 <li><p>URL뒤에 원하는 데이터를 요청인자표를 보고 파라미터로 전달하면 원하는 데이터를 골라서 받을수 있다.<br />
-<img src="../assets/05-12_675.jpg" alt="" /></p>
+<img src="../assets/05-12_675.jpg" class="shadow" alt="" /></p>
 </li>
 <li><p>데이터 확인해보기<br />
 정말 그런지 API를 바로 사용해 보자.<br />
@@ -556,9 +557,9 @@ npm start</code></pre>
 3번라인 삭제.
 <div class="codeblock-wrapper"><doc-codeblock line-numbers>
 <div class="codeblock-title">App.js</div>
-<pre class="language-javascript" data-line="1,3"><code v-pre class="language-javascript"> import { axios } from 'axios';
- import { useState, useEffect } from 'react';
- //import { fetchDB } from './fetch';</code></pre>
+<pre class="language-javascript" data-line="1,3"><code v-pre class="language-javascript">import axios from 'axios';
+import { useState, useEffect } from 'react';
+//import { fetchDB } from './fetch';</code></pre>
 </doc-codeblock></div>
 </li>
 </ol>
@@ -568,49 +569,43 @@ npm start</code></pre>
         <span>5.3. 레시피데이터 받아오기</span>
     </h3>
 </doc-anchor-target>
-<ul>
-<li>서버에서 제공하는 데이터를 받아오는 작업은 컴포넌트를 렌더링 하는 작업에 비해 시간이 오래 걸린다.<br />
-그러므로 비동기함수 내부에 axio를 작성하여 통신완료시 까지 기다린후 결과를 반환하도록 한다.</li>
-<li>데이터를 받아오는 함수 getDB 를 선언하고 비동기 함수 async를 할당한다.
-<ul>
-<li>try~catch 문 으로 예외처리를 작성한다.</li>
-</ul>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-javascript"><code v-pre class="language-javascript">const getDB = async () =&gt; {
-  try {
-  	//예외발생할 가능성이 있는 문장
-  } catch (error) {
-  	//예외상황 발생시 실행문
-  }
-};</code></pre>
-</doc-codeblock></div>
-</li>
-<li>try 문 내에 통신요청과 통신성공시의 응답데이터를 저장하는 문장을 작성한다
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-javascript"><code v-pre class="language-javascript">const getDB = async () =&gt; {
-  try {
-  	const DB = await axios.get('http://openapi.foodsafetykorea.go.kr/api/발급받은 서비스키/COOKRCP01/json/1/100');
-  	console.log(DB); // 응답 데이터 확인.
-  } catch (error) {
-  	console.error('데이터를 불러오는데 실패했습니다.', error);
-  }
+<div class="my-box-blue"><p>위에서 언급했듯 서버에서 제공하는 데이터를 받아오는 작업은 컴포넌트를 렌더링 하는 작업에 비해 시간이 오래 걸리므로 비동기식으로 작성한다.</p>
+</div>
+<ol>
+<li>데이터를 받아오는 함수 getDB 에 async를 할당한다.<br />
+서버와의 통신중 오류상황에 대비하여 try~catch 문 으로 예외처리를 작성한다.
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">App.js</div>
+<pre class="language-javascript"><code v-pre class="language-javascript"> ...
+ function App() {
+ const [loading, setLoading] = useState(true);
+ const [data, setData] = useState([]);
+const getDB = async () =&gt; {
+ try {
+ 	const DB = await axios.get('http://openapi.foodsafetykorea.go.kr/api/발급받은 서비스키/COOKRCP01/json/1/100');
+ 	console.log(DB); // 응답 데이터 확인.
+ } catch (error) {
+ 	console.error('데이터를 불러오는데 실패했습니다.', error);
+ }
 };
 //useEffect로 컴포넌트 마운트시 getDB함수를 호출한다.
 useEffect(() =&gt; {
-  getDB();
+ getDB();
+ 			const loadDB = async () =&gt; {
+ 		setLoading(false);
+ 		//	setData(db);
+ 		//	console.log(db);
+ 	};
+ 	// 레시피 데이터 로딩
+ 	loadDB();
 }, []);</code></pre>
 </doc-codeblock></div>
 </li>
-<li>콘솔메시지로 반환값을 확인해보자.<br />
-통신결과 서버에서 전달하고 있는 다양한 데이터가 확인된다<br />
-이중 data 키에 우리가 원하는 레시피데이터가 반환된것이 보인다.<br />
-<img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/f2b063ab-5763-4522-82a6-f18f4aaa1c70/a4c1d64b-29b6-4cb0-bd14-3416a25e11ef/Untitled.png" alt="Untitled" /></li>
-<li>DB 변수에 저장된 여러 하위키중 data에 접근하려면 . ****표기법을 사용한다.
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-javascript"><code v-pre class="language-javascript">console.log(DB.data);</code></pre>
-</doc-codeblock></div>
-<img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/f2b063ab-5763-4522-82a6-f18f4aaa1c70/9ccf55d3-4ffd-448c-a03b-627fbd2cac75/Untitled.png" alt="Untitled" /></li>
-</ul>
+<li>결과확인<br />
+서버에서 다양한 데이터를 전달하고 있는것이 확인된다.<br />
+이중 우리가 원하는 값은 data.COOKRCP01.row에 배열형태로 반환되었다.<br />
+<img src="../assets/05-12_677.jpg" class="shadow" alt="" /></li>
+</ol>
 <doc-anchor-target id="6-레시피-데이터-화면에-그리기">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#6-레시피-데이터-화면에-그리기">#</doc-anchor-trigger>
@@ -623,93 +618,160 @@ useEffect(() =&gt; {
         <span>6.1. 객체에 있는 키에 조금 더 똑똑하게 접근하기</span>
     </h3>
 </doc-anchor-target>
-<ul>
-<li>통신요청후 구조분해할당을 사용하여 data 키에 결과를 객체로(서버의 데이터 구조가 객체이다) 받는다콘솔메시지를 확인하면 이전과 같이 출력된다
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-javascript"><code v-pre class="language-javascript">const getDB = async () =&gt; {
-  try {
-  	const { data } = await axios.get('http://openapi.foodsafetykorea.go.kr/api/발급받은 서비스키/COOKRCP01/json/1/100');
-  	console.log(data); // 응답 데이터 확인.
-  } catch (error) {
-  	console.error('데이터를 불러오는데 실패했습니다.', error);
-  }
-};</code></pre>
-</doc-codeblock></div>
-</li>
-</ul>
-<doc-anchor-target id="62-데이터-저장하기">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#62-데이터-저장하기">#</doc-anchor-trigger>
-        <span>6.2. 데이터 저장하기</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li>저장된 데이터를 setState 함수에 전달하여 컴포넌트의 상태를 업데이트 한다
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-javascript"><code v-pre class="language-javascript">function App() {
-  const [loading, setLoading] = useState({ state: true, data: [] });
-  const getDB = async () =&gt; {
-  	try {
-  		const {data} = await axios.get('http://openapi.foodsafetykorea.go.kr/api/발급받은 서비스키/COOKRCP01/json/1/100');
-  		console.log(data); // 응답 데이터 확인.
-  		setLoading({ state: false, data: data.COOKRCP01.row }); // 로딩 상태와 data 업데이트
-  	} catch (error) {
-  		console.error('데이터를 불러오는데 실패했습니다.', error);
-  	}
-  };
-  useEffect(() =&gt; {
-  	getDB();
-  }, []);
-  ...</code></pre>
-</doc-codeblock></div>
-</li>
-<li>data 를 한번더 분해해서 row키의 데이터만 추출하면 더욱 간결한 코드를 구현할수 있다.
-<div class="codeblock-wrapper"><doc-codeblock>
+<ol>
+<li><p><code v-pre>data.COOKRCP01.row</code> 에서 일단 <code v-pre>data</code> 까지 구조분해할당으로 꺼내보자</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">App.js</div>
 <pre class="language-javascript"><code v-pre class="language-javascript">...
-  try {
-  	const { data } = await axios.get('http://openapi.foodsafetykorea.go.kr/api/발급받은 서비스키/COOKRCP01/json/1/100');
-  	const {	COOKRCP01: { row } } = data;
-  	setLoading({ state: false, data: row });
-  } catch (error) {
-  	console.error('데이터를 불러오는데 실패했습니다.', error);
-  }
-};
+function App() {
+ const [loading, setLoading] = useState(true);
+ const [data, setData] = useState([]);
+ const getDB = async () =&gt; {
+ 	try {
+ 		const { data } = await axios.get('http://openapi.foodsafetykorea.go.kr/api/08cc9b42270a4439b1b5/COOKRCP01/json/1/100');
+ 		console.log(data);
 ...</code></pre>
 </doc-codeblock></div>
 </li>
-</ul>
+<li><p>콘솔메시지는 1초 정도 기다리면 확인된다.<br />
+<img src="../assets/05-12_678.jpg" class="shadow" alt="" /></p>
+</li>
+<li><p>상태관리를 여러개 할 경우 객체를 활용하여 간단히 관리할수 있다.<br />
+loading,setLoadng의 초기값을 객체로 관리한다.</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">App.js</div>
+<pre class="language-javascript"><code v-pre class="language-javascript">const [loading, setLoading] = useState({ state: true, data: [] });</code></pre>
+</doc-codeblock></div>
+<p><img src="../assets/byby01.jpg" class="inline-block" alt="" /> 두개의 스위치로 각각 제어하던 전등을<br />
+<img src="../assets/byby02.jpg" class="inline-block" alt="" /> 하나의 멀티 스위치로 관리한다고 이해하면 쉽다. 이때 사용하는 자료형이 자바스크립트의 객체형이다.</p>
+</li>
+<li><p>컴포넌트에 그리기</p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">App.js</div>
+<pre class="language-javascript"><code v-pre class="language-javascript">...
+const getDB = async () =&gt; {
+ try {
+ 	const { data } = await axios.get('http://openapi.foodsafetykorea.go.kr/api/발급받은 서비스키/COOKRCP01/json/1/100');
+ 	setLoading({ state: false, data: data.COOKRCP01.row });
+ 	console.log(data);
+ } catch (error) {
+ 	console.error('데이터를 불러오는데 실패했습니다.', error);
+ }
+};
+useEffect(() =&gt; {
+ getDB();
+}, []);
+return (
+&lt;div className='App'&gt;
+ {loading.state ? (
+ 	&lt;h1&gt;로딩중입니다...&lt;/h1&gt;
+ ) : (
+ 	loading.data.map((a) =&gt; (
+ 		&lt;div key={a.RCP_SEQ}&gt;
+ 			&lt;span style=red&gt;{a.RCP_NM}&lt;/span&gt;
+ 			&lt;span&gt;{a.RCP_WAY2}&lt;/span&gt;
+ 		&lt;/div&gt;
+ 	))
+ )}
+&lt;/div&gt;
+...</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>결과확인<br />
+<img src="../assets/05-12_679.jpg" class="shadow" alt="" /></p>
+</li>
+</ol>
+<doc-anchor-target id="62-코드개선하기refactoring">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#62-코드개선하기refactoring">#</doc-anchor-trigger>
+        <span>6.2. 코드개선하기(Refactoring)</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li><code v-pre>	setLoading({ state: false, data: data.COOKRCP01.row });</code> 이 부분을 구조분해할당으로 줄여보자.<br />
+data 를 한번더 분해해서 row키의 데이터만 추출하면 더욱 간결한 코드를 구현할수 있다.
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">App.js</div>
+<pre class="language-javascript" data-line="6,7"><code v-pre class="language-javascript">function App() {
+	const [loading, setLoading] = useState({ state: true, data: [] });
+	const getDB = async () =&gt; {
+		try {
+			const {data} = await axios.get('http://openapi.foodsafetykorea.go.kr/api/발급받은 서비스키/COOKRCP01/json/1/100');
+			const {	COOKRCP01: { row } } = data;
+			setLoading({ state: false, data: row });
+		} catch (error) {
+			console.error('데이터를 불러오는데 실패했습니다.', error);
+		}
+	};
+	useEffect(() =&gt; {
+		getDB();
+	}, []);
+	return (
+	&lt;div className='App'&gt;
+		{loading.state ? (
+			&lt;h1&gt;로딩중입니다...&lt;/h1&gt;
+		) : (
+			loading.data.map((a) =&gt; (
+				&lt;div key={a.RCP_SEQ}&gt;
+					&lt;span style=red&gt;{a.RCP_NM}&lt;/span&gt;
+					&lt;span&gt;{a.RCP_WAY2}&lt;/span&gt;
+				&lt;/div&gt;
+			))
+		)}
+	&lt;/div&gt;
+);
+...</code></pre>
+</doc-codeblock></div>
+</li>
+</ol>
 <doc-anchor-target id="63-필요한-데이터만-추출하여-업데이트-하자">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#63-필요한-데이터만-추출하여-업데이트-하자">#</doc-anchor-trigger>
         <span>6.3. 필요한 데이터만 추출하여 업데이트 하자</span>
     </h3>
 </doc-anchor-target>
-<ul>
-<li>저장된 데이터의 구조를 살펴보고 구조에 맞게 하위키를 작성하여 컴포넌트에 렌더링 시켜보자</li>
-</ul>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-javascript"><code v-pre class="language-javascript">console.log(DB.data); // 응답 데이터 확인.
-setLoading({ state: false, data: DB.data.COOKRCP01.row }); // 로딩 상태와 data 업데이트
-...
-	loading.data.map((a) =&gt; (
-		&lt;div key={a.RCP_SEQ}&gt;
-			&lt;span style=red&gt;{a.RCP_NM}&lt;/span&gt;
-			&lt;span&gt;{a.RCP_WAY2}&lt;/span&gt;
-		&lt;/div&gt;</code></pre>
+<ol>
+<li><p>응답데이터의 구조를 살펴보고 구조에 맞게 키를 넣어 컴포넌트에 렌더링 시켜보자.<br />
+키에 해당하는 내용은 OPEN-API 페이지 하단의 출력항목 표에서 확인할수 있다 <img src="../assets/05-12_680.jpg" class="shadow" alt="" /></p>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<div class="codeblock-title">App.js</div>
+<pre class="language-javascript"><code v-pre class="language-javascript"> ...
+ const {	COOKRCP01: { row } } = data;
+ setLoading({ state: false, data: row });
+ console.log('data', loading.data);
+ ...
+ 	loading.data.map((a) =&gt; (
+ 		&lt;div key={a.RCP_SEQ}&gt;
+ 			&lt;span style=red&gt;{a.RCP_NM}&lt;/span&gt;
+ 			&lt;span&gt;{a.RCP_WAY2}&lt;/span&gt;
+ 			&lt;div&gt;
+ 				&lt;span&gt;{a.MANUAL01}&lt;/span&gt;
+ 				&lt;span&gt;{a.MANUAL02}&lt;/span&gt;
+ 				&lt;span&gt;{a.MANUAL03}&lt;/span&gt;
+ 			&lt;/div&gt;
+ 		&lt;/div&gt;</code></pre>
 </doc-codeblock></div>
-<p><figure class="content-center">
-    <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/f2b063ab-5763-4522-82a6-f18f4aaa1c70/d3b55490-566a-4210-bd56-4c93c281dbf8/Untitled.png" alt="Untitled">
-    <figcaption class="caption">Untitled</figcaption>
-</figure>
-</p>
-<ul>
-<li>앱을 실행해 보면 처음에는 isLoading... 이 화면에 나타나다가, 데이터가 화면에 렌더되는것을 볼수있다</li>
-</ul>
-<p>주의) 가끔 API가 오작동하며 axios.get()이 제대로 실행되지 않을 수도 있다. 그런 경우에는 1~2분 정도 기다렸다가 다시 리액트 앱을 실행해 보자.</p>
-<doc-anchor-target id="7-완료파일-내려받기">
+<p><img src="../assets/05-12_681.jpg" class="shadow" alt="" /></p>
+</li>
+<li><p>앱을 실행해 보면 처음에는 isLoading... 이 화면에 나타나다가, 데이터가 화면에 렌더되는것을 볼수있다<br />
+주의) 가끔 API가 오작동하며 axios.get()이 제대로 실행되지 않을 수도 있다. 그런 경우에는 1~2분 정도 기다렸다가 다시 리액트 앱을 실행해 보자.</p>
+</li>
+</ol>
+<doc-anchor-target id="7-여기까지-깃허브에-올리기">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#7-완료파일-내려받기">#</doc-anchor-trigger>
-        <span>7. 완료파일 내려받기</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#7-여기까지-깃허브에-올리기">#</doc-anchor-trigger>
+        <span>7. 여기까지 깃허브에 올리기</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock line-numbers>
+<pre class="language-bash"><code v-pre class="language-bash">git add .
+git commit -m &quot;07 api 연결&quot;
+git push origin main</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="8-완료파일-내려받기">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#8-완료파일-내려받기">#</doc-anchor-trigger>
+        <span>8. 완료파일 내려받기</span>
     </h2>
 </doc-anchor-target>
 <p><a href="../assets/06/06_fin.zip" target="_blank" class="no-link inline-flex align-middle items-center font-medium cursor-pointer transition-colors duration-200 ease-out focus:outline-none bg-green-500 hover:bg-green-700 text-white px-4 h-10 text-sm rounded-md">
