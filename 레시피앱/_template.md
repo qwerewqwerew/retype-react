@@ -35,7 +35,8 @@ tags: [리액트, react, React, nodejs, NODE, useState, useEffect]
     ![](./assets/05-02_643.jpg)
 6.  2번의 폴더를 루트로 선택하여 vscode를 연다.
 7.  vscode 의 터미널에 npm start 를 입력하여 앱을 실행한다.
-    +++
+
++++
 
 ## 2. 연관링크
 
